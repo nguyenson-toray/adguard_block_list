@@ -1,0 +1,322 @@
+# ===============================================
+# VIETNAM MOVIE/STREAMING SITES BLOCKLIST
+# Chặn các trang xem phim trực tuyến tại Việt Nam
+# Cập nhật: 2025
+# ===============================================
+
+# ==========================================
+# TRANG PHIM LẬU PHỔ BIẾN TẠI VIỆT NAM
+# ==========================================
+
+# PhimMoi series
+||phimmoi.net^
+||phimmoi.com^
+||phimmoi.tv^
+||phimmoi.org^
+||phimmoi24h.com^
+
+# Bilutv series  
+||bilutv.com^
+||bilutv.net^
+||bilutv.org^
+||bilutv.tv^
+
+# PhimHay series
+||phimhay.org^
+||phimhay.com^
+||phimhay.net^
+||phimhay.tv^
+
+# Fmovies Vietnam
+||fmovies.vn^
+||fmovies.com.vn^
+
+# HDViet
+||hdviet.com^
+||hdviet.net^
+||hdviet.org^
+
+# PhimHD
+||phimhd.org^
+||phimhd.net^
+||phimhd.com^
+
+# XemPhim
+||xemphim.com^
+||xemphim.net^
+||xemphim.tv^
+
+# VuViphim
+||vuviphim.com^
+||vuviphim.net^
+
+# PhimBo
+||phimbo.com^
+||phimbo.net^
+
+# PhimNhanh
+||phimnhanh.com^
+||phimnhanh.net^
+
+# MotPhim
+||motphim.com^
+||motphim.net^
+||motphim.tv^
+
+# CineHub
+||cinehub.vn^
+||cinehub.com^
+
+# ==========================================
+# TRANG PHIM ANIME/HOẠT HÌNH
+# ==========================================
+
+# AnimeViet
+||animeviet.tv^
+||animeviet.com^
+||animeviet.net^
+
+# AnimeHay
+||animehay.tv^
+||animehay.com^
+
+# Anime47
+||anime47.com^
+||anime47.net^
+
+# AnimeVsub
+||animevsub.tv^
+||animevsub.com^
+
+# VuiGhe Anime
+||vuighe.net^
+||vuighe.com^
+
+# ==========================================
+# TRANG PHIM BỘ HÀN QUỐC
+# ==========================================
+
+# PhimHan
+||phimhan.com^
+||phimhan.net^
+
+# Korean Drama
+||koreandrama.vn^
+||koreandrama.com.vn^
+
+# HDKorea
+||hdkorea.com^
+||hdkorea.net^
+
+# ==========================================
+# TRANG LIVE STREAMING BÓNG ĐÁ/THỂ THAO
+# ==========================================
+
+# Mitom TV
+||mitom.tv^
+||mitomtv.com^
+
+# Xoilac TV
+||xoilac.tv^
+||xoilactv.com^
+||xoilac.org^
+
+# 90phut TV
+||90phut.tv^
+||90phuttv.com^
+
+# VeboTV
+||vebo.tv^
+||vebotv.com^
+
+# CakhiaTV
+||cakhia.tv^
+||cakhiatv.com^
+
+# ==========================================
+# TRANG TORRENT/DOWNLOAD PHIM
+# ==========================================
+
+# HDViet Torrent
+||hdviet.torrent.com^
+||torrent.hdviet.com^
+
+# Vietnamese Torrent sites
+||vnsharing.net^
+||vntorrent.org^
+
+# ==========================================
+# TRANG PHIM NGƯỜI LỚN (18+)
+# ==========================================
+
+# Adult streaming sites (common VN)
+||sex18.com.vn^
+||phimsex.vn^
+||javhd.vn^
+||xvideovn.com^
+
+# ==========================================
+# TRANG PHIM QUỐC TẾ CÓ NỘI DUNG VIỆT
+# ==========================================
+
+# 123Movies variants
+||123movies.vn^
+||123phim.com^
+
+# GoMovies Vietnam
+||gomovies.vn^
+||gomovies.com.vn^
+
+# PutLocker Vietnam
+||putlocker.vn^
+||putlocker.com.vn^
+
+# SolarMovie Vietnam
+||solarmovie.vn^
+||solarmovie.com.vn^
+
+# ==========================================
+# IPTV/M3U STREAMING VIETNAM
+# ==========================================
+
+# IPTV Vietnam
+||iptv.com.vn^
+||vn-iptv.com^
+||iptvvietnam.net^
+
+# M3U Vietnam
+||m3u.vn^
+||m3uvn.com^
+
+# ==========================================
+# TRANG WEB TV TRỰC TUYẾN
+# ==========================================
+
+# VTVGo (unofficial)
+||vtvgo.vn^
+||vtv.com.vn^$path=/live/
+
+# HTV streaming
+||htv.com.vn^$path=/live/
+
+# VTC streaming  
+||vtc.vn^$path=/live/
+
+# ==========================================
+# GENERIC MOVIE PATTERNS (REGEX)
+# ==========================================
+
+# Generic Vietnamese movie sites
+/.*phim.*\.vn/
+/.*phim.*\.com\.vn/
+/.*movie.*\.vn/
+/.*film.*\.vn/
+/.*xem.*phim.*\.com/
+/.*phim.*online.*\.com/
+/.*phim.*moi.*\.com/
+/.*phim.*hay.*\.com/
+/.*phim.*hd.*\.com/
+/.*phim.*bo.*\.com/
+
+# Anime patterns
+/.*anime.*\.vn/
+/.*anime.*\.tv/
+/.*hoathinh.*\.com/
+
+# Sports streaming patterns
+/.*mitom.*\.tv/
+/.*xoilac.*\.tv/
+/.*bongda.*tv/
+/.*thethao.*tv/
+/.*tructiep.*tv/
+
+# Torrent patterns
+/.*torrent.*phim.*\.com/
+/.*download.*phim.*\.com/
+/.*phim.*torrent.*\.org/
+
+# IPTV patterns
+/.*iptv.*\.vn/
+/.*m3u.*\.vn/
+/.*tv.*online.*\.vn/
+
+# ==========================================
+# CDN & STREAMING SERVERS
+# ==========================================
+
+# Common streaming CDNs used by movie sites
+||streamtape.com^
+||doodstream.com^
+||upstream.to^
+||fembed.com^
+||supervideo.tv^
+||streamango.com^
+||openload.co^
+||rapidvideo.com^
+
+# Vietnamese CDNs
+||cdn.phimmoi.net^
+||stream.bilutv.com^
+||video.hdviet.com^
+
+# ==========================================
+# ADVERTISING NETWORKS FOR MOVIE SITES
+# ==========================================
+
+# Adult ads commonly found on movie sites
+||pornhub-premium.com^
+||xhamster.com^$third-party
+||xnxx.com^$third-party
+||redtube.com^$third-party
+
+# Cryptocurrency mining scripts
+||coinhive.com^
+||jsecoin.com^
+||coinerra.com^
+
+# Popup/redirect ads
+||popads.net^
+||popcash.net^
+||propellerads.com^
+||adnxs.com^$third-party
+
+# ==========================================
+# MOBILE APPS FOR MOVIE STREAMING
+# ==========================================
+
+# Mobile domains (automatically blocked by main domains)
+# m.phimmoi.net, app.bilutv.com etc.
+
+# ==========================================
+# WHITELIST EXAMPLES (If needed)
+# ==========================================
+
+# Allow legitimate streaming services
+# @@||netflix.com^
+# @@||youtube.com^
+# @@||amazon.com^$path=/prime/
+# @@||disney.com^
+# @@||hbo.com^
+
+# Allow official Vietnamese TV
+# @@||vtv.vn^
+# @@||htvonline.com.vn^
+# @@||vtc.vn^
+
+# ================================================
+# MOBILE APP PACKAGES (For MDM reference):
+# com.phimmoi.android (PhimMoi)
+# com.bilutv.app (BiluTV)  
+# com.hdviet.mobile (HDViet)
+# com.animeviet.tv (AnimeViet)
+# com.mitom.tv (MitomTV)
+# ================================================
+
+# ================================================
+# USAGE NOTES:
+# - Kiểm tra pháp lý trước khi deploy
+# - Whitelist streaming services hợp pháp
+# - Monitor để tránh block nhầm content hợp pháp
+# - Update thường xuyên vì domain thay đổi nhanh
+# - Cân nhắc impact đến productivity/entertainment
+# ================================================
