@@ -1,0 +1,275 @@
+# ===============================================
+# VIETNAM CAMERA APPS BLOCKLIST FOR ADGUARD
+# Chặn các app camera phổ biến tại Việt Nam (Tối ưu)
+# Cập nhật: 2025
+# ===============================================
+
+# ==========================================
+# IMOU LIFE / DAHUA (Rất phổ biến tại VN)
+# ==========================================
+||imou.com^
+||imoulife.com^
+||dahuatech.com^
+||dhitech.com^
+||lechange.com^
+||ezcloud.imou.com^
+||openapi.lechange.com^
+||eu-openapi.lechange.com^
+||us-openapi.lechange.com^
+||ap-openapi.lechange.com^
+
+# ==========================================
+# HIKVISION / HIK-CONNECT
+# ==========================================
+# ||hikvision.com^
+# ||hik-connect.com^
+# ||hikvisionapi.com^
+# ||hikconnect.com^
+# ||hikvisionvietnam.com^
+
+# ==========================================
+# EZVIZ (CloudEye)
+# ==========================================
+||ezviz.com^
+||ezvizlife.com^
+||ezvizapi.com^
+
+# ==========================================
+# XMEYE (Rất phổ biến ở VN)
+# ==========================================
+||xmeye.net^
+||xmeye.com^
+||xmcsee.com^
+
+# ==========================================
+# YOOSEE (Phổ biến camera giá rẻ)
+# ==========================================
+||yoosee.co^
+||yoosee.com^
+
+# ==========================================
+# V380 / V380 PRO
+# ==========================================
+||v380.net^
+||v380s.com^
+
+# ==========================================
+# iCSEE / CamHi
+# ==========================================
+||icsee.me^
+||camhipro.com^
+||camhi.net^
+
+# ==========================================
+# XIAOMI / MI HOME CAMERAS
+# ==========================================
+||mi.com^$app=mihome
+||mijia.com^
+||xiaomi.com^$app=camera
+
+# ==========================================
+# TP-LINK TAPO
+# ==========================================
+||tp-link.com^$app=tapo
+||tplinkcloud.com^
+||tplinkapps.com^
+||tapo.com^
+
+# ==========================================
+# REOLINK
+# ==========================================
+||reolink.com^
+||reolink-storage.s3.amazonaws.com^
+
+# ==========================================
+# THƯƠNG HIỆU VIỆT NAM
+# ==========================================
+
+# KBONE
+||kbone.vn^
+||kbvision.vn^
+
+# VANTECH
+||vantech.vn^
+||vantechvietnam.com^
+
+# QUESTEK
+||questek.vn^
+||questekglobal.com^
+
+# J-TECH
+||j-tech.vn^
+
+# REVOTECH
+||revotech.vn^
+
+# ==========================================
+# CÁC THƯƠNG HIỆU CAMERA KHÁC
+# ==========================================
+
+# 360 CAMERA / QIHOO
+||360.cn^$app=camera
+||qihoo.com^$app=camera
+||360safe.com^$app=camera
+
+# ZKTECO / ANVIZ
+||zkteco.com^
+||zktecocloud.com^
+||anviz.com^
+
+# TIANDY
+||tiandy.com^
+||tiandytech.com^
+
+# KGUARD
+||kguard.com^
+||kguard.net^
+
+# AJAX SYSTEMS
+||ajax.systems^
+
+# KAMI (YI Technology)
+||kamihome.com^
+||yitechnology.com^
+
+# SMARTWARES / ELRO
+||smartwares-app.com^
+||elro.eu^
+
+# ZMODO
+||zmodo.com^
+||myzmod.com^
+
+# ARLO
+||arlo.com^
+||netgear.com^$app=arlo
+
+# RING (Amazon)
+||ring.com^
+
+# SWANN
+||swann.com^
+||swanneye.com^
+
+# LOREX
+||lorex.com^
+||lorextechnology.com^
+
+# SRICAM
+||sricam.com^
+||sricctv.com^
+
+# WANSCAM
+||wanscam.com^
+
+# FLOUREON
+||floureon.com^
+
+# ZOSI
+||zositech.com^
+||zosi.com^
+
+# JENNOV
+||jennov.com^
+
+# ANNKE
+||annke.com^
+
+# ==========================================
+# EASY4IP CLOUD SERVICES (DAHUA)
+# ==========================================
+||easy4ipcloud.com^
+||easy4ip.com^
+||www-v2.easy4ipcloud.com^
+||devaccess.easy4ipcloud.com^
+||app-v2.easy4ipcloud.com^
+||updatev2.easy4ipcloud.com^
+
+# ==========================================
+# P2P & CLOUD SERVICES
+# ==========================================
+||tutk.com^
+||kalay.us^
+||iotcplatform.com^
+
+# ==========================================
+# GENERIC CAMERA PATTERNS (REGEX)
+# ==========================================
+
+# Camera API domains
+/.*camera.*api.*\.com/
+/.*cam.*cloud.*\.com/
+/.*surveillance.*api.*\.com/
+/.*ipcam.*api.*\.com/
+/.*dvr.*cloud.*\.com/
+/.*nvr.*api.*\.com/
+/.*cctv.*cloud.*\.com/
+
+# Camera services
+/.*camera.*storage.*\.com/
+/.*video.*storage.*\.com/
+/.*cam.*storage.*\.com/
+
+# Firmware updates
+/.*upgrade.*camera.*\.com/
+/.*firmware.*camera.*\.com/
+/.*update.*camera.*\.com/
+/.*ota.*camera.*\.com/
+
+# Push notifications for cameras
+/.*push.*camera.*\.com/
+/.*notification.*camera.*\.com/
+/.*alert.*camera.*\.com/
+
+# Analytics & tracking
+/.*analytics.*camera.*\.com/
+/.*tracking.*camera.*\.com/
+/.*stats.*camera.*\.com/
+
+# ==========================================
+# MOBILE APP DOMAINS
+# ==========================================
+
+# Mobile specific (đã bao gồm trong main domains)
+# m.imou.com, app.hikvision.com tự động bị block
+
+# ==========================================
+# CLOUD STORAGE SERVICES
+# ==========================================
+||camera-storage.amazonaws.com^
+/.*cam.*cloud.*\.amazonaws\.com/
+/.*camera.*cloud.*\.aliyun\.com/
+/.*surveillance.*cloud.*\.com/
+
+# ==========================================
+# WHITELIST EXAMPLES (Nếu cần)
+# ==========================================
+
+# Cho phép truy cập trang chủ (không phải app)
+# @@||hikvision.com^$path=/support/
+# @@||dahuatech.com^$path=/products/
+
+# Cho phép firmware update từ source tin cậy
+# @@||firmware.hikvision.com^
+# @@||update.dahuatech.com^
+
+# ================================================
+# MOBILE APP PACKAGE NAMES (For MDM reference):
+# com.mm.android.smartsdk (Imou)
+# com.hikvision.hikconnect (Hikvision)
+# com.ezviz.ezcontrol (Ezviz)
+# com.xm.xmeye (XMEye)
+# com.yoosee (Yoosee)
+# com.v380s (V380)
+# com.icsee.watchdog (iCSee)
+# com.xiaomi.smarthome (Xiaomi)
+# com.tplink.tapo (TP-Link Tapo)
+# ================================================
+
+# ================================================
+# USAGE NOTES:
+# - Test thoroughly before production deployment
+# - Use whitelist (@@) for exceptions if needed  
+# - Monitor logs for false positives
+# - Update regularly for new camera brands
+# ================================================
