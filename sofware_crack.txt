@@ -1,0 +1,414 @@
+# ===============================================
+# SOFTWARE DOWNLOAD SITES BLOCKLIST FOR ADGUARD
+# Chặn các trang download phần mềm có rủi ro bảo mật/bản quyền
+# Cập nhật: 2025
+# ===============================================
+
+# ==========================================
+# TRANG DOWNLOAD PHẦN MEM CRACK/WAREZ VN
+# ==========================================
+
+# Vietnamese warez/crack specific content
+||fshare.vn^$path=/file/crack/
+||fshare.vn^$path=/file/keygen/
+||fshare24h.net^
+
+# 4share crack content only
+||4share.vn^$path=/crack/
+||4share.vn^$path=/keygen/
+||4share24h.com^
+
+# TaiMienPhi (block crack sections)
+||taimienphi.vn^$path=/crack/
+||taimienphi.vn^$path=/keygen/
+||taive.vn^$path=/crack/
+
+# Dedicated crack sites (block completely)
+||fullcrack.net^
+||fullcrack.vn^
+||crackvn.com^
+||crackviet.com^
+||softvn.net^$path=/crack/
+||softviet.com^$path=/crack/
+
+# Game crack only
+||kenhtaigame.com^$path=/crack/
+||taigame.com.vn^$path=/crack/
+
+# VnZoom crack sections
+||vnzoom.com^$path=/crack/
+||vnzoom.net^$path=/crack/
+
+# ==========================================
+# TRANG WAREZ/CRACK QUỐC TẾ NỔI TIẾNG
+# ==========================================
+
+# Major warez sites
+||thepiratebay.org^
+||1337x.to^
+||rarbg.to^
+||kickass.to^
+||extratorrent.cc^
+
+# Crack sites
+||crackwatch.com^
+||skidrowreloaded.com^
+||codexgames.com^
+||fitgirl-repacks.site^
+||oceanofgames.com^
+
+# Software crack communities
+||crackedsoftware.org^
+||getintopc.com^
+||filehippo.com^
+||softonic.com^
+||download.com^
+
+# Suspicious file hosts (not legitimate cloud storage)
+||zippyshare.com^
+||uploaded.net^
+||rapidgator.net^
+||turbobit.net^
+||nitroflare.com^
+
+# ==========================================
+# TRANG DOWNLOAD WINDOWS/OFFICE CRACK
+# ==========================================
+
+# Windows activators
+||kmspico.org^
+||kmsauto.org^
+||kmspico.net^
+||windows-activator.com^
+||officetoolkit.com^
+
+# Office crack
+||office365crack.com^
+||msofficecrack.com^
+||officecrack.org^
+
+# Adobe crack
+||adobecrack.org^
+||photoshopcrack.net^
+||adobezii.com^
+
+# ==========================================
+# TRANG TORRENT PHẦN MEM
+# ==========================================
+
+# Software-specific torrents
+||rutracker.org^
+||torrentfreak.com^
+||limetorrents.info^
+||torrentz2.eu^
+||nyaa.si^
+
+# Private trackers (common ones)
+||whatbox.ca^
+||seedbox.io^
+
+# ==========================================
+# TRANG KEYGEN/SERIAL/PATCH
+# ==========================================
+
+# Serial/Key generators
+||serialkey.org^
+||keygenerator.org^
+||crackserial.com^
+||serialnumber.org^
+
+# Patch sites
+||patchcrack.com^
+||softwarepatch.com^
+||crackpatch.org^
+
+# ==========================================
+# ANDROID APK MOD/CRACK
+# ==========================================
+
+# APK Mod sites
+||apkmod.com^
+||apkpure.com^$path=/mod/
+||happymod.com^
+||an1.com^
+||revdl.com^
+||rexdl.com^
+
+# Game mod APK
+||androidoyun.club^
+||apkmody.io^
+||apkdone.com^
+
+# ==========================================
+# TRANG DOWNLOAD GAME CRACK
+# ==========================================
+
+# Game crack sites
+||steamunlocked.net^
+||skidrowgames.com^
+||igg-games.com^
+||gamestorrent.co^
+||repack-games.com^
+
+# Game repack groups
+||fitgirl-repacks.site^
+||dodi-repacks.site^
+||masquerade.site^
+||elamigos-games.com^
+
+# ==========================================
+# FILE HOSTING VỚI REPUTATION XẤU
+# ==========================================
+
+# Suspicious file hosts
+||adfly.net^
+||linkbucks.com^
+||shorte.st^
+||ouo.io^
+||bc.vc^
+
+# Malware-prone hosts
+||clicknupload.org^
+||ddownload.com^
+||ddlbase.net^
+||uploadgig.com^
+
+# ==========================================
+# TRANG TÀI LIỆU/EBOOK CRACK
+# ==========================================
+
+# eBook warez
+||libgen.is^
+||sci-hub.se^
+||b-ok.org^
+||pdfdrive.com^
+
+# Course piracy
+||coursehunter.net^
+||freetutorials.us^
+||downloadfreecourse.com^
+
+# ==========================================
+# CRYPTOCURRENCY MINERS & MALWARE
+# ==========================================
+
+# Known malware distributors
+||malware.com^
+||trojan-downloader.com^
+||virus.com^
+
+# Crypto miners
+||coinhive.com^
+||jsecoin.com^
+||crypto-loot.com^
+||coinerra.com^
+
+# ==========================================
+# FAKE DOWNLOAD SITES
+# ==========================================
+
+# Fake software sites
+||download-software-now.com^
+||free-software-download.com^
+||software-free-download.com^
+
+# Fake Adobe/Microsoft
+||adobe-download-free.com^
+||microsoft-office-free.com^
+||windows-download-free.com^
+
+# ==========================================
+# GENERIC PATTERNS (REGEX)
+# ==========================================
+
+# Crack-specific patterns (not general file sharing)
+/.*crack.*download.*\.com/
+/.*keygen.*generator.*\.com/
+/.*serial.*number.*\.org/
+/.*patch.*software.*\.com/
+/.*activator.*windows.*\.com/
+
+# Warez-specific patterns
+/.*warez.*download.*\.com/
+/.*pirate.*software.*\.org/
+/.*illegal.*software.*\.com/
+/.*repack.*games.*\.site/
+
+# Vietnamese crack patterns (specific)
+/.*phanmem.*crack.*\.vn/
+/.*crack.*phanmem.*\.com/
+/.*keygen.*vietnam.*\.com/
+
+# Exclude legitimate cloud storage from patterns
+# /.*share.*file.*\.com/ - REMOVED (too broad)
+# /.*download.*free.*\.com/ - REMOVED (too broad)
+
+# ==========================================
+# CDN & MIRROR SITES
+# ==========================================
+
+# Mirror sites for warez
+||mirror1.crackedsoftware.org^
+||mirror2.getintopc.com^
+||alt.softonic.com^
+
+# CDN used by crack sites
+||cdn.crackedsoftware.org^
+||files.getintopc.com^
+||dl.softonic.com^
+
+# ==========================================
+# ADVERTISING NETWORKS ON WAREZ SITES
+# ==========================================
+
+# Adult ads on software sites
+||pornhub-premium.com^$third-party
+||xhamster.com^$third-party
+||adult-ads.com^$third-party
+
+# Malicious ad networks
+||popads.net^
+||popcash.net^
+||propellerads.com^
+||exoclick.com^
+||juicyads.com^
+
+# ==========================================
+# MOBILE APPS FOR SOFTWARE DOWNLOAD
+# ==========================================
+
+# Mobile warez apps (domains auto-blocked by main rules)
+# m.getintopc.com, app.softonic.com etc.
+
+# ==========================================
+# WHITELIST - LEGITIMATE FILE SHARING SERVICES
+# ==========================================
+
+# Major Cloud Storage Services
+@@||drive.google.com^
+@@||docs.google.com^
+@@||dropbox.com^
+@@||onedrive.live.com^
+@@||onedrive.com^
+@@||box.com^
+@@||icloud.com^
+
+# File Sharing & Transfer Services
+@@||wetransfer.com^
+@@||send.firefox.com^
+@@||filemail.com^
+@@||gofile.io^
+@@||mega.nz^
+@@||mediafire.com^
+
+# Enterprise File Sharing
+@@||sharepoint.com^
+@@||teams.microsoft.com^
+@@||slack.com^$path=/files/
+@@||workspace.google.com^
+
+# Developer File Hosting
+@@||github.com^
+@@||gitlab.com^
+@@||bitbucket.org^
+@@||sourceforge.net^
+@@||codeberg.org^
+
+# Academic & Research
+@@||figshare.com^
+@@||zenodo.org^
+@@||researchgate.net^
+@@||academia.edu^
+
+# Vietnamese Legitimate Services
+@@||fshare.vn^$path=/folder/
+@@||4shared.com^$path=/folder/
+@@||drive.google.com^$path=/drive/
+
+# Content Distribution Networks
+@@||amazonaws.com^$path=/s3/
+@@||cloudflare.com^$path=/files/
+@@||jsdelivr.net^
+@@||unpkg.com^
+
+# ==========================================
+# ALLOW OFFICIAL SOFTWARE SOURCES
+# ==========================================
+
+# Allow official software sources
+# @@||microsoft.com^
+# @@||adobe.com^
+# @@||google.com^$path=/chrome/
+# @@||mozilla.org^
+# @@||apple.com^
+# @@||github.com^
+# @@||sourceforge.net^
+# @@||gitlab.com^
+
+# Allow legitimate download sites
+# @@||ninite.com^
+# @@||chocolatey.org^
+# @@||github.com^$path=/releases/
+# @@||releases.ubuntu.com^
+
+# Allow official app stores
+# @@||play.google.com^
+# @@||apps.apple.com^
+# @@||microsoft.com^$path=/store/
+# @@||steam.com^
+
+# ==========================================
+# EDUCATIONAL EXCEPTIONS
+# ==========================================
+
+# Allow student/academic access (if needed)
+# @@||adobe.com^$path=/student/
+# @@||microsoft.com^$path=/education/
+# @@||autodesk.com^$path=/education/
+
+# ================================================
+# CONFIGURATION FOR LEGITIMATE FILE SHARING
+# ================================================
+
+# ALLOW major cloud storage (already whitelisted above)
+# - Google Drive, OneDrive, Dropbox, Box, iCloud
+# - WeTransfer, Send, FileMaill, GoFile
+# - GitHub, GitLab, SourceForge
+# - Enterprise: SharePoint, Teams, Slack
+
+# CONDITIONAL ALLOW Vietnamese services:
+# - FShare: Allow folder sharing, block crack content
+# - 4Shared: Allow normal files, block crack sections
+# - TaiMienPhi: Allow software downloads, block cracks
+
+# STILL BLOCK:
+# - Dedicated crack/warez sites
+# - Malware distributors  
+# - Crypto miners
+# - Suspicious file hosts (ZippyShare, RapidGator, etc.)
+# - Adult/malicious ad networks
+
+# USAGE EXAMPLES:
+# Business file sharing: ✅ Allowed
+# Personal cloud storage: ✅ Allowed  
+# Software cracks: ❌ Blocked
+# Malware sites: ❌ Blocked
+# Enterprise collaboration: ✅ Allowed
+
+# ================================================
+# MOBILE APP PACKAGES (For MDM reference):
+# com.google.android.apps.docs (Google Drive)
+# com.dropbox.android (Dropbox)
+# com.microsoft.skydrive (OneDrive)
+# com.box.android (Box)
+# ================================================
+
+# ================================================
+# USAGE NOTES:
+# - Legitimate file sharing is now ALLOWED
+# - Only crack/warez content is blocked
+# - Monitor for business productivity vs security
+# - Adjust path-based rules as needed
+# - Whitelist additional services if required
+# - Educate users about safe file sharing practices
+# ================================================
