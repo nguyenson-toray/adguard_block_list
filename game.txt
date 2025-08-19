@@ -1,0 +1,365 @@
+# ===============================================
+# VIETNAM GAME SERVERS BLOCKLIST FOR ADGUARD
+# Chặn server các game phổ biến tại Việt Nam
+# Cập nhật: 2025
+# ===============================================
+
+# ==========================================
+# MOBILE GAMES - MOBA & BATTLE ROYALE
+# ==========================================
+
+# Liên Quân Mobile (Arena of Valor)
+||lienquan.garena.vn^
+||aov.garena.com^
+||aov-api.garena.com^
+||lienquan-api.garena.vn^
+
+# Mobile Legends Bang Bang
+||mobilelegends.com^
+||mobilelegends-api.com^
+||ml.moonton.com^
+||api.mobilelegends.com^
+
+# PUBG Mobile
+||pubgmobile.com^
+||pubgm.proximabeta.com^
+||pubgmobile.level99.com^
+||igamecj.com^$app=pubgm
+
+# Free Fire
+||ff.garena.vn^
+||freefire.garena.com^
+||ff-api.garena.com^
+||booyah.live^
+
+# Wild Rift (League of Legends Mobile)
+||wildrift.leagueoflegends.com^
+||wr.riotgames.com^
+||riot-wildrift.com^
+
+# ==========================================
+# PC GAMES - MOBA & COMPETITIVE
+# ==========================================
+
+# League of Legends
+||leagueoflegends.com^
+||riotgames.com^
+||riot.com^
+||lol.garena.vn^
+||lol.garena.com^
+
+# Dota 2
+||dota2.com^
+||steamcommunity.com^$app=dota2
+||api.steampowered.com^$app=dota2
+
+# Valorant
+||playvalorant.com^
+||valorant-api.com^
+||valorant.riotgames.com^
+
+# CS:GO / CS2
+||store.steampowered.com^$app=csgo
+||steamcommunity.com^$app=csgo
+||blog.counter-strike.net^
+
+# ==========================================
+# BATTLE ROYALE PC GAMES
+# ==========================================
+
+# PUBG PC
+||pubg.com^
+||battlegrounds.pubg.com^
+||pubgapi.com^
+||bluehole.net^
+
+# Apex Legends
+||ea.com^$app=apex
+||apexlegends.com^
+||origin.com^$app=apex
+
+# Fortnite
+||fortnite.com^
+||epicgames.com^$app=fortnite
+||unrealengine.com^$app=fortnite
+
+# ==========================================
+# MMO GAMES VIỆT NAM
+# ==========================================
+
+# Võ Lâm Truyền Kỳ (VNG)
+||volam.vn^
+||volam.com.vn^
+||vng.com.vn^$app=volam
+
+# Tân Minh Chủ
+||tanminhthu.vn^
+||tmt.vn^
+
+# Phong Thần
+||phongthancorp.com^
+||phongthangame.vn^
+
+# Kiếm Thế
+||jx.zing.vn^
+||kiemthe.com.vn^
+
+# ==========================================
+# GARENA PLATFORM & GAMES
+# ==========================================
+
+# Garena Platform
+||garena.vn^
+||garena.com^
+||garena.tv^
+||dl.garena.vn^
+||api.garena.vn^
+
+# Garena specific games
+||fifa.garena.vn^
+||lol.garena.vn^
+||hon.garena.vn^
+
+# ==========================================
+# RACING & SPORTS GAMES
+# ==========================================
+
+# FIFA Online
+||fo4.nexon.com^
+||fifaonline4.nexon.com^
+||fifa.ea.com^$path=/online/
+
+# Need for Speed
+||needforspeed.com^
+||ea.com^$app=nfs
+
+# Speed Drifters
+||speeddrifters.com^
+||garena.vn^$app=speeddrifters
+
+# ==========================================
+# CASUAL & PUZZLE GAMES
+# ==========================================
+
+# Candy Crush series
+||king.com^
+||candycrush.king.com^
+||candycrushsaga.com^
+
+# Clash of Clans / Clash Royale
+||supercell.com^
+||clashofclans.com^
+||clashroyale.com^
+
+# ==========================================
+# SHOOTING GAMES MOBILE
+# ==========================================
+
+# Call of Duty Mobile
+||callofduty.com^$app=mobile
+||activision.com^$app=codm
+
+# CrossFire Mobile
+||crossfire.z8games.com^
+||cf.gameclub.vn^
+
+# ==========================================
+# MMORPG QUỐC TẾ PHỔ BIẾN TẠI VN
+# ==========================================
+
+# World of Warcraft
+||worldofwarcraft.com^
+||blizzard.com^$app=wow
+||battle.net^$app=wow
+
+# Final Fantasy XIV
+||finalfantasyxiv.com^
+||square-enix.com^$app=ffxiv
+
+# Genshin Impact
+||genshin.hoyoverse.com^
+||mihoyo.com^$app=genshin
+||hoyolab.com^
+
+# ==========================================
+# GAME LAUNCHERS & PLATFORMS
+# ==========================================
+
+# Steam
+||store.steampowered.com^
+||steamcommunity.com^
+||steamcdn-a.akamaihd.net^
+
+# Epic Games Store
+||epicgames.com^
+||unrealengine.com^
+
+# Origin (EA)
+||origin.com^
+||ea.com^
+
+# Battle.net (Blizzard)
+||battle.net^
+||blizzard.com^
+
+# Uplay (Ubisoft)
+||uplay.com^
+||ubisoft.com^
+
+# ==========================================
+# VIETNAMESE GAME PUBLISHERS
+# ==========================================
+
+# VNG Corporation
+||vng.com.vn^
+||zing.vn^$app=game
+||zonv.vn^
+
+# Funtap
+||funtap.vn^
+||funtap.com^
+
+# VTC Game
+||vtcgame.vn^
+||vtc.vn^$app=game
+
+# SohaGame
+||sohagame.vn^
+||sohagame.com^
+
+# NPH Gosu
+||gosu.vn^
+||gosu.com.vn^
+
+# ==========================================
+# GAME STREAMING & ESPORTS
+# ==========================================
+
+# Facebook Gaming
+||fb.gg^
+||facebook.com^$path=/gaming/
+
+# YouTube Gaming
+||gaming.youtube.com^
+||youtube.com^$path=/gaming/
+
+# Twitch
+||twitch.tv^
+||twitch.com^
+
+# Garena Live
+||live.garena.vn^
+||booyah.live^
+
+# ==========================================
+# GAME UPDATE SERVERS
+# ==========================================
+
+# Steam updates
+||content.steampowered.com^
+||client-download.steampowered.com^
+
+# League of Legends updates
+||l3cdn.riotgames.com^
+||ddragon.leagueoflegends.com^
+
+# PUBG updates
+||download.pubg.com^
+||patch.pubg.com^
+
+# ==========================================
+# MOBILE GAME GENERIC PATTERNS
+# ==========================================
+
+# Game APIs
+/.*game.*api.*\.com/
+/.*gaming.*api.*\.vn/
+/.*gameserver.*\.com/
+/.*game.*cloud.*\.com/
+
+# Game CDN
+/.*game.*cdn.*\.com/
+/.*gaming.*cdn.*\.net/
+/.*gamefiles.*\.com/
+
+# Vietnamese game patterns
+/.*game.*\.vn/
+/.*game.*\.com\.vn/
+/.*tro.*choi.*\.vn/
+
+# Mobile game patterns
+/.*mobile.*game.*\.com/
+/.*game.*mobile.*\.net/
+
+# ==========================================
+# GAME CHAT & VOICE SERVICES
+# ==========================================
+
+# Discord (gaming)
+||discord.com^
+||discord.gg^
+||discordapp.com^
+
+# TeamSpeak
+||teamspeak.com^
+||ts3server.com^
+
+# ==========================================
+# CRYPTO GAMES & NFT GAMES
+# ==========================================
+
+# Axie Infinity
+||axieinfinity.com^
+||roninchain.com^
+||axie.tech^
+
+# Other crypto games
+||thesandbox.game^
+||decentraland.org^
+
+# ==========================================
+# GAME ANALYTICS & TRACKING
+# ==========================================
+
+# Game analytics
+||gameanalytics.com^
+||unity3d.com^$app=analytics
+||adjust.com^$app=game
+
+# ==========================================
+# WHITELIST EXAMPLES (If needed)
+# ==========================================
+
+# Allow educational games
+# @@||educational-games.com^
+# @@||khan-academy.org^$path=/games/
+
+# Allow work-related gaming tools
+# @@||unity3d.com^$client=dev-team
+# @@||unrealengine.com^$client=dev-team
+
+# Allow gaming during breaks
+# @@||steampowered.com^$time=12:00-13:00
+# @@||leagueoflegends.com^$time=17:00-18:00
+
+# ================================================
+# MOBILE APP PACKAGES (For MDM reference):
+# com.garena.game.kgvn (Liên Quân)
+# com.mobile.legends (Mobile Legends)
+# com.tencent.ig (PUBG Mobile)
+# com.dts.freefireth (Free Fire)
+# com.riotgames.league.wildrift (Wild Rift)
+# com.supercell.clashofclans (Clash of Clans)
+# com.ea.gp.fifamobile (FIFA Mobile)
+# ================================================
+
+# ================================================
+# USAGE NOTES:
+# - Consider business impact vs productivity
+# - Allow educational/work-related gaming tools
+# - Consider time-based restrictions instead of full blocks
+# - Monitor for false positives with game engines (Unity, Unreal)
+# - Whitelist if games are used for team building
+# - Consider different policies for different user groups
+# - Be aware of remote work gaming during breaks
+# ================================================
