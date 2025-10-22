@@ -1,0 +1,476 @@
+# ===============================================
+# ANTI-GAMBLING BLOCKLIST FOR ADGUARD (LITE VERSION)
+# Chỉ chặn các trang cá cược, cờ bạc online
+# KHÔNG chặn game online hợp pháp
+# Cập nhật: Tháng 10/2025
+# ===============================================
+
+# ================================================
+# MỤC ĐÍCH: Chặn triệt để các trang cá cược bất hợp pháp
+# bảo vệ người dùng khỏi cờ bạc online
+# Giữ lại các game giải trí lành mạnh
+# ================================================
+
+# ==========================================
+# DANH SÁCH CÁ CƯỢC BÓNG ĐÁ BẤT HỢP PHÁP
+# ==========================================
+
+# === Nhà cái lớn hoạt động tại VN ===
+
+# W88 Group
+||w88.com^
+||w88*.com^
+||w88vn.com^
+||w88club.com^
+||w88live.com^
+||w88asia.com^
+||w88hn.com^
+||w88ae.com^
+||linkw88*.com^
+||w88link.com^
+||w88top.com^
+||w88win.com^
+
+# BK8 Group
+||bk8.com^
+||bk8*.com^
+||bk8vietnam.com^
+||bk8vn.com^
+||bk8asia.com^
+||linkbk8.com^
+||bk8vip.com^
+||bk8bet.com^
+
+# M88/Mansion88 Group
+||m88.com^
+||m88*.com^
+||mansion88.com^
+||m88asia.com^
+||m88link.com^
+||m88cvf.com^
+||m88help.com^
+
+# Fun88 Group
+||fun88.com^
+||fun88*.com^
+||fun88vn.com^
+||fun88asia.com^
+||fun88thai.com^
+||linkfun88.com^
+||fun88angels.com^
+
+# VN88 Group
+||vn88.com^
+||vn88*.com^
+||vn88vn.com^
+||vn88pro.com^
+||vn88top.com^
+||vn88best.com^
+
+# New88 Group
+||new88.com^
+||new88*.com^
+||new88vn.com^
+||new88.org^
+||new88us.com^
+
+# i9Bet Group
+||i9bet.com^
+||i9bet*.com^
+||i9betvn.com^
+||i9bet.net^
+||i9bet.org^
+
+# 8xBet Group
+||8xbet.com^
+||8xbet*.com^
+||8xbetvn.com^
+||8xbet.net^
+
+# FB88 Group
+||fb88.com^
+||fb88*.com^
+||fb88vn.com^
+||fb88pro.com^
+||fb88cs.com^
+
+# Dafabet Group
+||dafabet.com^
+||dafabet*.com^
+||dafaviet.com^
+||dafa888.com^
+||dafasports.com^
+
+# Lucky88 Group
+||lucky88.com^
+||lucky88*.com^
+||lucky88vn.com^
+||lucky88slot.com^
+
+# Fi88 Group
+||fi88.com^
+||fi88*.com^
+||fi88vn.com^
+||fi88club.com^
+
+# K8 Group
+||k8.com^
+||k8vn.com^
+||k8cc.com^
+||k8vina.com^
+||k8bet.com^
+||k8casino.com^
+
+# 6686 Sports
+||6686.com^
+||6686*.com^
+||6686vn.com^
+||6686sports.com^
+||6686ag.com^
+
+# VSbet Group
+||vsbet.com^
+||vsbet*.com^
+||vsbetasia.com^
+
+# ==========================================
+# CÁC NHÀ CÁI QUỐC TẾ HOẠT ĐỘNG TẠI VN
+# ==========================================
+
+# 188Bet
+||188bet.com^
+||188bet*.com^
+||188betvn.com^
+||188asia.com^
+
+# Bet365
+||bet365.com^
+||bet365*.com^
+||bet365vietnam.com^
+||mobile365.com^
+
+# 12Bet
+||12bet.com^
+||12bet*.com^
+||12betvn.com^
+
+# Sbobet
+||sbobet.com^
+||sbobet*.com^
+||sbobetasia.com^
+||sbobetonline.com^
+
+# V9bet
+||v9bet.com^
+||v9bet*.com^
+||v9betvn.com^
+
+# Letou
+||letou.com^
+||letou*.com^
+||letouvn.com^
+
+# 1xBet
+||1xbet.com^
+||1xbet*.com^
+||1xbetvn.com^
+||1xbet-vietnam.com^
+
+# Pinnacle
+||pinnacle.com^
+||pinnaclesports.com^
+
+# Betway
+||betway.com^
+||betwayasia.com^
+
+# ==========================================
+# CASINO ONLINE & SLOTS
+# ==========================================
+
+# Casino trực tuyến
+||casino.com^
+||casinovn.com^
+||livecasino.com^
+||888casino.com^
+||vegascasino.com^
+||royalcasino.com^
+||empirecasino.com^
+||dreamcasino.com^
+
+# Slots & Game casino
+||slotgame.com^
+||megaslot.com^
+||slot88.com^
+||pgslot.com^
+||pragmaticplay.com^
+||spadegaming.com^
+||microgaming.com^
+
+# ==========================================
+# TÀI XỈU & XỔ SỐ ONLINE
+# ==========================================
+
+# Tài xỉu
+||taixiu.com^
+||taixiuonline.com^
+||taixiumd5.com^
+||taixiusunwin.com^
+||taixiu68.com^
+||taixiu88.com^
+
+# Xổ số online
+||xoso.com^
+||xosoonline.com^
+||xosovietnam.com^
+||xosohomnay.com^
+||ketquaxoso.com^
+||xosomienbac.com^
+||xosomiennam.com^
+
+# Lô đề online
+||lode.com^
+||lodeonline.com^
+||lodeviet.com^
+||lode88.com^
+||danh-lo-de.com^
+
+# ==========================================
+# GAME BÀI ĐỔI THƯỞNG
+# ==========================================
+
+# Sunwin Group
+||sunwin.com^
+||sunwin*.com^
+||sunwin.club^
+||sunwin.win^
+||sunwin88.com^
+||taisunwin.com^
+
+# Rikvip Group
+||rikvip.com^
+||rikvip*.com^
+||rikvip.club^
+||rikvip88.com^
+||rikclub.com^
+
+# B52 Club
+||b52.club^
+||b52*.club^
+||b52game.com^
+||taib52.com^
+
+# Win79
+||win79.com^
+||win79*.com^
+||win79.club^
+
+# Go88
+||go88.com^
+||go88*.com^
+||go88.club^
+||go88play.com^
+
+# Hit Club
+||hitclub.com^
+||hit.club^
+||hitclub*.com^
+
+# Các game bài khác
+||gamebai.com^
+||game-bai.com^
+||gamebaidoithuong.com^
+||baivip.com^
+||vipgame.com^
+||gamevip.com^
+||naga.casino^
+||nagacasino.com^
+
+# ==========================================
+# XÓC ĐĨA & BACCARAT ONLINE
+# ==========================================
+
+||xocdia.com^
+||xocdiaonline.com^
+||baccarat.com^
+||baccaratonline.com^
+||baccaratvn.com^
+||sicbo.com^
+||sicboonline.com^
+
+# ==========================================
+# CÁC TRANG PHỤ & LINK DỰ PHÒNG
+# ==========================================
+
+# Link vào các nhà cái
+||linkvaow88.com^
+||linkvaobk8.com^
+||linkm88moi.com^
+||link12bet.com^
+||linkvao188bet.com^
+||linksbobet.com^
+||linkfun88moinhat.com^
+||linkvn88.com^
+||linkvaonew88.com^
+||linkvaofi88.com^
+||linkvaoi9bet.com^
+||cacuocuytin.com^
+||nhacaiuytin.com^
+||top10nhacai.com^
+||topnhacai.com^
+||conglycacuoc.com^
+
+# ==========================================
+# POKER ONLINE
+# ==========================================
+
+||pokerstars.com^
+||pokerstars*.com^
+||partypoker.com^
+||888poker.com^
+||pokerking.com^
+||ggpoker.com^
+||pokeronline.com^
+||pokervn.com^
+
+# ==========================================
+# DOMAINS VIỆT NAM LIÊN QUAN CÁ CƯỢC
+# ==========================================
+
+# Chặn tất cả .vn có từ khóa cá cược
+||*cacuoc*.vn^
+||*cadobongda*.vn^
+||*cadoonline*.vn^
+||*casino*.vn^
+||*taixiu*.vn^
+||*xoso*.vn^
+||*lode*.vn^
+||*baccarat*.vn^
+||*poker*.vn^
+||*nhacai*.vn^
+||*cuocbongda*.vn^
+||*gamebai*.vn^
+
+# ==========================================
+# E-SPORTS BETTING
+# ==========================================
+
+||bet-at-home.com^
+||ggbet.com^
+||thunderpick.com^
+||rivalry.com^
+||unikrn.com^
+||loot.bet^
+||betspawn.com^
+
+# ==========================================
+# CRYPTO GAMBLING
+# ==========================================
+
+||stake.com^
+||roobet.com^
+||bc.game^
+||bcgame.com^
+||duelbits.com^
+||rollbit.com^
+||cloudbet.com^
+||fortunejack.com^
+||bitcasino.io^
+||sportsbet.io^
+
+# ==========================================
+# TRACKING & AFFILIATE CỦA CÁ CƯỢC
+# ==========================================
+
+||tracking.w88*.com^
+||analytics.bk8*.com^
+||stats.m88*.com^
+||affiliate.fun88*.com^
+||partner.vn88*.com^
+||aff.*.com^
+||affiliates.*.com^
+||tracking.bet*.com^
+
+# ==========================================
+# CDN & API CỦA TRANG CÁ CƯỢC
+# ==========================================
+
+||api.w88*.com^
+||api.bk8*.com^
+||api.m88*.com^
+||api.fun88*.com^
+||cdn.w88*.com^
+||cdn.bk8*.com^
+||static.fb88*.com^
+||images.dafabet*.com^
+||assets.*.bet^
+||cdn.bet*.com^
+
+# ==========================================
+# GENERIC BLOCKING PATTERNS
+# ==========================================
+
+# Patterns chung cho cá cược
+/.*casino.*/
+/.*betting.*/
+/.*gambl.*/
+/.*sportsbook.*/
+/.*bookmaker.*/
+/.*taixiu.*/
+/.*xocdia.*/
+/.*bacara.*/
+/.*sicbo.*/
+/.*lottery.*/
+/.*togel.*/
+
+# ==========================================
+# FALSE POSITIVES PREVENTION
+# Các trang KHÔNG phải cá cược - được phép
+# ==========================================
+
+# Game chính thống được phép
+@@||steam.com^
+@@||epicgames.com^
+@@||origin.com^
+@@||ubisoft.com^
+@@||blizzard.com^
+@@||riotgames.com^
+@@||garena.vn^
+@@||vng.com.vn^
+
+# Chess & Board games hợp pháp
+@@||chess.com^
+@@||lichess.org^
+@@||chess24.com^
+
+# Game giáo dục
+@@||education.minecraft.net^
+@@||kahoot.com^
+@@||quizizz.com^
+@@||duolingo.com^
+
+# ==========================================
+# HƯỚNG DẪN SỬ DỤNG
+# ==========================================
+
+# 1. Import file vào AdGuard:
+#    Settings > Filters > Custom > Add filter
+#
+# 2. File này CHỈ chặn cá cược, KHÔNG chặn:
+#    - Game online hợp pháp (Garena, VNG, Steam...)
+#    - Game mobile thông thường
+#    - Platform game chính thống
+#
+# 3. Để report thêm trang cá cược mới:
+#    Thêm: ||domain-moi.com^
+#
+# 4. LƯU Ý PHÁP LÝ:
+#    Cá cược online là BẤT HỢP PHÁP tại Việt Nam
+#    Vi phạm có thể bị phạt hành chính hoặc hình sự
+#
+# 5. HỖ TRỢ:
+#    Nếu bị chặn nhầm trang hợp pháp, thêm:
+#    @@||domain-hop-phap.com^
+# ==========================================
+
+# END OF FILE - Updated October 2025
