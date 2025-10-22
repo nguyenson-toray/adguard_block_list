@@ -1,275 +1,265 @@
 # ===============================================
-# VIETNAM NEWS SITES BLOCKLIST FOR ADGUARD
-# Chặn các trang tin tức Việt Nam
-# Cập nhật: 2025
+# VIETNAM NEWS AGGREGATORS BLOCKLIST FOR ADGUARD
+# Chặn các trang/app tổng hợp tin tức Việt Nam
+# Giữ lại các trang báo chính thống
+# Cập nhật: Tháng 10/2025
 # ===============================================
 
+# ================================================
+# QUAN TRỌNG: File này CHỈ chặn:
+# - Các trang/app tổng hợp tin tức (news aggregators)
+# - Mạng xã hội có tính năng tin tức
+# - Trang tin tức clickbait, giật gân
+# 
+# KHÔNG chặn:
+# - Báo chính thống (VnExpress, Tuổi Trẻ, Thanh Niên, Dân Trí...)
+# - Báo điện tử cơ quan nhà nước
+# - Trang tin chuyên ngành uy tín
+# ================================================
+
 # ==========================================
-# BÁO CHÍ CHÍNH THỐNG - GOVERNMENT/STATE MEDIA
+# APP/TRANG TỔNG HỢP TIN TỨC - NEWS AGGREGATORS
 # ==========================================
 
-# Báo Nhân Dân
-||nhandanvn.vn^
-||nhandan.vn^
-||nhandanplus.vn^
+# Báo Mới - App tổng hợp tin tức lớn nhất
+# Tổng hợp từ 150+ nguồn báo
+||baomoi.com^
+||m.baomoi.com^
+||api.baomoi.com^
+||static.baomoi.com^
+||cdn.baomoi.com^
 
-# Báo Tuổi Trẻ
-||tuoitre.vn^
-||tuoitreplus.vn^
+# 24h.com.vn - Trang tổng hợp tin tức
+||24h.com.vn^
+||m.24h.com.vn^
+||static.24h.com.vn^
 
-# Báo Thanh Niên
-||thanhnien.vn^
-||thanhnienvn.vn^
+# Soha News - Trang tổng hợp tin tức
+||soha.vn^
+||m.soha.vn^
+||cdn.soha.vn^
+||static.soha.vn^
 
-# VnExpress
-||vnexpress.net^
-||vnexpress.vn^
+# ==========================================
+# MẠNG XÃ HỘI CÓ TÍNH NĂNG TIN TỨC
+# ==========================================
 
-# Zing News
+# Lotus - Mạng xã hội tích hợp tin tức
+# Tổng hợp từ 50+ đầu báo
+||lotus.vn^
+||api.lotus.vn^
+||static.lotus.vn^
+||cdn.lotus.vn^
+
+# Gapo - Mạng xã hội có tin tức
+||gapo.vn^
+||api.gapo.vn^
+||cdn.gapo.vn^
+||static.gapo.vn^
+
+# Hahalolo - Mạng xã hội du lịch có tin tức
+||hahalolo.com^
+||api.hahalolo.com^
+||cdn.hahalolo.com^
+
+# Mocha - Mạng xã hội Viettel có tin tức
+||mocha.com.vn^
+||api.mocha.vn^
+||cdn.mocha.vn^
+
+# NetCalo - Mạng xã hội có tin tức
+||netcalo.com^
+||api.netcalo.com^
+
+# ==========================================
+# TRANG TIN GIẢI TRÍ CLICKBAIT & TỔNG HỢP
+# ==========================================
+
+# Kenh14 - Tin giải trí tổng hợp
+||kenh14.vn^
+||m.kenh14.vn^
+||static.kenh14.vn^
+
+# Zing News/Zing.vn - Tổng hợp tin tức
 ||zingnews.vn^
 ||news.zing.vn^
-
-# Dân Trí
-||dantri.com.vn^
-||dantrivn.net^
-
-# Báo Mới
-||baomoi.com^
-
-# Tin Tức Online
-||tintuc.vn^
-
-# 24h
-||24h.com.vn^
-
-# Kenh14
-||kenh14.vn^
-
-# Soha News
-||soha.vn^
-
-# Eva.vn
-||eva.vn^
-
-# ==========================================
-# BÁO ĐIỆN TỬ CƠ QUAN NHẤN NHÀ NƯỚC
-# ==========================================
-
-# Báo Quân Đội Nhân Dân
-||qdnd.vn^
-
-# Báo Công An Nhân Dân
-||cand.com.vn^
-
-# Báo Lao Động
-||laodong.vn^
-
-# Báo Đầu Tư
-||baodautu.vn^
-
-# Báo Công Thương
-||congthuong.vn^
-
-# Báo Giáo Dục Việt Nam
-||giaoduc.net.vn^
-
-# Báo Sức Khỏe & Đời Sống
-||suckhoedoisong.vn^
-
-# ==========================================
-# BÁO ĐỊA PHƯƠNG
-# ==========================================
-
-# Báo Hà Nội Mới
-||hanoimoi.com.vn^
-
-# Báo Sài Gòn Giải Phóng
-||sggp.org.vn^
-
-# Báo Đà Nẵng
-||baodanang.vn^
-
-# Báo Hải Phòng
-||baohaiduong.vn^
-
-# Báo Cần Thơ
-||baocantho.com.vn^
-
-# Báo An Giang
-||baoangiangonline.com.vn^
-
-# ==========================================
-# TIN TỨC GIẢI TRÍ & LIFESTYLE
-# ==========================================
-
-# Zing.vn
 ||zing.vn^
+||mp3.zing.vn^
+||tv.zing.vn^
 
-# Yan News
-||yan.vn^
-
-# GenK
+# GenK - Tin công nghệ tổng hợp
 ||genk.vn^
+||m.genk.vn^
 
-# Báo Phụ Nữ
-||phunuvietnam.vn^
+# Yan News - Tin giải trí tổng hợp
+||yan.vn^
+||news.yan.vn^
 
-# Báo Gia Đình & Xã Hội
-||giadinh.net.vn^
+# Eva.vn - Tin phụ nữ tổng hợp
+||eva.vn^
+||m.eva.vn^
 
-# Afamily
+# Afamily - Tin gia đình tổng hợp
 ||afamily.vn^
+||m.afamily.vn^
 
 # ==========================================
-# TIN TỨC KINH TẾ & TÀI CHÍNH
-# ==========================================
-
-# VietnamNet
-||vietnamnet.vn^
-
-# CafeF
-||cafef.vn^
-
-# CafeLand
-||cafeland.vn^
-
-# Báo Đầu Tư Chứng Khoán
-||baodauthuchungkhoan.vn^
-
-# Thời Báo Kinh Tế
-||thesaigontimes.vn^
-
-# Forbes Vietnam
-||forbesvietnam.com.vn^
-
-# ==========================================
-# TIN TỨC THÔNG TIN & CÔNG NGHỆ
-# ==========================================
-
-# VnMedia
-||vnmedia.vn^
-
-# ICTNews
-||ictnews.vn^
-
-# Techrum
-||techrum.vn^
-
-# Tinhte
-||tinhte.vn^
-
-# VnReview
-||vnreview.vn^
-
-# ==========================================
-# TRANG TIN TỨC TỔNG HỢP
+# TRANG TIN TỨC TỔNG HỢP KHÁC
 # ==========================================
 
 # InfoNet
 ||infonet.vn^
+||m.infonet.vn^
 
 # Báo Net
 ||baonet.vn^
 
-# VTC News
+# WebTreTho - Diễn đàn có tin tức tổng hợp
+||webtretho.com^
+||m.webtretho.com^
+
+# Tin Tức Online
+||tintuc.vn^
+||tintucvietnam.vn^
+
+# Tin Mới
+||tinmoi.vn^
+||m.tinmoi.vn^
+
+# Spiderum - Mạng xã hội chia sẻ quan điểm có tin tức
+||spiderum.com^
+||api.spiderum.com^
+
+# VTC News - Có tính năng tổng hợp tin tức
 ||vtcnews.vn^
-
-# VOV - Đài Tiếng Nói Việt Nam
-||vov.vn^
-
-# VTV News
-||vtv.vn^
-
-# Báo Điện Tử VTC
 ||vtc.vn^
 
 # ==========================================
-# TIN TỨC QUỐC TẾ BẰNG TIẾNG VIỆT
+# MOBILE APP DOMAINS
 # ==========================================
 
-# BBC Tiếng Việt (chỉ block path Vietnamese)
-/bbc\.com\/vietnamese/
+# App Báo Mới domains
+||apps.baomoi.com^
+||epi.com.vn^
 
-# VOA Tiếng Việt
-/voanews\.com\/vietnamese/
+# App domains cho các mạng xã hội
+||app.lotus.vn^
+||app.gapo.vn^
+||app.hahalolo.com^
 
-# RFA Tiếng Việt  
-/rfa\.org\/vietnamese/
+# App VN Ngày Nay (VN Today) - Tổng hợp tin tức
+||vntoday.vn^
+||vnngaynay.vn^
 
-# ==========================================
-# TIN TỨC THỂ THAO
-# ==========================================
-
-# Thể Thao 247
-||thethao247.vn^
-
-# Goal Vietnam (chỉ block path /vi/)
-/goal\.com\/vi/
-
-# Báo Thể Thao & Văn Hóa
-||thethaovanhoa.vn^
+# App Tin Nóng - Tổng hợp tin tức
+||tinnong.vn^
+||app.tinnong.vn^
 
 # ==========================================
-# BLOG & TRANG CÁ NHÂN NỔI TIẾNG
+# API & CDN CỦA CÁC TRANG TỔNG HỢP
 # ==========================================
 
-# Spiderum
-||spiderum.com^
+# API endpoints thường dùng
+||api.baomoi.com^
+||api.24h.com.vn^
+||api.soha.vn^
+||api.kenh14.vn^
+||api.zingnews.vn^
 
-# Webtretho
-||webtretho.com^
-
-# ==========================================
-# TIN TỨC VÀ DIỄN ĐÀN XÃ HỘI
-# ==========================================
-
-# OTOFun
-||otofun.net^
-
-# VOZ
-||voz.vn^
+# CDN và static content
+||cdn.24h.com.vn^
+||static.zingnews.vn^
+||image.kenh14.vn^
+||photo.soha.vn^
 
 # ==========================================
-# TIN TỨC HẬU CẦN & ĐỜI SỐNG
+# TRACKING & ANALYTICS CỦA TRANG TỔNG HỢP
 # ==========================================
 
-# Báo Giao Thông
-||baogiaothong.vn^
-
-# Báo Y Tế
-||baoytevinh.vn^
-
-# ==========================================
-# MOBILE APPS CỦA CÁC TRANG TIN TỨC
-# ==========================================
-
-# Mobile/App specific domains (đã bao gồm trong main domain)
-# m.vnexpress.net, m.thanhnien.vn, etc. tự động bị block
+||log.baomoi.com^
+||tracking.24h.com.vn^
+||analytics.soha.vn^
+||stats.kenh14.vn^
+||metrics.zing.vn^
 
 # ==========================================
-# GENERIC BLOCKING PATTERNS
+# GENERIC PATTERNS CHO APP TỔNG HỢP
 # ==========================================
 
-# Generic news patterns
-/.*news.*\.vn/
-/.*baodientu.*\.vn/
-/.*tinmoi.*\.vn/
-/.*tintuc.*\.vn/
+# Chặn subdomain liên quan đến tổng hợp
+/.*aggregator.*\.vn/
+/.*tonghop.*\.vn/
+/.*tintuctonghop.*\.vn/
 
 # ==========================================
-# ADS & ANALYTICS CHO TRANG TIN TỨC
+# DANH SÁCH LOẠI TRỪ (WHITELIST)
+# Các trang báo chính thống KHÔNG bị chặn
 # ==========================================
 
-/.*ads.*\.vn/
-/.*analytics.*\.vn/
-/.*tracking.*\.vn/
-/.*stats.*\.vn/
-/.*metrics.*\.vn/
+# VnExpress - Báo chính thống
+@@||vnexpress.net^
 
-# ================================================
-# EXAMPLES VỀ SYNTAX ADGUARD:
-# ||example.org^ = chặn example.org và subdomain
-# /regex/ = chặn theo pattern regex
-# ! hoặc # = comment
-# @@ = whitelist (ngoại lệ)
-# ================================================
+# Báo Tuổi Trẻ - Báo chính thống
+@@||tuoitre.vn^
+
+# Báo Thanh Niên - Báo chính thống  
+@@||thanhnien.vn^
+
+# Dân Trí - Báo chính thống
+@@||dantri.com.vn^
+
+# Báo Nhân Dân - Cơ quan Đảng
+@@||nhandan.vn^
+
+# VTV - Đài truyền hình quốc gia
+@@||vtv.vn^
+
+# VOV - Đài tiếng nói Việt Nam
+@@||vov.vn^
+
+# Báo Lao Động - Báo chính thống
+@@||laodong.vn^
+
+# Báo Đầu Tư - Báo kinh tế chính thống
+@@||baodautu.vn^
+
+# VietnamNet - Báo chính thống
+@@||vietnamnet.vn^
+
+# Báo Quân Đội Nhân Dân
+@@||qdnd.vn^
+
+# Báo Công An Nhân Dân
+@@||cand.com.vn^
+
+# CafeF - Tin kinh tế chuyên ngành
+@@||cafef.vn^
+
+# Thể Thao 247 - Tin thể thao chuyên ngành
+@@||thethao247.vn^
+
+# ICTNews - Tin công nghệ chuyên ngành
+@@||ictnews.vn^
+
+# VnMedia - Tạp chí điện tử chính thống
+@@||vnmedia.vn^
+
+# ==========================================
+# GHI CHÚ SỬ DỤNG
+# ==========================================
+
+# File này dành cho AdGuard Home/AdGuard DNS
+# Import vào AdGuard Settings > Filters > Custom
+# 
+# Để tạm thời bỏ chặn một trang:
+# Thêm @@ phía trước rule, ví dụ:
+# @@||baomoi.com^
+#
+# Để chặn thêm trang mới:
+# Thêm rule mới theo format:
+# ||domain.com^
+#
+# Cập nhật định kỳ để bổ sung app/trang mới
+# ==========================================
+
+# END OF FILE
