@@ -273,3 +273,6 @@
 # - Monitor logs for false positives
 # - Update regularly for new camera brands
 # ================================================
+||viettelcamera.vn^
+||thingplus.vn^
+||cameraddns.net^
