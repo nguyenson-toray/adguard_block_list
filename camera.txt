@@ -34,7 +34,7 @@
 ||dss.dahuacloud.com^
 ||vs.dahuacloud.com^
 ||dmss.dahuasecurity.com^
-
+||amdb.alice.licelus.com^
 # ==========================================
 # EASY4IP CLOUD SERVICES (DAHUA P2P)
 # ==========================================
