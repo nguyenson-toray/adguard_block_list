@@ -1,7 +1,8 @@
 # ===============================================
 # VIETNAM CAMERA APPS BLOCKLIST FOR ADGUARD
-# Chặn các app camera phổ biến tại Việt Nam (Tối ưu)
-# Cập nhật: 2025
+# Chặn các app camera phổ biến tại Việt Nam (Cập nhật 2025)
+# Version: 2.0
+# Cập nhật: December 2025
 # ===============================================
 
 # ==========================================
@@ -17,41 +18,134 @@
 ||eu-openapi.lechange.com^
 ||us-openapi.lechange.com^
 ||ap-openapi.lechange.com^
+||ib.isappcloud.com^
+||dolynkcloud.com^
+||dolynk.com^
+# NEW Dahua P2P/Cloud domains 2024-2025
+||api.imoulife.com^
+||cloud.imoulife.com^
+||push.imoulife.com^
+||msg.imoulife.com^
+||mqtt.imoulife.com^
+||cnc.lechange.com^
+||cnopen.lechange.com^
+||open.lechange.cn^
+||p2p.dahuacloud.com^
+||dss.dahuacloud.com^
+||vs.dahuacloud.com^
+||dmss.dahuasecurity.com^
+
+# ==========================================
+# EASY4IP CLOUD SERVICES (DAHUA P2P)
+# ==========================================
+||easy4ipcloud.com^
+||easy4ip.com^
+||www-v2.easy4ipcloud.com^
+||devaccess.easy4ipcloud.com^
+||app-v2.easy4ipcloud.com^
+||updatev2.easy4ipcloud.com^
+# NEW Easy4IP domains
+||api.easy4ipcloud.com^
+||p2p.easy4ipcloud.com^
+||push.easy4ipcloud.com^
+||relay.easy4ipcloud.com^
+||stun.easy4ipcloud.com^
+||turn.easy4ipcloud.com^
+||msg.easy4ipcloud.com^
 
 # ==========================================
 # HIKVISION / HIK-CONNECT
 # ==========================================
-# ||hikvision.com^
-# ||hik-connect.com^
-# ||hikvisionapi.com^
-# ||hikconnect.com^
-# ||hikvisionvietnam.com^
+||hikvision.com^
+||hik-connect.com^
+||hikvisionapi.com^
+||hikconnect.com^
+||hikvisionvietnam.com^
+# NEW Hik-Connect P2P domains 2024-2025
+||dev.hik-connect.com^
+||litedev.hik-connect.com^
+||eu.hik-connect.com^
+||us.hik-connect.com^
+||ap.hik-connect.com^
+||cloud.hik-connect.com^
+||api.hik-connect.com^
+||push.hik-connect.com^
+||msg.hik-connect.com^
+||tpp.hikvision.com^
+||openapi.hikvision.com^
+||hikddns.com^
+||hik-cloud.com^
+||hikmicro.com^
+||pyronix-cloud.com^
 
 # ==========================================
-# EZVIZ (CloudEye)
+# EZVIZ (CloudEye - Hikvision consumer brand)
 # ==========================================
 ||ezviz.com^
 ||ezvizlife.com^
 ||ezvizapi.com^
+# NEW EZVIZ domains 2024-2025
+||api.ezviz.com^
+||open.ezviz.com^
+||i.ezviz.com^
+||cloud.ezviz.com^
+||push.ezviz.com^
+||msg.ezviz.com^
+||ezvizcloud.com^
+||ezviz7.com^
+||ezvis.com^
+||openapi.ezviz.com^
+||ezvizeu.com^
+||ezvizap.com^
+||ezvizvn.com^
 
 # ==========================================
-# XMEYE (Rất phổ biến ở VN)
+# XMEYE (Rất phổ biến ở VN - Xiongmaitech)
 # ==========================================
 ||xmeye.net^
 ||xmeye.com^
 ||xmcsee.com^
+# NEW XMEye/Xiongmai domains 2024-2025
+||api.xmeye.net^
+||cloud.xmeye.net^
+||p2p.xmeye.net^
+||push.xmeye.net^
+||xiongmaitech.com^
+||xmsecu.com^
+||xmeye.cn^
+||gw.xmeye.net^
+||nat.xmeye.net^
+||nwc.xmeye.net^
+||uc.xmeye.net^
 
 # ==========================================
-# YOOSEE (Phổ biến camera giá rẻ)
+# YOOSEE (Phổ biến camera giá rẻ - Gwell)
 # ==========================================
 ||yoosee.co^
 ||yoosee.com^
+# NEW Yoosee domains 2024-2025
+||api.yoosee.co^
+||cloud.yoosee.co^
+||p2p.yoosee.co^
+||gwelltimes.com^
+||gwell.cc^
+||gwsecu.com^
+||cloudlinks.cn^
+||open.yoosee.co^
 
 # ==========================================
-# V380 / V380 PRO
+# V380 / V380 PRO (Macro Video)
 # ==========================================
 ||v380.net^
 ||v380s.com^
+# NEW V380 domains 2024-2025
+||api.v380.net^
+||cloud.v380.net^
+||p2p.v380.net^
+||push.v380.net^
+||macrovideo.com.cn^
+||v380pro.com^
+||v380cam.com^
 
 # ==========================================
 # iCSEE / CamHi
@@ -59,6 +153,16 @@
 ||icsee.me^
 ||camhipro.com^
 ||camhi.net^
+# NEW iCSEE/CamHi domains 2024-2025
+||api.icsee.me^
+||cloud.icsee.me^
+||p2p.icsee.me^
+||push.icsee.me^
+||camhi.com^
+||eseecloud.com^
+||eseecloud3.com^
+||vrcam.net^
+||ippro.co^
 
 # ==========================================
 # XIAOMI / MI HOME CAMERAS
@@ -66,6 +170,19 @@
 ||mi.com^$app=mihome
 ||mijia.com^
 ||xiaomi.com^$app=camera
+||xiaomiyoupin.com^
+# NEW Xiaomi camera domains 2024-2025
+||api.io.mi.com^
+||sg.api.io.mi.com^
+||us.api.io.mi.com^
+||de.api.io.mi.com^
+||ru.api.io.mi.com^
+||i.mi.com^
+||account.xiaomi.com^
+||micloud.xiaomi.net^
+||mishop.io.mi.com^
+||home.mi.com^
+||iot.mi.com^
 
 # ==========================================
 # TP-LINK TAPO
@@ -74,24 +191,48 @@
 ||tplinkcloud.com^
 ||tplinkapps.com^
 ||tapo.com^
+# NEW Tapo domains 2024-2025
+||api.tplinkcloud.com^
+||cloud.tplinkcloud.com^
+||tapocare.com^
+||tapo.vip^
+||kasa.tp-link.com^
+||kasacare.com^
+||eu.tplinkcloud.com^
+||us.tplinkcloud.com^
+||apac.tplinkcloud.com^
 
 # ==========================================
 # REOLINK
 # ==========================================
 ||reolink.com^
 ||reolink-storage.s3.amazonaws.com^
+# NEW Reolink domains 2024-2025
+||api.reolink.com^
+||cloud.reolink.com^
+||push.reolink.com^
+||p2p.reolink.com^
+||download.reolink.com^
+||reolinkcam.com^
 
 # ==========================================
 # THƯƠNG HIỆU VIỆT NAM
 # ==========================================
 
-# KBONE
+# KBVISION / KBONE
 ||kbone.vn^
 ||kbvision.vn^
+||kbvision.com^
+||kabevision.com^
+# NEW KBvision domains
+||api.kbvision.vn^
+||cloud.kbvision.vn^
+||p2p.kbvision.vn^
 
 # VANTECH
 ||vantech.vn^
 ||vantechvietnam.com^
+||cloud.vantech.vn^
 
 # QUESTEK
 ||questek.vn^
@@ -99,9 +240,123 @@
 
 # J-TECH
 ||j-tech.vn^
+||j-techvn.com^
 
 # REVOTECH
 ||revotech.vn^
+
+# FPT CAMERA (Nhà mạng VN)
+||fptcamera.vn^
+||camera.fpt.vn^
+||fptcameraiq.vn^
+||fptplay.vn^$app=camera
+||fpt.vn^$app=camera
+||fptsmarthome.vn^
+||smarthome.fpt.vn^
+||cloud.fptcamera.vn^
+||api.fptcamera.vn^
+||fptlife.vn^
+||fptsmartcloud.com^
+
+# VIETTEL CAMERA
+||viettelcamera.vn^
+||thingplus.vn^
+||cameraddns.net^
+||vhome.vn^
+||home.viettel.vn^
+||smarthome.viettel.vn^
+||iot.viettel.vn^
+
+# VNPT CAMERA / iGate
+||vnptsmarthome.vn^
+||igate.vnpt.vn^
+||smarthome.vnpt.vn^
+||cybercam.vnpt.vn^
+||camera.vnpt.vn^
+
+# ==========================================
+# TUTK / KALAY P2P PLATFORM
+# (Nền tảng P2P phổ biến nhất cho camera giá rẻ)
+# ==========================================
+||tutk.com^
+||kalay.us^
+||iotcplatform.com^
+# NEW TUTK/Kalay domains 2024-2025
+||throughtek.com^
+||tutk.io^
+||kalay.io^
+||kalay.net^
+||kalay.com^
+||tutk.net^
+||p2p.tutk.com^
+||api.tutk.com^
+||cloud.tutk.com^
+||stun.tutk.com^
+||relay.tutk.com^
+||gslb.tutk.com^
+||dispatcher.tutk.com^
+
+# ==========================================
+# TUYA SMART PLATFORM
+# (Nền tảng IoT cho nhiều camera generic)
+# ==========================================
+||tuya.com^
+||tuyaus.com^
+||tuyaeu.com^
+||tuyacn.com^
+||smartlife.com^
+||smart-life.com^
+# NEW Tuya domains 2024-2025
+||api.tuya.com^
+||openapi.tuya.com^
+||cloud.tuya.com^
+||a1.tuyaus.com^
+||a1.tuyaeu.com^
+||a1.tuyacn.com^
+||m1.tuyaus.com^
+||m1.tuyaeu.com^
+||m1.tuyacn.com^
+||px1.tuyaus.com^
+||px1.tuyaeu.com^
+||ms.tuyaus.com^
+||ms.tuyaeu.com^
+||ms.tuyacn.com^
+||images.tuyaus.com^
+||images.tuyaeu.com^
+||tuyaoem.com^
+||tuya-inc.com^
+
+# ==========================================
+# YCC365 Plus / PixPlus (Closeli)
+# ==========================================
+||ycc365plus.com^
+||closeli.com^
+||closeli.cn^
+||pixplus.co^
+||api.ycc365plus.com^
+||cloud.ycc365plus.com^
+
+# ==========================================
+# DANALE
+# ==========================================
+||danale.com^
+||danale.cn^
+||api.danale.com^
+
+# ==========================================
+# YI CAMERA / YI IOT (YI Technology)
+# ==========================================
+||yitechnology.com^
+||kamihome.com^
+||yi.com^
+||yicamera.com^
+# NEW YI domains 2024-2025
+||api.yitechnology.com^
+||cloud.yitechnology.com^
+||push.yitechnology.com^
+||api.kamihome.com^
+||cloud.kamihome.com^
+||kami.vision^
 
 # ==========================================
 # CÁC THƯƠNG HIỆU CAMERA KHÁC
@@ -111,15 +366,27 @@
 ||360.cn^$app=camera
 ||qihoo.com^$app=camera
 ||360safe.com^$app=camera
+||360.com^$app=camera
+||360os.com^
 
 # ZKTECO / ANVIZ
 ||zkteco.com^
 ||zktecocloud.com^
 ||anviz.com^
+||zkbio.com^
+||zkbiocloudtime.com^
 
 # TIANDY
 ||tiandy.com^
 ||tiandytech.com^
+||cloud.tiandy.com^
+
+# UNIVIEW / UNV
+||uniview.com^
+||univiewsecurity.com^
+||ezstation.net^
+||cloud.uniview.com^
+||unv.com^
 
 # KGUARD
 ||kguard.com^
@@ -127,10 +394,7 @@
 
 # AJAX SYSTEMS
 ||ajax.systems^
-
-# KAMI (YI Technology)
-||kamihome.com^
-||yitechnology.com^
+||ajaxsecuritycloud.com^
 
 # SMARTWARES / ELRO
 ||smartwares-app.com^
@@ -139,21 +403,35 @@
 # ZMODO
 ||zmodo.com^
 ||myzmod.com^
+||zmodo.net^
 
 # ARLO
 ||arlo.com^
 ||netgear.com^$app=arlo
+||arlocloud.com^
 
 # RING (Amazon)
 ||ring.com^
+||ring-cloud.com^
+||account.ring.com^
+||api.ring.com^
+||fw.ring.com^
+||app.ring.com^
+
+# NEST (Google)
+||nest.com^
+||nestcam.com^
+||dropcam.com^
 
 # SWANN
 ||swann.com^
 ||swanneye.com^
+||swanncloud.com^
 
 # LOREX
 ||lorex.com^
 ||lorextechnology.com^
+||lorex.cloud^
 
 # SRICAM
 ||sricam.com^
@@ -161,6 +439,7 @@
 
 # WANSCAM
 ||wanscam.com^
+||wanscam.net^
 
 # FLOUREON
 ||floureon.com^
@@ -168,29 +447,85 @@
 # ZOSI
 ||zositech.com^
 ||zosi.com^
+||zosismart.com^
 
 # JENNOV
 ||jennov.com^
 
 # ANNKE
 ||annke.com^
+||annkecloud.com^
+
+# AMCREST
+||amcrest.com^
+||amcrestcloud.com^
+||amcrestview.com^
+
+# FOSCAM
+||foscam.com^
+||myfoscam.com^
+||foscamcloud.com^
+
+# UBIQUITI / UNIFI PROTECT
+||ui.com^$app=protect
+||unifi.ui.com^
+||ubnt.com^$app=camera
+
+# WYZE
+||wyze.com^
+||wyzecam.com^
+||api.wyze.com^
+
+# EUFY / ANKER
+||eufylife.com^
+||eufy.com^
+||anker-in.com^$app=eufy
+
+# BLINK (Amazon)
+||blinkforhome.com^
+||immedia-semi.com^
 
 # ==========================================
-# EASY4IP CLOUD SERVICES (DAHUA)
+# OTHER P2P PLATFORMS
 # ==========================================
-||easy4ipcloud.com^
-||easy4ip.com^
-||www-v2.easy4ipcloud.com^
-||devaccess.easy4ipcloud.com^
-||app-v2.easy4ipcloud.com^
-||updatev2.easy4ipcloud.com^
 
-# ==========================================
-# P2P & CLOUD SERVICES
-# ==========================================
-||tutk.com^
-||kalay.us^
-||iotcplatform.com^
+# NVSIP (Sunywo)
+||nvsip.com^
+||sunywo.com^
+
+# iCAM / UBELL / UBOX (uBIA)
+||ubia.cn^
+||ubell.com.cn^
+||ubox.net^
+
+# CARECAM (HuiYun)
+||carecam.vn^
+||carecam.com^
+||huiyuncloud.com^
+
+# TOSEE (Tocoding)
+||tosee.net^
+||tocoding.com^
+
+# GOOLINK (Vnow)
+||goolink.com^
+||vnowlink.com^
+
+# UMEYE
+||umeye.com^
+||umeye.net^
+
+# SEETONG (Topsee)
+||seetong.com^
+||topsee.com.cn^
+
+# IPC360 (Puwell)
+||ipc360.com^
+||puwell.com^
+
+# FINDCAM / ZSCAM
+||findcam.com^
+||zscam.com^
 
 # ==========================================
 # GENERIC CAMERA PATTERNS (REGEX)
@@ -226,53 +561,93 @@
 /.*tracking.*camera.*\.com/
 /.*stats.*camera.*\.com/
 
-# ==========================================
-# MOBILE APP DOMAINS
-# ==========================================
+# P2P patterns
+/.*p2p.*cam.*\.com/
+/.*stun.*cam.*\.com/
+/.*relay.*cam.*\.com/
+/.*turn.*cam.*\.com/
 
-# Mobile specific (đã bao gồm trong main domains)
-# m.imou.com, app.hikvision.com tự động bị block
-
 # ==========================================
-# CLOUD STORAGE SERVICES
+# CLOUD STORAGE SERVICES (Camera specific)
 # ==========================================
 ||camera-storage.amazonaws.com^
 /.*cam.*cloud.*\.amazonaws\.com/
 /.*camera.*cloud.*\.aliyun\.com/
 /.*surveillance.*cloud.*\.com/
+/.*ipc.*\.oss-.*\.aliyuncs\.com/
+/.*camera.*\.oss-.*\.aliyuncs\.com/
+
+# ==========================================
+# MQTT BROKERS (Camera IoT)
+# ==========================================
+/.*mqtt.*cam.*\.com/
+/.*mqtt.*ipc.*\.com/
+/.*broker.*cam.*\.com/
+
+# ==========================================
+# WebRTC STUN/TURN Servers (Camera P2P)
+# ==========================================
+/.*stun.*ipc.*\.com/
+/.*turn.*ipc.*\.com/
+/.*stun.*camera.*\.com/
+/.*turn.*camera.*\.com/
 
 # ==========================================
 # WHITELIST EXAMPLES (Nếu cần)
+# Uncomment các dòng bên dưới nếu muốn cho phép
 # ==========================================
 
 # Cho phép truy cập trang chủ (không phải app)
 # @@||hikvision.com^$path=/support/
 # @@||dahuatech.com^$path=/products/
+# @@||ezviz.com^$document
 
 # Cho phép firmware update từ source tin cậy
 # @@||firmware.hikvision.com^
 # @@||update.dahuatech.com^
+# @@||download.kbvision.vn^
 
 # ================================================
 # MOBILE APP PACKAGE NAMES (For MDM reference):
+# ================================================
 # com.mm.android.smartsdk (Imou)
+# com.mm.android.DMSS (DMSS - Dahua)
 # com.hikvision.hikconnect (Hikvision)
+# com.connect.hik (Hik-Connect)
 # com.ezviz.ezcontrol (Ezviz)
+# com.ezviz (Ezviz Global)
 # com.xm.xmeye (XMEye)
+# com.XMTech.iCSee (iCSee)
 # com.yoosee (Yoosee)
 # com.v380s (V380)
+# com.v380 (V380 Pro)
 # com.icsee.watchdog (iCSee)
 # com.xiaomi.smarthome (Xiaomi)
 # com.tplink.tapo (TP-Link Tapo)
+# com.tplink.kasa_android (TP-Link Kasa)
+# com.reolink.app (Reolink)
+# com.kbvision.app (KBVision)
+# com.dahua.kbvision (KBVision - Dahua)
+# com.fptsmarthome.camera (FPT Camera)
+# com.viettel.smarthome (Viettel Home)
+# com.tuya.smart (Tuya Smart)
+# com.tuya.smartlife (Smart Life)
+# com.yiiot.smart (YI IoT)
+# com.kami.vision (Kami Home)
+# com.samsung.smartcam (Samsung SmartCam)
+# com.closeli.smart (YCC365 Plus)
 # ================================================
 
 # ================================================
-# USAGE NOTES:
-# - Test thoroughly before production deployment
-# - Use whitelist (@@) for exceptions if needed  
-# - Monitor logs for false positives
-# - Update regularly for new camera brands
+# NOTES / GHI CHÚ:
 # ================================================
-||viettelcamera.vn^
-||thingplus.vn^
-||cameraddns.net^
+# - Danh sách này được cập nhật tháng 12/2025
+# - Bao gồm các domain mới nhất của P2P và Cloud
+# - Đã thêm các thương hiệu phổ biến tại VN 2024-2025
+# - TUTK/Kalay là nền tảng P2P phổ biến nhất
+# - Tuya Smart hỗ trợ nhiều camera generic
+# - FPT, Viettel, VNPT là các nhà mạng VN có dịch vụ camera
+# - Test kỹ trước khi áp dụng cho production
+# - Sử dụng whitelist (@@) để tạo ngoại lệ nếu cần
+# - Theo dõi logs để phát hiện false positives
+# ================================================
