@@ -1,0 +1,398 @@
+# ===============================================
+# ANTI-LOTTERY BLOCKLIST FOR ADGUARD
+# Chặn tất cả dịch vụ liên quan xổ số, lô đề
+# Bao gồm: kết quả xổ số, soi cầu, thống kê,
+#           lô đề online, Vietlott, xổ số tỉnh
+# Cập nhật: Tháng 2/2026
+# ===============================================
+
+# ==========================================
+# TRANG KẾT QUẢ XỔ SỐ LỚN NHẤT VN
+# ==========================================
+
+# === Minh Ngọc (lớn nhất) ===
+||minhngoc.net^
+||minhngoc.net.vn^
+||minhngoc.com.vn^
+||*.minhngoc.net^
+||*.minhngoc.net.vn^
+||xsminhngoc.com^
+
+# === Xổ Số Đại Phát ===
+||xosodaiphat.com^
+||*.xosodaiphat.com^
+
+# === KQXS.vn ===
+||kqxs.vn^
+||*.kqxs.vn^
+||kqxs.com^
+||kqxs.net^
+
+# === Xoso.net ===
+||xoso.net^
+||*.xoso.net^
+||xoso.net.vn^
+
+# === Xoso.com.vn ===
+||xoso.com.vn^
+||*.xoso.com.vn^
+
+# === XSKT.com.vn ===
+||xskt.com.vn^
+||*.xskt.com.vn^
+
+# === Minh Chính ===
+||minhchinh.com^
+||*.minhchinh.com^
+
+# === MKetqua ===
+||mketqua.net^
+||*.mketqua.net^
+||mketqua.com^
+
+# === Kết quả xổ số khác ===
+||ketqua.net^
+||*.ketqua.net^
+||ketquaxoso.com^
+||ketquaxoso.vn^
+||kqxoso.com^
+||xosovn.com^
+||xosovn.net^
+||xosobamien.com^
+||xoso.me^
+||xoso.vn^
+||xoso.info^
+
+# ==========================================
+# XỔ SỐ KIẾN THIẾT CÁC TỈNH
+# ==========================================
+
+# === Xổ số tỉnh - Miền Nam ===
+||xskthcm.com^
+||*.xskthcm.com^
+||xskthochiminh.com^
+||xosobinhduong.com.vn^
+||xosodongnai.com.vn^
+||xosodongnai.com^
+||xosoangiang.com.vn^
+||xosocamau.com.vn^
+||xosocantho.com.vn^
+||xosodalat.com.vn^
+||xosolamdong.com.vn^
+||xosodongthap.com.vn^
+||xosotiengiang.com.vn^
+||xosotayninh.com.vn^
+||xosovinhlong.com.vn^
+||xosobinhduong.com^
+||xosobaclieu.com.vn^
+||xosobinhphuoc.com.vn^
+||xosobentre.com.vn^
+||xosobinhthuan.com.vn^
+||xosohaugiang.com.vn^
+||xosokiengiang.com.vn^
+||xosolongan.com.vn^
+||xososoctrang.com.vn^
+||xosotravinh.com.vn^
+||xosovungtau.com.vn^
+
+# === Xổ số tỉnh - Miền Trung ===
+||xosobinhdinh.com.vn^
+||xosodalklak.com.vn^
+||xosodanang.com.vn^
+||xosodalknong.com.vn^
+||xosogialai.com.vn^
+||xosokhanhhoa.com.vn^
+||xosokontum.com.vn^
+||xosoninhthuan.com.vn^
+||xosophuyen.com.vn^
+||xosoquangbinh.com.vn^
+||xosoquangngai.com.vn^
+||xosoquangnam.com.vn^
+||xosoquangtri.com.vn^
+||xosohue.com.vn^
+
+# === Xổ số tỉnh - Miền Bắc / Thủ Đô ===
+||xosothudo.com.vn^
+||xosohanoi.com.vn^
+||xosomienbac.com^
+||xosomienbac.com.vn^
+||xsmb.com^
+||xsmb.net^
+
+# === Pattern chung xổ số tỉnh ===
+||xoso*.com.vn^
+||xskt*.com.vn^
+||xskt*.com^
+
+# ==========================================
+# VIETLOTT
+# ==========================================
+
+||vietlott.vn^
+||*.vietlott.vn^
+||vietlott.com^
+||vietlott.com.vn^
+||vietlottonline.vn^
+||vietlottonline.com^
+||mega645.vn^
+||power655.vn^
+||max3d.vn^
+||keno.vn^
+||xsokeno.com^
+||ketquavietlott.com^
+||vietlottaz.com^
+||vietlottlive.com^
+||vietlottresult.com^
+
+# ==========================================
+# TRANG SOI CẦU / DỰ ĐOÁN / THỐNG KÊ
+# ==========================================
+
+# === Soi cầu lớn ===
+||soicau.com^
+||soicau.net^
+||soicau.vn^
+||soicau247.com^
+||soicauxsmb.com^
+||soicauxs.com^
+||soicauvip.com^
+||soicauchuan.com^
+||soicaurongbachkim.com^
+||soicaurong.com^
+||soicaumb.com^
+||soicauxoso.com^
+||soicauxsmn.com^
+||soicautot.com^
+||soicau366.com^
+||soicau888.com^
+||soicaulode.com^
+
+# === Rồng Bạch Kim ===
+||rongbachkim.com^
+||*.rongbachkim.com^
+||rongbachkim.vn^
+||rongbachkim.net^
+||rongbachkim88.com^
+
+# === Dự đoán xổ số ===
+||dudoanxoso.com^
+||dudoanxs.com^
+||dudoankqxs.com^
+||dubaoxoso.com^
+||dubaoxs.com^
+||dudoanxoso.vn^
+
+# === Thống kê xổ số ===
+||thongkexoso.com^
+||thongkexs.com^
+||thongkexsmb.com^
+||thongkeloto.com^
+||tkxs.com^
+
+# === Cầu lô / Bạch thủ ===
+||caulo.net^
+||caulo.com^
+||caulode.com^
+||bachthu.net^
+||bachthu.com^
+||bachthuloday.com^
+||bachthude.com^
+
+# === Soi cầu 247/888 ===
+||xoso247.com^
+||xs247.com^
+||xoso888.com^
+||xs888.com^
+||xoso66.com^
+||xoso99.com^
+||xoso168.com^
+
+# ==========================================
+# LÔ ĐỀ ONLINE
+# ==========================================
+
+||lode.com^
+||lodeonline.com^
+||lodeviet.com^
+||lode88.com^
+||lode68.com^
+||danh-lo-de.com^
+||danhde.com^
+||danhdetructuyen.com^
+||danhdetrenmang.com^
+||danhdetrenmang.net^
+||lodetrenmang.com^
+||lodetrenmang.net^
+||lodevn.com^
+||lodexs.com^
+||lodeuytin.com^
+||loto.vn^
+||loto88.com^
+||lotoviet.com^
+||lotovn.com^
+||lotode.com^
+||lotode.vn^
+||lodethethao.com^
+
+# ==========================================
+# XỔ SỐ ONLINE / MUA VÉ SỐ TRỰC TUYẾN
+# ==========================================
+
+||xosoonline.com^
+||xosoonline.vn^
+||xosovietnam.com^
+||xosohomnay.com^
+||xosomienbac.com^
+||xosomiennam.com^
+||xosomientrung.com^
+||muasotrenmang.com^
+||muavesoonline.com^
+||vesoonline.com^
+||vesovn.com^
+||veso.vn^
+||vesodientu.com^
+||xosonhanh.com^
+||xosoplus.com^
+||xosotrucotiep.com^
+||xosotrucgtiep.com^
+||tructiepxoso.com^
+||xstv.com^
+||kqxs3mien.com^
+||kqxsmienbac.com^
+||kqxsmiennam.com^
+||kqxsmientrung.com^
+
+# ==========================================
+# APP XỔ SỐ & API
+# ==========================================
+
+||lottoranker.com^
+||lottoranker-vn.com^
+||thelotter.com^
+||*.thelotter.com^
+||lotterypost.com^
+||lotteryusa.com^
+||lottonumbers.com^
+||lottomatica.com^
+||jackpot.com^
+||lottoland.com^
+||lottoland.asia^
+||multilotto.com^
+||wintrillions.com^
+||playeuromillions.com^
+||playuslotteries.com^
+||lottosmile.com^
+||agentlotto.com^
+||lottokings.com^
+
+# ==========================================
+# TRANG TIN XỔ SỐ & FORUM
+# ==========================================
+
+||tinxoso.com^
+||tinxoso.vn^
+||tintucxoso.com^
+||xosohomnay.net^
+||xosohomnay.vn^
+||xshomnay.com^
+||giaixoso.com^
+||xstoday.com^
+||xshangngay.com^
+
+# === Forum soi cầu / lô đề ===
+||soicauxs.net^
+||forumsoicau.com^
+||clubsoicau.com^
+||cauloxs.com^
+||taicaulode.com^
+||giaimaxoso.com^
+
+# ==========================================
+# TRANG QUỐC TẾ LIÊN QUAN XỔ SỐ
+# ==========================================
+
+||lottery.com^
+||lotteryresults.com^
+||lotterycritic.com^
+||lottery.net^
+||lotteryguru.com^
+||lotteryforum.com^
+||lotto.net^
+
+# ==========================================
+# GENERIC BLOCKING PATTERNS
+# ==========================================
+
+# Pattern chung xổ số
+/.*xoso.*/
+/.*xskt.*/
+/.*kqxs.*/
+/.*lottery.*/
+/.*lotto.*/
+/.*soicau.*/
+/.*rongbachkim.*/
+/.*dudoanxs.*/
+/.*lodeonline.*/
+/.*lodetrenmang.*/
+/.*danhde.*/
+/.*ketquaxoso.*/
+/.*vietlott.*/
+
+# Keyword patterns
+||*xsmb*.com^
+||*xsmn*.com^
+||*xsmt*.com^
+||*kqxs*.com^
+||*soicau*.com^
+||*lode*.com^
+||*xoso*.com^
+
+# ==========================================
+# FALSE POSITIVES PREVENTION
+# Cho phép các trang KHÔNG phải xổ số
+# ==========================================
+
+# Trang tin tức chính thống có mục xổ số nhưng là báo lớn
+# (Bỏ comment nếu muốn cho phép)
+# @@||vnexpress.net^
+# @@||tuoitre.vn^
+# @@||thanhnien.vn^
+# @@||dantri.com.vn^
+# @@||baomoi.com^
+
+# Google & search engines
+@@||google.com^
+@@||google.com.vn^
+@@||bing.com^
+
+# Platform game chính thống
+@@||steam.com^
+@@||steampowered.com^
+@@||epicgames.com^
+
+# ==========================================
+# HƯỚNG DẪN SỬ DỤNG
+# ==========================================
+
+# 1. Import file vào AdGuard Home:
+#    Settings > Filters > Custom > Add filter
+#
+# 2. File này chặn TẤT CẢ liên quan xổ số:
+#    - Kết quả xổ số trực tiếp (Minh Ngọc, KQXS...)
+#    - Xổ số kiến thiết các tỉnh
+#    - Vietlott (Mega, Power, Keno, Max3D)
+#    - Soi cầu, dự đoán, thống kê lô đề
+#    - Lô đề online, đánh đề trực tuyến
+#    - Mua vé số online
+#    - App & trang xổ số quốc tế
+#
+# 3. Nếu bị chặn nhầm, thêm:
+#    @@||domain-hop-phap.com^
+#
+# 4. LƯU Ý: 
+#    - File này RIÊNG cho xổ số
+#    - Dùng kèm file anti-gambling-blocklist.txt 
+#      để chặn thêm cá cược, casino, game bài
+# ==========================================
+
+# END OF FILE - Updated February 2026
