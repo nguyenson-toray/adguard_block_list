@@ -1,15 +1,175 @@
 # ===============================================
-# ANTI-GAMBLING BLOCKLIST FOR ADGUARD (LITE VERSION)
-# Chỉ chặn các trang cá cược, cờ bạc online
-# KHÔNG chặn game online hợp pháp
-# Cập nhật: Tháng 10/2025
+# ANTI-GAMBLING & SPORTS SCORE BLOCKLIST FOR ADGUARD
+# Chặn: cá cược, cờ bạc online, tỉ số bóng đá
+# Cập nhật: Tháng 2/2026
 # ===============================================
 
 # ================================================
-# MỤC ĐÍCH: Chặn triệt để các trang cá cược bất hợp pháp
-# bảo vệ người dùng khỏi cờ bạc online
-# Giữ lại các game giải trí lành mạnh
+# MỤC ĐÍCH: 
+# - Chặn triệt để các trang cá cược bất hợp pháp
+# - Chặn các dịch vụ xem tỉ số bóng đá/thể thao trực tiếp
+# - Bảo vệ người dùng khỏi cờ bạc online
+# - Giữ lại các game giải trí lành mạnh
 # ================================================
+
+# ==========================================
+# DỊCH VỤ TỈ SỐ BÓNG ĐÁ / LIVESCORE
+# ==========================================
+
+# === Flashscore Group ===
+||flashscore.com^
+||flashscore.vn^
+||flashscore.co^
+||flashscore.mobi^
+||flashscore.ninja^
+||*.flashscore.com^
+||*.flashscore.vn^
+||*.flashscore.ninja^
+||fsdatacentre.com^
+||*.fsdatacentre.com^
+||livesportmedia.eu^
+||*.livesportmedia.eu^
+||lsapp.eu^
+||*.lsapp.eu^
+
+# === Livescore Group ===
+||livescore.com^
+||livescore.vn^
+||livescore.in^
+||livescore.mobi^
+||livescores.com^
+||*.livescore.com^
+
+# === Sofascore ===
+||sofascore.com^
+||*.sofascore.com^
+||api.sofascore.com^
+
+# === Soccerway / Goalzz ===
+||soccerway.com^
+||*.soccerway.com^
+||goalzz.com^
+||*.goalzz.com^
+
+# === 365scores ===
+||365scores.com^
+||*.365scores.com^
+
+# === FotMob ===
+||fotmob.com^
+||*.fotmob.com^
+
+# === AiScore ===
+||aiscore.com^
+||*.aiscore.com^
+
+# === Nowgoal / GoalOO ===
+||nowgoal.com^
+||nowgoal*.com^
+||goaloo.com^
+||goaloo*.com^
+||nowgoal.vn^
+
+# === BongDa / Keonhacai / VN Score sites ===
+||bongda.com.vn^
+||bongdanet.vn^
+||bongda.net^
+||bongdalive.vn^
+||bongdaplus.vn^
+||bongdaso.com^
+||bongdalu.com^
+||tiso.vn^
+||tysobongda.com^
+||ketquabongda.com^
+||kqbd.com^
+||livescorevn.com^
+||tructiepbongda.com^
+||xoilac.com^
+||xoilac*.com^
+||xoilactv.com^
+||xoilac.tv^
+||cakhia.com^
+||cakhia*.com^
+||cakhiatv.com^
+||cakhia.tv^
+||vebo.tv^
+||vebo*.tv^
+||vebotv.com^
+||mitom.com^
+||mitom*.com^
+||rakhoi.tv^
+||rakhoi*.tv^
+||socolive.com^
+||socolive*.com^
+||90phut.tv^
+||90phut*.tv^
+
+# === Kèo nhà cái / Soi kèo ===
+||keonhacai.com^
+||keonhacai*.com^
+||soikeo.com^
+||soikeo*.com^
+||tylebongda.com^
+||tylekeo.com^
+||tyso.com^
+||tylebd.com^
+
+# === Whoscored / Stats ===
+||whoscored.com^
+||*.whoscored.com^
+
+# === SoccerSTATS ===
+||soccerstats.com^
+||*.soccerstats.com^
+
+# === FlashResults (liên quan Flashscore) ===
+||flashresults.com^
+||*.flashresults.com^
+
+# === Besoccer ===
+||besoccer.com^
+||*.besoccer.com^
+
+# === ScoresPro ===
+||scorespro.com^
+||*.scorespro.com^
+
+# === FootyStats ===
+||footystats.org^
+||*.footystats.org^
+
+# === Forebet / Prediction ===
+||forebet.com^
+||*.forebet.com^
+
+# === ScoreBat (Video highlights) ===
+||scorebat.com^
+||*.scorebat.com^
+
+# === LiveScore apps CDN/API ===
+||lsm-static.com^
+||*.lsm-static.com^
+||livesport.eu^
+||*.livesport.eu^
+
+# === Trực tiếp bóng đá VN ===
+||xembd.com^
+||xembongda.com^
+||tructiepbongda.vn^
+||tructiep.vn^
+||banhkhuc.tv^
+||vaoroi.tv^
+||vaoroi*.tv^
+||thevang.tv^
+||thevang*.tv^
+||colatv.com^
+||colatv*.com^
+
+# === Generic livescore patterns ===
+/.*livescore.*/
+/.*flashscore.*/
+/.*bongdaso.*/
+/.*tyscore.*/
 
 # ==========================================
 # DANH SÁCH CÁ CƯỢC BÓNG ĐÁ BẤT HỢP PHÁP
@@ -337,7 +497,6 @@
 # DOMAINS VIỆT NAM LIÊN QUAN CÁ CƯỢC
 # ==========================================
 
-# Chặn tất cả .vn có từ khóa cá cược
 ||*cacuoc*.vn^
 ||*cadobongda*.vn^
 ||*cadoonline*.vn^
@@ -410,7 +569,6 @@
 # GENERIC BLOCKING PATTERNS
 # ==========================================
 
-# Patterns chung cho cá cược
 /.*casino.*/
 /.*betting.*/
 /.*gambl.*/
@@ -430,6 +588,7 @@
 
 # Game chính thống được phép
 @@||steam.com^
+@@||steampowered.com^
 @@||epicgames.com^
 @@||origin.com^
 @@||ubisoft.com^
@@ -449,6 +608,12 @@
 @@||quizizz.com^
 @@||duolingo.com^
 
+# Tin tức thể thao chính thống (NẾU muốn cho phép, bỏ comment)
+# @@||thethao247.vn^
+# @@||bongdaplus.vn^
+# @@||espn.com^
+# @@||goal.com^
+
 # ==========================================
 # HƯỚNG DẪN SỬ DỤNG
 # ==========================================
@@ -456,21 +621,25 @@
 # 1. Import file vào AdGuard:
 #    Settings > Filters > Custom > Add filter
 #
-# 2. File này CHỈ chặn cá cược, KHÔNG chặn:
-#    - Game online hợp pháp (Garena, VNG, Steam...)
+# 2. File này chặn:
+#    - Tất cả nhà cái, cá cược online
+#    - Tất cả trang xem tỉ số bóng đá trực tiếp
+#    - Trang trực tiếp bóng đá lậu (xoilac, cakhia...)
+#    - Casino, slots, game bài đổi thưởng
+#    - Xổ số, lô đề online
+#    - Crypto gambling
+#
+# 3. File này KHÔNG chặn:
+#    - Game online hợp pháp (Steam, Garena, VNG...)
 #    - Game mobile thông thường
 #    - Platform game chính thống
 #
-# 3. Để report thêm trang cá cược mới:
-#    Thêm: ||domain-moi.com^
-#
-# 4. LƯU Ý PHÁP LÝ:
-#    Cá cược online là BẤT HỢP PHÁP tại Việt Nam
-#    Vi phạm có thể bị phạt hành chính hoặc hình sự
-#
-# 5. HỖ TRỢ:
-#    Nếu bị chặn nhầm trang hợp pháp, thêm:
+# 4. Nếu bị chặn nhầm trang hợp pháp, thêm:
 #    @@||domain-hop-phap.com^
+#
+# 5. Nếu muốn cho phép tin tức thể thao
+#    (không phải tỉ số live), bỏ comment phần
+#    "Tin tức thể thao chính thống" ở trên
 # ==========================================
 
-# END OF FILE - Updated October 2025
+# END OF FILE - Updated February 2026
