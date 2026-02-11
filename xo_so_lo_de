@@ -348,29 +348,6 @@
 ||*xoso*.com^
 
 # ==========================================
-# FALSE POSITIVES PREVENTION
-# Cho phép các trang KHÔNG phải xổ số
-# ==========================================
-
-# Trang tin tức chính thống có mục xổ số nhưng là báo lớn
-# (Bỏ comment nếu muốn cho phép)
-# @@||vnexpress.net^
-# @@||tuoitre.vn^
-# @@||thanhnien.vn^
-# @@||dantri.com.vn^
-# @@||baomoi.com^
-
-# Google & search engines
-@@||google.com^
-@@||google.com.vn^
-@@||bing.com^
-
-# Platform game chính thống
-@@||steam.com^
-@@||steampowered.com^
-@@||epicgames.com^
-
-# ==========================================
 # HƯỚNG DẪN SỬ DỤNG
 # ==========================================
 
