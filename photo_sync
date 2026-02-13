@@ -1,0 +1,72 @@
+# ╔══════════════════════════════════════════════╗
+# ║  CHẶN ĐỒNG BỘ ẢNH LÊN CLOUD - TẤT CẢ HÃNG  ║
+# ╚══════════════════════════════════════════════╝
+
+# ===== 1. GOOGLE PHOTOS =====
+||photosdata-pa.googleapis.com^
+||photos.googleapis.com^
+||photos-ugc.l.googleusercontent.com^
+||photosettings-pa.googleapis.com^
+
+# ===== 2. APPLE iCLOUD PHOTOS =====
+# iCloud Photo sync
+||p*-ckdatabase.icloud.com^
+||p*-sharedstreams.icloud.com^
+||cvws.icloud-content.com^
+
+
+# ===== 4. SAMSUNG CLOUD =====
+||vas.samsungcloud.com^
+||gos-api.samsungcloud.com^
+||syncservice.samsungcloud.com^
+||gallery.samsungcloud.com^
+||cm-gallery.samsungcloud.com^
+||api-gallery.samsungcloud.com^
+
+# ===== 5. XIAOMI MI CLOUD =====
+||i.mi.com^
+||us.i.mi.com^
+||api.micloud.xiaomi.net^
+||gallery.cloud.xiaomi.com^
+||bs.mi.com^
+||file.micloud.xiaomi.net^
+
+# ===== 6. OPPO / HeyTap Cloud =====
+||cloud.oppo.com^
+||api-cloud.oppo.com^
+||cloud.heytap.com^
+||api-cloud.heytap.com^
+||backup-cloud.heytap.com^
+||gallery-cloud.heytap.com^
+
+# ===== 7. VIVO Cloud =====
+||cloud.vivo.com^
+||api-cloud.vivo.com^
+||cs.vivo.com^
+||gallery-cloud.vivo.com^
+
+# ===== 8. HUAWEI Cloud / Mobile Cloud =====
+||cloud.huawei.com^
+||hicloud.com^
+||api.hicloud.com^
+||cloud-api.hicloud.com^
+||gallery.hicloud.com^
+||cloud.dbankcloud.com^
+||cloud.dbankcdn.com^
+||backup.cloud.huawei.com^
+
+
+# ===== 10. AMAZON PHOTOS =====
+||www.amazon.com/photos^
+||photos.amazon.com^
+||api.amazon.com/photos^
+||drive.amazonaws.com^
+||content-na.drive.amazonaws.com^
+
+# ===== 11. FLICKR =====
+||api.flickr.com^
+||up.flickr.com^
+
+# ===== 12. MEGA =====
+||g.api.mega.co.nz^
+||gfs*.userstorage.mega.co.nz^
