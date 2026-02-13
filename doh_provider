@@ -1,0 +1,61 @@
+# ===== Google DoH =====
+||dns.google^
+||dns.google.com^
+||dns64.dns.google^
+||8888.google^
+
+# ===== Cloudflare DoH =====
+||cloudflare-dns.com^
+||one.one.one.one^
+||1dot1dot1dot1.cloudflare-dns.com^
+||dns.cloudflare.com^
+||family.cloudflare-dns.com^
+||security.cloudflare-dns.com^
+
+# ===== Quad9 DoH =====
+||dns.quad9.net^
+||dns9.quad9.net^
+||dns10.quad9.net^
+||dns11.quad9.net^
+
+# ===== NextDNS DoH =====
+||dns.nextdns.io^
+||*.dns.nextdns.io^
+
+# ===== Alibaba DoH (Trung Quốc) =====
+||dns.alidns.com^
+||doh.pub^
+||dot.pub^
+
+# ===== Tencent DoH (Trung Quốc) =====
+||doh.360.cn^
+||dot.360.cn^
+||dns.pub^
+
+# ===== Khác =====
+||doh.opendns.com^
+||dns.adguard-dns.com^
+||doh.cleanbrowsing.org^
+||dns.mullvad.net^
+||freedns.controld.com^
+||dns.controld.com^
+||basic.rethinkdns.com^
+||sky.rethinkdns.com^
+||max.rethinkdns.com^
+||mozilla.cloudflare-dns.com^
+||dns.switch.ch^
+||doh.applied-privacy.net^
+||doh.dns.sb^
+||dns.twnic.tw^
+||ordns.he.net^
+
+# ===== DoH phổ biến ở Việt Nam =====
+||dns.vnnic.vn^
+
+# ===== Apple Private Relay (cũng bypass DNS) =====
+||mask.icloud.com^
+||mask-h2.icloud.com^
+||mask-api.icloud.com^
+
+# ===== Firefox DoH mặc định =====
+||use-application-dns.net^
