@@ -1,0 +1,77 @@
+! Title: Block iOS & Android OS Updates
+! Description: Chặn cập nhật hệ điều hành iOS và Android
+! Author: IT Admin
+! Last modified: 2026-03-04
+! Homepage: Internal Use Only
+
+! ===========================
+! iOS / iPadOS / macOS Updates
+! ===========================
+
+! Check update server
+||mesu.apple.com^
+||gdmf.apple.com^
+||mesu-cdn.origin-apple.com.akadns.net^
+
+! Software update catalog
+||swscan.apple.com^
+||swcdn.apple.com^
+||swdownload.apple.com^
+||swdist.apple.com^
+
+! OTA update download
+||appldnld.apple.com^
+||updates-http.cdn-apple.com^
+||updates.cdn-apple.com^
+||osrecovery.apple.com^
+
+! Experience / setup update
+||xp.apple.com^
+
+! Asset & config update
+||gg.apple.com^
+||gnf-mdn.apple.com^
+||gnf-mr.apple.com^
+
+! ===========================
+! Android OS Updates (OTA)
+! ===========================
+
+! Google OTA update servers
+||ota.googlezip.net^
+||ota-cache1.googlezip.net^
+||ota-cache2.googlezip.net^
+
+! Android update client
+||android.clients.google.com^
+
+! ===========================
+! Samsung Firmware Updates
+! ===========================
+||fota-cloud-dn.ospserver.net^
+||fos2-cloud-dn.ospserver.net^
+||fo2-cloud-dn.ospserver.net^
+
+! ===========================
+! Xiaomi / MIUI Updates
+! ===========================
+||update.miui.com^
+||us.update.miui.com^
+||global.update.miui.com^
+
+! ===========================
+! Huawei / HarmonyOS Updates
+! ===========================
+||update.dbankcloud.com^
+||update.hicloud.com^
+
+! ===========================
+! OPPO / Realme Updates
+! ===========================
+||component-ota.coloros.com^
+||ota.coloros.com^
+
+! ===========================
+! Vivo Updates
+! ===========================
+||ota-update.vivo.com.cn^
