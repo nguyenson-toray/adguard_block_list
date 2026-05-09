@@ -1,0 +1,63 @@
+! ============================================
+! ZALO SOCIAL BLOCK — Chặn Feed/Story/Status
+! Giữ: Chat, Call, Media trong tin nhắn
+! ============================================
+
+! --- Zalo Social Feed ---
+||zpsocial1-f*.zadn.vn^
+||zpsocial2-f*.zadn.vn^
+||zpsocial3-f*.zadn.vn^
+||zpsocial4-f*.zadn.vn^
+||zpsocial5-f*.zadn.vn^
+
+! --- News Feed / Video Feed ---
+||zfeed*.zadn.vn^
+||feed*.zadn.vn^
+||newsfeed*.zadn.vn^
+
+! --- Story / Trạng thái ---
+||story*.zadn.vn^
+||zstory*.zadn.vn^
+
+! --- Official Account (OA) / Bài viết ---
+! --- ||oa.zadn.vn^
+! --- ||oa-*.zadn.vn^
+! --- ||article*.zadn.vn^
+! --- ||blog*.zadn.vn^
+
+! --- Zalo TV / Video public ---
+||tv.zadn.vn^
+||zalo.tv^
+||video*.zadn.vn^
+||zfeed-video*.zadn.vn^
+||vod*.zadn.vn^
+
+! --- Mini App / Game / Shop (không cần thiết cho công việc) ---
+||zapps.me^
+||zapps.vn^
+||shop*.zadn.vn^
+||zshop*.zadn.vn^
+||game*.zadn.vn^
+
+! --- Quảng cáo Zalo ---
+||ads*.zadn.vn^
+||adservice*.zadn.vn^
+||tracking*.zadn.vn^
+
+! ============================================
+! WHITELIST — Đảm bảo Chat/Call hoạt động
+! (Thêm vào nếu bị block nhầm)
+! ============================================
+@@||chat*.zalo.me^
+@@||wpa.chat.zalo.me^
+@@||convers-wpa.chat.zalo.me^
+@@||msg*.zadn.vn^
+@@||talk*.zaloapp.com^
+@@||call*.zaloapp.com^
+@@||res-zalo.zadn.vn^
+@@||s*.ava-talk.zadn.vn^
+@@||zalo-api.zadn.vn^
+@@||api.zalo.me^
+@@||auth*.zadn.vn^
+@@||login*.zadn.vn^
+@@||stc*.zadn.vn^
