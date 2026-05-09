@@ -1,15 +1,30 @@
 # ===============================================
-# ANTI-LOTTERY BLOCKLIST FOR ADGUARD
+# ANTI-LOTTERY BLOCKLIST FOR ADGUARD HOME
 # Chặn tất cả dịch vụ liên quan xổ số, lô đề
 # Bao gồm: kết quả xổ số, soi cầu, thống kê,
-#           lô đề online, Vietlott, xổ số tỉnh
-# Cập nhật: Tháng 2/2026
+#           lô đề online, Vietlott, nhà cái,
+#           xổ số tỉnh, cá cược xổ số quốc tế
+# Cập nhật: Tháng 5/2026
 # ===============================================
+
+
+# ==========================================
+# [MỚI] PHÁT HIỆN TỪ DNS LOG
+# ==========================================
+||az24.vn^
+||cdn.az24.vn^
+||xsmn.mobi^
+||xshomnay.net^
+||xshomnay.vn^
+||xshomnay.com^
+||xstoday.com^
+||xshangngay.com^
+
 
 # ==========================================
 # TRANG KẾT QUẢ XỔ SỐ LỚN NHẤT VN
 # ==========================================
-||xsmn.mobi^
+
 # === Minh Ngọc (lớn nhất) ===
 ||minhngoc.net^
 ||minhngoc.net.vn^
@@ -17,6 +32,10 @@
 ||*.minhngoc.net^
 ||*.minhngoc.net.vn^
 ||xsminhngoc.com^
+
+# === AZ24 ===
+||az24.vn^
+||*.az24.vn^
 
 # === Xổ Số Đại Phát ===
 ||xosodaiphat.com^
@@ -28,50 +47,65 @@
 ||kqxs.com^
 ||kqxs.net^
 
-# === Xoso.net ===
+# === Xoso.net / xoso.com.vn ===
 ||xoso.net^
 ||*.xoso.net^
 ||xoso.net.vn^
-
-# === Xoso.com.vn ===
 ||xoso.com.vn^
 ||*.xoso.com.vn^
+||xoso.me^
+||xoso.vn^
+||xoso.info^
 
-# === XSKT.com.vn ===
+# === XSKT ===
 ||xskt.com.vn^
 ||*.xskt.com.vn^
 
 # === Minh Chính ===
 ||minhchinh.com^
 ||*.minhchinh.com^
+||xosominhchinh.com^
 
-# === MKetqua ===
+# === MKetqua / Ketqua ===
 ||mketqua.net^
 ||*.mketqua.net^
 ||mketqua.com^
-
-# === Kết quả xổ số khác ===
 ||ketqua.net^
 ||*.ketqua.net^
 ||ketquaxoso.com^
 ||ketquaxoso.vn^
 ||kqxoso.com^
+
+# === Các trang kết quả khác ===
 ||xosovn.com^
 ||xosovn.net^
 ||xosobamien.com^
-||xoso.me^
-||xoso.vn^
-||xoso.info^
+||xosobamien.net^
+||xosobamien.vn^
+||xs3mien.com^
+||xs3m.com^
+||xs3mien.net^
+||kqxs3mien.com^
+||kqxsmienbac.com^
+||kqxsmiennam.com^
+||kqxsmientrung.com^
+||tructiepxoso.com^
+||xosotrucotiep.com^
+||xosotrucgtiep.com^
+||xstv.com^
+||giaixoso.com^
+
 
 # ==========================================
 # XỔ SỐ KIẾN THIẾT CÁC TỈNH
 # ==========================================
 
-# === Xổ số tỉnh - Miền Nam ===
+# === Miền Nam ===
 ||xskthcm.com^
 ||*.xskthcm.com^
 ||xskthochiminh.com^
 ||xosobinhduong.com.vn^
+||xosobinhduong.com^
 ||xosodongnai.com.vn^
 ||xosodongnai.com^
 ||xosoangiang.com.vn^
@@ -83,7 +117,6 @@
 ||xosotiengiang.com.vn^
 ||xosotayninh.com.vn^
 ||xosovinhlong.com.vn^
-||xosobinhduong.com^
 ||xosobaclieu.com.vn^
 ||xosobinhphuoc.com.vn^
 ||xosobentre.com.vn^
@@ -95,7 +128,7 @@
 ||xosotravinh.com.vn^
 ||xosovungtau.com.vn^
 
-# === Xổ số tỉnh - Miền Trung ===
+# === Miền Trung ===
 ||xosobinhdinh.com.vn^
 ||xosodalklak.com.vn^
 ||xosodanang.com.vn^
@@ -110,19 +143,21 @@
 ||xosoquangnam.com.vn^
 ||xosoquangtri.com.vn^
 ||xosohue.com.vn^
+||xosoninh-thuan.com^
+||xosodaknong.com^
 
-# === Xổ số tỉnh - Miền Bắc / Thủ Đô ===
+# === Miền Bắc ===
 ||xosothudo.com.vn^
 ||xosohanoi.com.vn^
 ||xosomienbac.com^
 ||xosomienbac.com.vn^
 ||xsmb.com^
 ||xsmb.net^
+||xsmb.vn^
+||xshn.com^
+||xsquangninh.com^
+||xsthainguyen.com^
 
-# === Pattern chung xổ số tỉnh ===
-||xoso*.com.vn^
-||xskt*.com.vn^
-||xskt*.com^
 
 # ==========================================
 # VIETLOTT
@@ -143,12 +178,101 @@
 ||vietlottaz.com^
 ||vietlottlive.com^
 ||vietlottresult.com^
+||vietlott365.com^
+||ketquamega645.com^
+||ketquapower655.com^
+
+
+# ==========================================
+# NHÀ CÁI LÔ ĐỀ ONLINE 2025-2026
+# ==========================================
+
+# === Nhà cái phổ biến ===
+||five88.com^
+||*.five88.com^
+||may88.com^
+||*.may88.com^
+||max79.com^
+||*.max79.com^
+||86bet.com^
+||*.86bet.com^
+||vic88.com^
+||*.vic88.com^
+||zo88.com^
+||*.zo88.com^
+||vivu88.com^
+||*.vivu88.com^
+||debet.com^
+||*.debet.com^
+||sin88.com^
+||*.sin88.com^
+||topbet.com^
+||*.topbet.com^
+||typhu88.com^
+||*.typhu88.com^
+||sodo66.com^
+||*.sodo66.com^
+||jun88.com^
+||*.jun88.com^
+||sv388.com^
+||*.sv388.com^
+||w88.com^
+||*.w88.com^
+||bet88.com^
+||*.bet88.com^
+||fb88.com^
+||*.fb88.com^
+||bk8.com^
+||*.bk8.com^
+||fun88.com^
+||*.fun88.com^
+||12bet.com^
+||*.12bet.com^
+||188bet.com^
+||*.188bet.com^
+||m88.com^
+||*.m88.com^
+||ee88.com^
+||*.ee88.com^
+||i9bet.com^
+||*.i9bet.com^
+||shbet.com^
+||*.shbet.com^
+||hi88.com^
+||*.hi88.com^
+||uw88.com^
+||*.uw88.com^
+||ok9.com^
+||*.ok9.com^
+||8xbet.com^
+||*.8xbet.com^
+||v9bet.com^
+||*.v9bet.com^
+||789bet.com^
+||*.789bet.com^
+||king88.com^
+||*.king88.com^
+||j88.com^
+||*.j88.com^
+||new88.com^
+||*.new88.com^
+||kubet.com^
+||*.kubet.com^
+||iwin.com^
+||*.iwin.com^
+||go88.vn^
+||*.go88.vn^
+||sunwin.com^
+||*.sunwin.com^
+||nbet.com^
+||*.nbet.com^
+
 
 # ==========================================
 # TRANG SOI CẦU / DỰ ĐOÁN / THỐNG KÊ
 # ==========================================
 
-# === Soi cầu lớn ===
+# === Soi cầu ===
 ||soicau.com^
 ||soicau.net^
 ||soicau.vn^
@@ -166,6 +290,13 @@
 ||soicau366.com^
 ||soicau888.com^
 ||soicaulode.com^
+||soicau3mien.com^
+||soicauvip888.com^
+||soicaumobi.com^
+||soicau.mobi^
+||soicauwin.com^
+||soicauplus.com^
+||soicaukqxs.com^
 
 # === Rồng Bạch Kim ===
 ||rongbachkim.com^
@@ -173,21 +304,22 @@
 ||rongbachkim.vn^
 ||rongbachkim.net^
 ||rongbachkim88.com^
+||rongbachkim247.com^
 
-# === Dự đoán xổ số ===
+# === Dự đoán / Thống kê ===
 ||dudoanxoso.com^
 ||dudoanxs.com^
 ||dudoankqxs.com^
 ||dubaoxoso.com^
 ||dubaoxs.com^
 ||dudoanxoso.vn^
-
-# === Thống kê xổ số ===
 ||thongkexoso.com^
 ||thongkexs.com^
 ||thongkexsmb.com^
 ||thongkeloto.com^
 ||tkxs.com^
+||thongkesoicau.com^
+||phansoixs.com^
 
 # === Cầu lô / Bạch thủ ===
 ||caulo.net^
@@ -197,8 +329,11 @@
 ||bachthu.com^
 ||bachthuloday.com^
 ||bachthude.com^
+||caulomien.com^
+||cauloxs.com^
+||taicaulode.com^
 
-# === Soi cầu 247/888 ===
+# === Soi cầu số / Forum ===
 ||xoso247.com^
 ||xs247.com^
 ||xoso888.com^
@@ -206,13 +341,20 @@
 ||xoso66.com^
 ||xoso99.com^
 ||xoso168.com^
+||forumsoicau.com^
+||clubsoicau.com^
+||soicauxs.net^
+||giaimaxoso.com^
+||xosomienbac.info^
+
 
 # ==========================================
-# LÔ ĐỀ ONLINE
+# LÔ ĐỀ / ĐÁnh ĐỀ ONLINE
 # ==========================================
 
 ||lode.com^
 ||lodeonline.com^
+||lodeonline.live^
 ||lodeviet.com^
 ||lode88.com^
 ||lode68.com^
@@ -221,6 +363,7 @@
 ||danhdetructuyen.com^
 ||danhdetrenmang.com^
 ||danhdetrenmang.net^
+||danhdeonline.co.com^
 ||lodetrenmang.com^
 ||lodetrenmang.net^
 ||lodevn.com^
@@ -233,16 +376,25 @@
 ||lotode.com^
 ||lotode.vn^
 ||lodethethao.com^
+||lode99.com^
+||lode386.com^
+||nhacat.com^
+||nhacat.net^
+||nhacat.vn^
+||trangdaude.com^
+||ketquade.com^
+
 
 # ==========================================
-# XỔ SỐ ONLINE / MUA VÉ SỐ TRỰC TUYẾN
+# XỔ SỐ ONLINE / MUA VÉ TRỰC TUYẾN
 # ==========================================
 
 ||xosoonline.com^
 ||xosoonline.vn^
 ||xosovietnam.com^
 ||xosohomnay.com^
-||xosomienbac.com^
+||xosohomnay.net^
+||xosohomnay.vn^
 ||xosomiennam.com^
 ||xosomientrung.com^
 ||muasotrenmang.com^
@@ -253,21 +405,16 @@
 ||vesodientu.com^
 ||xosonhanh.com^
 ||xosoplus.com^
-||xosotrucotiep.com^
-||xosotrucgtiep.com^
-||tructiepxoso.com^
-||xstv.com^
-||kqxs3mien.com^
-||kqxsmienbac.com^
-||kqxsmiennam.com^
-||kqxsmientrung.com^
+||xosonhanh.net^
+||tinxoso.com^
+||tinxoso.vn^
+||tintucxoso.com^
+
 
 # ==========================================
-# APP XỔ SỐ & API
+# APP / PLATFORM XỔ SỐ QUỐC TẾ
 # ==========================================
 
-||lottoranker.com^
-||lottoranker-vn.com^
 ||thelotter.com^
 ||*.thelotter.com^
 ||lotterypost.com^
@@ -284,33 +431,8 @@
 ||lottosmile.com^
 ||agentlotto.com^
 ||lottokings.com^
-
-# ==========================================
-# TRANG TIN XỔ SỐ & FORUM
-# ==========================================
-
-||tinxoso.com^
-||tinxoso.vn^
-||tintucxoso.com^
-||xosohomnay.net^
-||xosohomnay.vn^
-||xshomnay.com^
-||giaixoso.com^
-||xstoday.com^
-||xshangngay.com^
-
-# === Forum soi cầu / lô đề ===
-||soicauxs.net^
-||forumsoicau.com^
-||clubsoicau.com^
-||cauloxs.com^
-||taicaulode.com^
-||giaimaxoso.com^
-
-# ==========================================
-# TRANG QUỐC TẾ LIÊN QUAN XỔ SỐ
-# ==========================================
-
+||lottoranker.com^
+||lottoranker-vn.com^
 ||lottery.com^
 ||lotteryresults.com^
 ||lotterycritic.com^
@@ -318,58 +440,72 @@
 ||lotteryguru.com^
 ||lotteryforum.com^
 ||lotto.net^
+||powerball.com^
+||megamillions.com^
+
+
+# ==========================================
+# YOUTUBE CHANNEL XỔ SỐ (DNS không chặn được)
+# - Cần chặn ở tầng khác (WatchGuard WebBlocker)
+# - Ghi chú để tham khảo:
+#   youtube.com/@xosoaz24vn
+#   youtube.com/@minhngocxoso
+# ==========================================
+
 
 # ==========================================
 # GENERIC BLOCKING PATTERNS
 # ==========================================
 
-# Pattern chung xổ số
-/.*xoso.*/
-/.*xskt.*/
-/.*kqxs.*/
-/.*lottery.*/
-/.*lotto.*/
-/.*soicau.*/
-/.*rongbachkim.*/
-/.*dudoanxs.*/
-/.*lodeonline.*/
-/.*lodetrenmang.*/
-/.*danhde.*/
-/.*ketquaxoso.*/
-/.*vietlott.*/
-
-# Keyword patterns
+# Wildcard theo pattern tên miền
 ||*xsmb*.com^
+||*xsmb*.net^
 ||*xsmn*.com^
 ||*xsmt*.com^
 ||*kqxs*.com^
+||*kqxs*.net^
 ||*soicau*.com^
+||*soicau*.net^
 ||*lode*.com^
-||*xoso*.com^
+||*xoso*.vn^
+||*xoso*.net^
+||*xskt*.com^
+||*xskt*.vn^
+||*ketquaxs*.com^
+||*ketquaxoso*.com^
+||*vietlott*.com^
+||*rongbachkim*.com^
+||*dudoanxs*.com^
+||*thongkexs*.com^
 
 # ==========================================
 # HƯỚNG DẪN SỬ DỤNG
 # ==========================================
-
-# 1. Import file vào AdGuard Home:
-#    Settings > Filters > Custom > Add filter
 #
-# 2. File này chặn TẤT CẢ liên quan xổ số:
-#    - Kết quả xổ số trực tiếp (Minh Ngọc, KQXS...)
-#    - Xổ số kiến thiết các tỉnh
-#    - Vietlott (Mega, Power, Keno, Max3D)
-#    - Soi cầu, dự đoán, thống kê lô đề
-#    - Lô đề online, đánh đề trực tuyến
-#    - Mua vé số online
-#    - App & trang xổ số quốc tế
+# 1. Import vào AdGuard Home:
+#    Settings > Filters > Custom filtering rules > Add
+#    (hoặc dùng URL nếu host file online)
 #
-# 3. Nếu bị chặn nhầm, thêm:
+# 2. File này chặn:
+#    ✅ Kết quả xổ số 3 miền (az24, minhngoc, kqxs...)
+#    ✅ Xổ số kiến thiết tất cả tỉnh thành
+#    ✅ Vietlott (Mega, Power, Keno, Max3D)
+#    ✅ Nhà cái lô đề online (Five88, May88, W88...)
+#    ✅ Soi cầu, dự đoán, thống kê lô đề
+#    ✅ Đánh lô đề / đề online
+#    ✅ Mua vé số online
+#    ✅ Trang xổ số quốc tế
+#
+# 3. Nếu bị chặn nhầm:
 #    @@||domain-hop-phap.com^
 #
-# 4. LƯU Ý: 
-#    - File này RIÊNG cho xổ số
-#    - Dùng kèm file anti-gambling-blocklist.txt 
-#      để chặn thêm cá cược, casino, game bài
+# 4. Kết hợp với WatchGuard WebBlocker:
+#    Category: Gambling → chặn chính xác hơn ở tầng URL
+#    (DNS chỉ chặn được theo domain, không theo path)
+#
+# 5. Dùng kèm file anti-gambling-blocklist.txt
+#    để chặn thêm casino, cá cược thể thao
+#
 # ==========================================
-
-# END OF FILE - Updated February 2026
+# END OF FILE - Updated May 2026
+# ==========================================
