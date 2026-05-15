@@ -1,0 +1,293 @@
+# ===============================================================
+# BARTENDER / SEAGULL SCIENTIFIC BLOCKLIST FOR ADGUARD HOME
+# ===============================================================
+# Cập nhật: 15/05/2026
+# Mục đích: Chặn TOÀN BỘ kết nối ra Internet của
+#           BarTender Label Software (Seagull Scientific)
+#           bao gồm: activation, license check, telemetry,
+#           cloud, update, download, support, tracking.
+#
+# Tác dụng:
+# - BarTender chạy offline (grace mode khi mất license server local)
+# - Không thể activate license online từ máy
+# - Không gửi telemetry/usage data về Seagull
+# - Không tự update
+# - Không truy cập BarTender Cloud
+# - Không tải driver/installer mới
+#
+# KHÔNG ảnh hưởng:
+# - Seagull License Server (SLS) trong mạng LAN nội bộ
+#   (vì SLS chạy qua TCP/UDP 5160, không qua DNS công cộng)
+# - In ấn qua driver in (không đi qua các domain này)
+# - Kết nối tới máy in mạng (LAN, không Internet)
+#
+# Cài đặt:
+# AdGuard Home > Filters > DNS blocklists > Add a custom list
+# > Paste URL hoặc paste nội dung trực tiếp
+# ===============================================================
+
+
+# =====================================================
+# [1] DOMAIN CHÍNH CỦA SEAGULL SCIENTIFIC
+# =====================================================
+
+# Root domain Seagull Scientific (toàn bộ subdomain)
+||seagullscientific.com^
+||seagullsoftware.com^
+
+# Các domain phụ và brand cũ
+||bartendersoftware.com^
+||bartenderbarcodesoftware.com^
+||bartender.com^
+||seagulldns.com^
+
+
+# =====================================================
+# [2] LICENSE ACTIVATION / AUTHENTICATION
+# =====================================================
+# Đây là các FQDN mà BarTender connect tới để kiểm tra
+# license khi activate. Chặn = không activate online được.
+
+||activation.seagullscientific.com^
+||activation.seagullsoftware.com^
+||license.seagullscientific.com^
+||licensing.seagullscientific.com^
+||sls.seagullscientific.com^
+||sls.seagullsoftware.com^
+||licenseservice.seagullscientific.com^
+||register.seagullscientific.com^
+||registration.seagullscientific.com^
+
+
+# =====================================================
+# [3] CUSTOMER PORTAL / DOWNLOADS
+# =====================================================
+# Chặn tải installer, driver, update.
+
+||portal.seagullscientific.com^
+||portal.seagullsoftware.com^
+||downloads.seagullscientific.com^
+||download.seagullscientific.com^
+||software.seagullscientific.com^
+
+
+# =====================================================
+# [4] BARTENDER CLOUD (SaaS)
+# =====================================================
+# Nếu không dùng BarTender Cloud, chặn để
+# user không thể login/sync lên cloud.
+
+||cloud.seagullscientific.com^
+||bartendercloud.com^
+||www.bartendercloud.com^
+||cloud.bartendercloud.com^
+||api.bartendercloud.com^
+||app.bartendercloud.com^
+||print.bartendercloud.com^
+
+
+# =====================================================
+# [5] DOCUMENTATION / SUPPORT / HELP
+# =====================================================
+# Chặn để user không thể truy cập tài liệu online.
+# (Lưu ý: cũng chặn luôn việc tìm hướng dẫn fix lỗi)
+
+||help.seagullscientific.com^
+||help.seagullsoftware.com^
+||support.seagullscientific.com^
+||support.seagullsoftware.com^
+||kb.seagullscientific.com^
+||docs.seagullscientific.com^
+||documentation.seagullscientific.com^
+||community.seagullscientific.com^
+||forum.seagullscientific.com^
+||forums.seagullscientific.com^
+
+
+# =====================================================
+# [6] WEBSITE CHÍNH / MARKETING
+# =====================================================
+
+||www.seagullscientific.com^
+||www.seagullsoftware.com^
+||www.bartendersoftware.com^
+||blog.seagullscientific.com^
+||news.seagullscientific.com^
+||events.seagullscientific.com^
+||webinar.seagullscientific.com^
+||webinars.seagullscientific.com^
+
+
+# =====================================================
+# [7] TELEMETRY / ANALYTICS / TRACKING
+# =====================================================
+# Chặn telemetry usage data về Seagull.
+
+||telemetry.seagullscientific.com^
+||analytics.seagullscientific.com^
+||metrics.seagullscientific.com^
+||stats.seagullscientific.com^
+||tracking.seagullscientific.com^
+||log.seagullscientific.com^
+||logs.seagullscientific.com^
+||insights.seagullscientific.com^
+
+
+# =====================================================
+# [8] AWS S3 BUCKETS CỦA SEAGULL
+# =====================================================
+# Seagull host nhiều tài liệu/whitepaper trên AWS S3.
+# Phát hiện trong URL: seagull-documentation.s3.us-west-2.amazonaws.com
+# Chặn theo prefix Seagull (KHÔNG chặn toàn bộ S3).
+
+||seagull-documentation.s3.us-west-2.amazonaws.com^
+||seagullbartender.s3.amazonaws.com^
+||seagullscientific.s3.amazonaws.com^
+
+# Wildcard cho bucket bắt đầu bằng seagull
+/^https?:\/\/seagull[\w-]*\.s3[\w.-]*\.amazonaws\.com/
+
+
+# =====================================================
+# [9] BARTENDER TRACK & TRACE / MOJIX
+# =====================================================
+# Seagull đã mua Mojix (real-time supply chain platform).
+# Chặn nếu không dùng tính năng Track & Trace.
+
+||mojix.com^
+||www.mojix.com^
+||api.mojix.com^
+||cloud.mojix.com^
+||tracktrace.seagullscientific.com^
+
+
+# =====================================================
+# [10] BARTENDER UPDATE CHECK
+# =====================================================
+# Chặn auto-update check.
+
+||update.seagullscientific.com^
+||updates.seagullscientific.com^
+||fixes.seagullscientific.com^
+||patch.seagullscientific.com^
+||patches.seagullscientific.com^
+
+
+# =====================================================
+# [11] CDN VÀ STATIC ASSETS
+# =====================================================
+
+||cdn.seagullscientific.com^
+||static.seagullscientific.com^
+||assets.seagullscientific.com^
+||img.seagullscientific.com^
+||images.seagullscientific.com^
+||media.seagullscientific.com^
+
+
+# =====================================================
+# [12] EMAIL / NEWSLETTER (MARKETING)
+# =====================================================
+
+||email.seagullscientific.com^
+||mail.seagullscientific.com^
+||mailer.seagullscientific.com^
+||newsletter.seagullscientific.com^
+||marketing.seagullscientific.com^
+
+
+# =====================================================
+# [13] SALES / TRIAL / FREE EDITION
+# =====================================================
+
+||sales.seagullscientific.com^
+||trial.seagullscientific.com^
+||free.seagullscientific.com^
+||demo.seagullscientific.com^
+||shop.seagullscientific.com^
+||store.seagullscientific.com^
+||buy.seagullscientific.com^
+
+
+# =====================================================
+# [14] PRINT PORTAL (nếu dùng từ xa)
+# =====================================================
+# Chặn nếu KHÔNG dùng Print Portal qua Internet.
+# Nếu dùng nội bộ LAN thì không ảnh hưởng vì
+# đây chỉ chặn DNS công cộng.
+
+||printportal.seagullscientific.com^
+||print.seagullscientific.com^
+||webprint.seagullscientific.com^
+
+
+# =====================================================
+# [15] AUTHENTICATION / SSO
+# =====================================================
+
+||auth.seagullscientific.com^
+||login.seagullscientific.com^
+||sso.seagullscientific.com^
+||identity.seagullscientific.com^
+||account.seagullscientific.com^
+||accounts.seagullscientific.com^
+
+
+# =====================================================
+# [16] API ENDPOINTS
+# =====================================================
+
+||api.seagullscientific.com^
+||api.seagullsoftware.com^
+||api2.seagullscientific.com^
+||rest.seagullscientific.com^
+||graphql.seagullscientific.com^
+||service.seagullscientific.com^
+||services.seagullscientific.com^
+
+
+# =====================================================
+# [17] CÔNG TY LIÊN QUAN / RESELLER VN
+# =====================================================
+# Các reseller VN bán BarTender (tùy chọn).
+# Nếu muốn user không tìm thấy hướng dẫn mua/download
+# từ reseller VN, bỏ comment các dòng dưới.
+
+# ||labelbasic.com^
+# ||barcodefactory.com^
+# ||barcodesinc.com^
+# ||atlasrfidstore.com^
+
+
+# =====================================================
+# HƯỚNG DẪN BỔ SUNG
+# =====================================================
+#
+# ⚠️ NẾU CẦN CHẶN HOÀN TOÀN (kể cả trong LAN):
+# Vào AdGuard Home > Filters > Custom filtering rules,
+# thêm DNS rewrite để chặn cả mDNS local:
+#
+#   ||bartender.local^$dnsrewrite=0.0.0.0
+#   ||seagull.local^$dnsrewrite=0.0.0.0
+#
+# ⚠️ NẾU CÓ SEAGULL LICENSE SERVER (SLS) NỘI BỘ:
+# SLS chạy qua TCP/UDP port 5160 trên mạng LAN
+# (vd: 192.168.x.x:5160), KHÔNG đi qua DNS công cộng.
+# → Blocklist này KHÔNG ảnh hưởng SLS nội bộ.
+# Nếu muốn chặn cả SLS, phải block ở firewall router
+# theo IP/port (không phải AdGuard).
+#
+# ⚠️ KIỂM TRA HIỆU QUẢ:
+# Sau khi áp dụng, mở BarTender > Help > About.
+# Nếu KHÔNG activate được = blocklist hoạt động.
+# Nếu BarTender đã activate trước đó, sẽ chạy ở
+# "grace mode" - vẫn in được nhưng không gọi về Seagull.
+#
+# ⚠️ ALLOWLIST (CHO PHÉP NGƯỢC LẠI):
+# Nếu cần BarTender activate được lúc nào đó,
+# thêm @@ phía trước rule tương ứng:
+#   @@||activation.seagullscientific.com^
+#
+# =====================================================
+# END OF FILE
+# =====================================================
