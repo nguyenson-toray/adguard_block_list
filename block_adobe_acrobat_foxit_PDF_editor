@@ -1,0 +1,325 @@
+# ===============================================================
+# ADOBE ACROBAT & FOXIT PDF EDITOR BLOCKLIST FOR ADGUARD HOME
+# ===============================================================
+# Cập nhật: 15/05/2026
+# Mục đích: Chặn TOÀN BỘ kết nối Internet của
+#           Adobe Acrobat (Reader, Pro, DC) và
+#           Foxit PDF Editor (Reader, Phantom, Editor Pro)
+# Bao gồm:  activation, license check, telemetry,
+#           auto-update, cloud sync, AI features.
+#
+# Tác dụng:
+# - Acrobat/Foxit chạy offline, không tự update
+# - Không gửi telemetry/tracking về Adobe/Foxit
+# - Không activate license online (Acrobat sẽ vào grace mode)
+# - Không sync lên cloud, không dùng AI features
+# - KHÔNG ảnh hưởng việc đọc/in/sửa PDF cơ bản
+#
+# Cài đặt: AdGuard Home > Filters > DNS blocklists
+#          > Add a custom list > paste content / URL
+# ===============================================================
+
+
+# =====================================================================
+# PHẦN A: ADOBE ACROBAT
+# =====================================================================
+# Note: List "a-dove-is-dumb" maintain ~80% telemetry subdomains
+#       dạng random ([random].adobestats.io, [random].adobe.io).
+#       Khuyến nghị COMBO với list đó để cover hết.
+
+# ─────────────────────────────────────────────────────────────────────
+# [A.1] ADOBE ACTIVATION & LICENSE
+# ─────────────────────────────────────────────────────────────────────
+||genuine.adobe.com^
+||prod.adobegenuine.com^
+||lcs-cops.adobe.io^
+||lcs-mobile-cops.adobe.io^
+||lcs-robs.adobe.com^
+||lcs-ulecs.adobe.io^
+||licenses.adobe.com^
+||activate.adobe.com^
+||na1r.services.adobe.com^
+||hl2rcv.adobe.com^
+||ic.adobe.io^
+||wip1.adobe.com^
+||wip2.adobe.com^
+||wip3.adobe.com^
+||wip4.adobe.com^
+||wwis-dubc1-vip60.adobe.com^
+||wwis-dubc1-vip100.adobe.com^
+||wwis-dubc1-vip101.adobe.com^
+||wwis-dubc1-vip102.adobe.com^
+||3dns-1.adobe.com^
+||3dns-2.adobe.com^
+||3dns-3.adobe.com^
+||3dns-4.adobe.com^
+||3dns.adobe.com^
+||ereg.adobe.com^
+||ereg.wip.adobe.com^
+||ereg.wip1.adobe.com^
+||ereg.wip2.adobe.com^
+||ereg.wip3.adobe.com^
+||ereg.wip4.adobe.com^
+||activate.wip.adobe.com^
+||activate.wip1.adobe.com^
+||activate.wip2.adobe.com^
+||activate.wip3.adobe.com^
+||activate.wip4.adobe.com^
+||practivate.adobe.com^
+||practivate.adobe.ipp^
+||practivate.adobe.newoa^
+||practivate.adobe.ntp^
+
+# ─────────────────────────────────────────────────────────────────────
+# [A.2] ADOBE TELEMETRY / TRACKING / ANALYTICS
+# ─────────────────────────────────────────────────────────────────────
+||adobestats.io^
+||stats.adobe.com^
+||metrics.adobe.com^
+||rtmetrics.adobe.com^
+||telemetry.adobe.com^
+||hb.adobe.com^
+||sstats.adobe.com^
+||t.adobe.com^
+||fpdownload.macromedia.com^
+||fpdownload2.macromedia.com^
+||fpdownload.adobe.com^
+||www.adobetag.com^
+||cc-api-data.adobe.io^
+
+# ─────────────────────────────────────────────────────────────────────
+# [A.3] ADOBE UPDATE / DOWNLOAD
+# ─────────────────────────────────────────────────────────────────────
+||armmf.adobe.com^
+||ardownload.adobe.com^
+||ardownload2.adobe.com^
+||ardownload3.adobe.com^
+||ardownload4.adobe.com^
+||ardownload5.adobe.com^
+||acroipm.adobe.com^
+||acroipm2.adobe.com^
+||www.adobe.com.tw^
+||www.adobe.com.cn^
+||www-archive.adobe.com^
+||get.adobe.com^
+
+# ─────────────────────────────────────────────────────────────────────
+# [A.4] ADOBE CLOUD / CREATIVE SERVICES
+# ─────────────────────────────────────────────────────────────────────
+||cloud.acrobat.com^
+||documentcloud.adobe.com^
+||files.acrobat.com^
+||sign.acrobat.com^
+||echocdn.acrobat.com^
+||echosign.com^
+||echosign.adobe.com^
+||na1.echosign.com^
+||www.echosign.com^
+
+# ─────────────────────────────────────────────────────────────────────
+# [A.5] ADOBE IO API (TELEMETRY-HEAVY)
+# ─────────────────────────────────────────────────────────────────────
+||adobe.io^
+||cc-api-data.adobe.io^
+||cc-collab.adobe.io^
+||uss.adobe.io^
+||adobeid-na1.services.adobe.com^
+||p7uxzbnt8h.adobe.io^
+||9ngulmtgqi.adobe.io^
+||vcorzsld2a.adobe.io^
+
+# ─────────────────────────────────────────────────────────────────────
+# [A.6] ADOBE GENUINE SERVICE / VALIDATION
+# ─────────────────────────────────────────────────────────────────────
+||adobegenuine.com^
+||genuine.adobe.io^
+||genuine-prod.adobe.io^
+||helpx.adobe.com^
+
+# ─────────────────────────────────────────────────────────────────────
+# [A.7] ADOBE AI / FIREFLY / SENSEI
+# ─────────────────────────────────────────────────────────────────────
+||firefly.adobe.com^
+||sensei.adobe.io^
+||genai.services.adobe.com^
+
+# ─────────────────────────────────────────────────────────────────────
+# [A.8] WEBSITE / MARKETING (TÙY CHỌN - chặn cả browser)
+# ─────────────────────────────────────────────────────────────────────
+# Bỏ comment nếu muốn chặn cả trang web Adobe.com
+# ||adobe.com^
+# ||www.adobe.com^
+# ||account.adobe.com^
+# ||business.adobe.com^
+
+# ─────────────────────────────────────────────────────────────────────
+# [A.9] ADOBE ANALYTICS / EXPERIENCE CLOUD (TRACKING)
+# ─────────────────────────────────────────────────────────────────────
+||adobedtm.com^
+||assets.adobedtm.com^
+||demdex.net^
+||dpm.demdex.net^
+||everesttech.net^
+||omtrdc.net^
+||*.sc.omtrdc.net^
+||tags.tiqcdn.com^
+
+
+# =====================================================================
+# PHẦN B: FOXIT PDF EDITOR / READER / PHANTOM
+# =====================================================================
+
+# ─────────────────────────────────────────────────────────────────────
+# [B.1] FOXIT DOMAIN CHÍNH (root)
+# ─────────────────────────────────────────────────────────────────────
+||foxitsoftware.com^
+||foxitcloud.com^
+||foxit.com^
+||foxitservice.com^
+||foxitreader.com^
+||foxit-software.com^
+
+# ─────────────────────────────────────────────────────────────────────
+# [B.2] FOXIT TRACKING - mở MỖI PDF gửi data về đây!
+# ─────────────────────────────────────────────────────────────────────
+# QUAN TRỌNG: platform.foxitcloud.com được Foxit gọi
+# MỖI LẦN mở file PDF, kể cả khi đã tắt "Data Collection".
+||platform.foxitcloud.com^
+||logger.foxitcloud.com^
+||tracker.foxitcloud.com^
+||analytics.foxitcloud.com^
+||stats.foxitcloud.com^
+||telemetry.foxitcloud.com^
+||metrics.foxitcloud.com^
+
+# ─────────────────────────────────────────────────────────────────────
+# [B.3] FOXIT ACTIVATION / LICENSE
+# ─────────────────────────────────────────────────────────────────────
+||activation.foxitsoftware.com^
+||activate.foxitsoftware.com^
+||license.foxitsoftware.com^
+||licensing.foxitsoftware.com^
+||register.foxitsoftware.com^
+||registration.foxitsoftware.com^
+||myaccount.foxitsoftware.com^
+||account.foxitsoftware.com^
+||auth.foxitsoftware.com^
+||sso.foxitsoftware.com^
+
+# ─────────────────────────────────────────────────────────────────────
+# [B.4] FOXIT UPDATE / AUTO-UPDATE
+# ─────────────────────────────────────────────────────────────────────
+||update.foxitsoftware.com^
+||updates.foxitsoftware.com^
+||cdn01.foxitsoftware.com^
+||cdn02.foxitsoftware.com^
+||fs.foxitsoftware.com^
+||fs02.foxitsoftware.com^
+
+# ─────────────────────────────────────────────────────────────────────
+# [B.5] FOXIT CLOUD SERVICES
+# ─────────────────────────────────────────────────────────────────────
+||cloud.foxitsoftware.com^
+||www.foxitcloud.com^
+||api.foxitcloud.com^
+||app.foxitcloud.com^
+||esign.foxitsoftware.com^
+||esignature.foxitsoftware.com^
+||sign.foxitsoftware.com^
+||docs.foxitcloud.com^
+||convert.foxitsoftware.com^
+
+# ─────────────────────────────────────────────────────────────────────
+# [B.6] FOXIT AI / SMART REDACT / CHATPDF
+# ─────────────────────────────────────────────────────────────────────
+||ai.foxitsoftware.com^
+||ai.foxitcloud.com^
+||chatpdf.foxit.com^
+||smartredact.foxit.com^
+
+# ─────────────────────────────────────────────────────────────────────
+# [B.7] FOXIT WEBSITE / MARKETING
+# ─────────────────────────────────────────────────────────────────────
+||www.foxit.com^
+||www.foxitsoftware.com^
+||shop.foxitsoftware.com^
+||store.foxitsoftware.com^
+||sales.foxitsoftware.com^
+||blog.foxitsoftware.com^
+||www.foxitreader.com^
+
+# ─────────────────────────────────────────────────────────────────────
+# [B.8] FOXIT SUPPORT / FORUM / KB
+# ─────────────────────────────────────────────────────────────────────
+||kb.foxit.com^
+||kb.foxitsoftware.com^
+||help.foxitsoftware.com^
+||support.foxitsoftware.com^
+||forums.foxitsoftware.com^
+||community.foxitsoftware.com^
+
+# ─────────────────────────────────────────────────────────────────────
+# [B.9] FOXIT CDN / STATIC
+# ─────────────────────────────────────────────────────────────────────
+||cdn.foxitsoftware.com^
+||static.foxitsoftware.com^
+||assets.foxitsoftware.com^
+
+
+# =====================================================================
+# PHẦN C: KHUYẾN NGHỊ BỔ SUNG
+# =====================================================================
+# Để chặn hoàn chỉnh Adobe Acrobat (telemetry đổi domain liên tục),
+# kết hợp với list "a-dove-is-dumb" được maintain liên tục:
+#
+# AdGuard Home > Filters > DNS blocklists > Add custom list:
+#   Name: Adobe is dumb
+#   URL:  https://a.dove.isdumb.one/pihole
+#   (Cập nhật mỗi 2 tuần, ~10,000+ random telemetry subdomains)
+#
+# Hoặc URL mirror nếu Cloudflare bị block ở VN:
+#   https://a.dove.isdumb.one/list.txt
+#
+# =====================================================================
+
+
+# =====================================================================
+# PHẦN D: KIỂM TRA SAU KHI ÁP DỤNG
+# =====================================================================
+#
+# 1. Test domain bị chặn:
+#    nslookup platform.foxitcloud.com
+#    nslookup genuine.adobe.com
+#    → Phải trả về NXDOMAIN hoặc 0.0.0.0
+#
+# 2. Mở Acrobat / Foxit:
+#    - Không hiện popup "Sign in to Adobe/Foxit"
+#    - Không tự check update
+#    - Vẫn mở/in/sửa PDF bình thường
+#
+# 3. Check Query Log AdGuard Home:
+#    - Filter theo IP máy có cài Acrobat/Foxit
+#    - Đếm số request bị block trong 5 phút sau khi mở PDF
+#    - Bình thường: 20-50 requests bị chặn (cả 2 phần mềm)
+#
+# =====================================================================
+
+
+# =====================================================================
+# PHẦN E: UNBLOCK (nếu cần)
+# =====================================================================
+#
+# Để cho phép activate Adobe Acrobat tạm thời:
+#   @@||genuine.adobe.com^
+#   @@||lcs-cops.adobe.io^
+#   @@||activate.adobe.com^
+#
+# Để cho phép activate Foxit tạm thời:
+#   @@||activation.foxitsoftware.com^
+#   @@||license.foxitsoftware.com^
+#
+# Sau khi activate xong → xóa @@ để chặn lại
+#
+# =====================================================================
+# END OF FILE
+# =====================================================================
