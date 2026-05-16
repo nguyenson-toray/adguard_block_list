@@ -1,0 +1,35 @@
+! ====================================================================
+! 1. CHO PHÉP CÁC TÊN MIỀN PHỤC VỤ CHAT, CALL VÀ MEDIA (ẢNH/VOICE) CHÍNH
+! ====================================================================
+@@||zalo.me^$client='Group_3_28_191_Zalo_Work_Only'
+@@||zaloapp.com^$client='Group_3_28_191_Zalo_Work_Only'
+@@||zalocdn.com^$client='Group_3_28_191_Zalo_Work_Only'
+@@||zadn.vn^$client='Group_3_28_191_Zalo_Work_Only'
+@@||vng.com.vn^$client='Group_3_28_191_Zalo_Work_Only'
+
+! ====================================================================
+! 2. MỞ THÔNG BÁO ĐẨY (PUSH NOTIFICATION) KHI TẮT MÀN HÌNH ĐIỆN THOẠI
+! (Bắt buộc phải mở thì điện thoại mới đổ chuông khi có cuộc gọi đến)
+! ====================================================================
+! --- Cho điện thoại Android (Google FCM) ---
+@@||googleapis.com^$client='Group_3_28_191_Zalo_Work_Only'
+@@||gstatic.com^$client='Group_3_28_191_Zalo_Work_Only'
+
+! --- Cho điện thoại iPhone (Apple APNs) ---
+@@||apple.com^$client='Group_3_28_191_Zalo_Work_Only'
+
+! ====================================================================
+! 3. CHẶN PHẦN MẠNG XÃ HỘI, NHẬT KÝ, VIDEO, KHÁM PHÁ CỦA ZALO
+! (Các quy tắc chặn này sẽ đè lên quyền được phép ở trên)
+! ====================================================================
+||feed.zalo.me^$client='Group_3_28_191_Zalo_Work_Only'
+||timeline.zalo.me^$client='Group_3_28_191_Zalo_Work_Only'
+||diary.zalo.me^$client='Group_3_28_191_Zalo_Work_Only'
+||social.zalo.me^$client='Group_3_28_191_Zalo_Work_Only'
+||explore.zalo.me^$client='Group_3_28_191_Zalo_Work_Only'
+||channel.zalo.me^$client='Group_3_28_191_Zalo_Work_Only'
+
+! ====================================================================
+! 4. KHÓA TỔNG - CHẶN TOÀN BỘ INTERNET CÒN LẠI
+! ====================================================================
+||*^$client='Group_3_28_191_Zalo_Work_Only'
