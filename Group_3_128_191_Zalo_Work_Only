@@ -1,69 +1,59 @@
 ! =========================================================
-! ZALO ONLY MODE (ANDROID + IPHONE)
-! - Allow:
-!   + Zalo chat
-!   + Zalo call
-!   + Zalo push notification
-!   + Internet connection check
-! - Block everything else
+! ZALO ONLY MODE
+! Android + iPhone
 ! =========================================================
 
 
 ! =========================================================
-! 1. BLOCK ALL INTERNET
+! 1. BLOCK EVERYTHING
 ! =========================================================
 
-||*^$client=Group_3_128_191_Zalo_Work_Only
+*$client=Group_3_28_191_Zalo_Work_Only
 
 
 ! =========================================================
 ! 2. ZALO CORE
 ! =========================================================
 
-@@||zalo.me^$client=Group_3_128_191_Zalo_Work_Only
-@@||zaloapp.com^$client=Group_3_128_191_Zalo_Work_Only
-@@||zalocdn.com^$client=Group_3_128_191_Zalo_Work_Only
-@@||zadn.vn^$client=Group_3_128_191_Zalo_Work_Only
-@@||vng.com.vn^$client=Group_3_128_191_Zalo_Work_Only
+@@||zalo.me^$client=Group_3_28_191_Zalo_Work_Only
+@@||zaloapp.com^$client=Group_3_28_191_Zalo_Work_Only
+@@||zalocdn.com^$client=Group_3_28_191_Zalo_Work_Only
+@@||zadn.vn^$client=Group_3_28_191_Zalo_Work_Only
+@@||vng.com.vn^$client=Group_3_28_191_Zalo_Work_Only
+
+@@||chat.zalo.me^$client=Group_3_28_191_Zalo_Work_Only
+@@||ws.zalo.me^$client=Group_3_28_191_Zalo_Work_Only
+@@||voice.zalo.me^$client=Group_3_28_191_Zalo_Work_Only
+@@||video.zalo.me^$client=Group_3_28_191_Zalo_Work_Only
+@@||srv.zdn.vn^$client=Group_3_28_191_Zalo_Work_Only
 
 
 ! =========================================================
-! 3. ZALO CHAT / CALL
+! 3. ANDROID PUSH
 ! =========================================================
 
-@@||chat.zalo.me^$client=Group_3_128_191_Zalo_Work_Only
-@@||ws.zalo.me^$client=Group_3_128_191_Zalo_Work_Only
-@@||voice.zalo.me^$client=Group_3_128_191_Zalo_Work_Only
-@@||video.zalo.me^$client=Group_3_128_191_Zalo_Work_Only
-@@||srv.zdn.vn^$client=Group_3_128_191_Zalo_Work_Only
+@@||mtalk.google.com^$client=Group_3_28_191_Zalo_Work_Only
+@@||fcm.googleapis.com^$client=Group_3_28_191_Zalo_Work_Only
+@@||firebaseinstallations.googleapis.com^$client=Group_3_28_191_Zalo_Work_Only
 
 
 ! =========================================================
-! 4. ANDROID PUSH NOTIFICATION
+! 4. IPHONE PUSH
 ! =========================================================
 
-@@||mtalk.google.com^$client=Group_3_128_191_Zalo_Work_Only
-@@||fcm.googleapis.com^$client=Group_3_128_191_Zalo_Work_Only
-@@||firebaseinstallations.googleapis.com^$client=Group_3_128_191_Zalo_Work_Only
-@@||gstatic.com^$client=Group_3_128_191_Zalo_Work_Only
+@@||push.apple.com^$client=Group_3_28_191_Zalo_Work_Only
+@@||apple-dns.net^$client=Group_3_28_191_Zalo_Work_Only
 
 
 ! =========================================================
-! 5. IPHONE PUSH NOTIFICATION
+! 5. INTERNET CHECK
 ! =========================================================
 
-@@||push.apple.com^$client=Group_3_128_191_Zalo_Work_Only
-@@||apple-dns.net^$client=Group_3_128_191_Zalo_Work_Only
+@@||connectivitycheck.gstatic.com^$client=Group_3_28_191_Zalo_Work_Only
+@@||connectivitycheck.android.com^$client=Group_3_28_191_Zalo_Work_Only
+@@||clients3.google.com^$client=Group_3_28_191_Zalo_Work_Only
 
+@@||captive.apple.com^$client=Group_3_28_191_Zalo_Work_Only
 
-! =========================================================
-! 6. INTERNET CONNECTION CHECK
-! =========================================================
-
-! Android
-@@||connectivitycheck.gstatic.com^$client=Group_3_128_191_Zalo_Work_Only
-@@||connectivitycheck.android.com^$client=Group_3_128_191_Zalo_Work_Only
-@@||clients3.google.com^$client=Group_3_128_191_Zalo_Work_Only
-
-! iPhone
-@@||captive.apple.com^$client=Group_3_128_191_Zalo_Work_Only
+@@||msftconnecttest.com^$client=Group_3_28_191_Zalo_Work_Only
+@@||msftncsi.com^$client=Group_3_28_191_Zalo_Work_Only
