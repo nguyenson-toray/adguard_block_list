@@ -8,589 +8,589 @@
 # ==========================================
 # IMOU LIFE / DAHUA (Rất phổ biến tại VN)
 # ==========================================
-||imou.com^
-||imoulife.com^
-||dahuatech.com^
-||dhitech.com^
-||lechange.com^
-||ezcloud.imou.com^
-||openapi.lechange.com^
-||eu-openapi.lechange.com^
-||us-openapi.lechange.com^
-||ap-openapi.lechange.com^
-||ib.isappcloud.com^
-||dolynkcloud.com^
-||dolynk.com^
+||imou.com^$client=10.0.3.0/24
+||imoulife.com^$client=10.0.3.0/24
+||dahuatech.com^$client=10.0.3.0/24
+||dhitech.com^$client=10.0.3.0/24
+||lechange.com^$client=10.0.3.0/24
+||ezcloud.imou.com^$client=10.0.3.0/24
+||openapi.lechange.com^$client=10.0.3.0/24
+||eu-openapi.lechange.com^$client=10.0.3.0/24
+||us-openapi.lechange.com^$client=10.0.3.0/24
+||ap-openapi.lechange.com^$client=10.0.3.0/24
+||ib.isappcloud.com^$client=10.0.3.0/24
+||dolynkcloud.com^$client=10.0.3.0/24
+||dolynk.com^$client=10.0.3.0/24
 # NEW Dahua P2P/Cloud domains 2024-2025
-||api.imoulife.com^
-||cloud.imoulife.com^
-||push.imoulife.com^
-||msg.imoulife.com^
-||mqtt.imoulife.com^
-||cnc.lechange.com^
-||cnopen.lechange.com^
-||open.lechange.cn^
-||p2p.dahuacloud.com^
-||dss.dahuacloud.com^
-||vs.dahuacloud.com^
-||dmss.dahuasecurity.com^
-||amdb.alice.licelus.com^
+||api.imoulife.com^$client=10.0.3.0/24
+||cloud.imoulife.com^$client=10.0.3.0/24
+||push.imoulife.com^$client=10.0.3.0/24
+||msg.imoulife.com^$client=10.0.3.0/24
+||mqtt.imoulife.com^$client=10.0.3.0/24
+||cnc.lechange.com^$client=10.0.3.0/24
+||cnopen.lechange.com^$client=10.0.3.0/24
+||open.lechange.cn^$client=10.0.3.0/24
+||p2p.dahuacloud.com^$client=10.0.3.0/24
+||dss.dahuacloud.com^$client=10.0.3.0/24
+||vs.dahuacloud.com^$client=10.0.3.0/24
+||dmss.dahuasecurity.com^$client=10.0.3.0/24
+||amdb.alice.licelus.com^$client=10.0.3.0/24
 # ==========================================
 # EASY4IP CLOUD SERVICES (DAHUA P2P)
 # ==========================================
-||easy4ipcloud.com^
-||easy4ip.com^
-||www-v2.easy4ipcloud.com^
-||devaccess.easy4ipcloud.com^
-||app-v2.easy4ipcloud.com^
-||updatev2.easy4ipcloud.com^
+||easy4ipcloud.com^$client=10.0.3.0/24
+||easy4ip.com^$client=10.0.3.0/24
+||www-v2.easy4ipcloud.com^$client=10.0.3.0/24
+||devaccess.easy4ipcloud.com^$client=10.0.3.0/24
+||app-v2.easy4ipcloud.com^$client=10.0.3.0/24
+||updatev2.easy4ipcloud.com^$client=10.0.3.0/24
 # NEW Easy4IP domains
-||api.easy4ipcloud.com^
-||p2p.easy4ipcloud.com^
-||push.easy4ipcloud.com^
-||relay.easy4ipcloud.com^
-||stun.easy4ipcloud.com^
-||turn.easy4ipcloud.com^
-||msg.easy4ipcloud.com^
+||api.easy4ipcloud.com^$client=10.0.3.0/24
+||p2p.easy4ipcloud.com^$client=10.0.3.0/24
+||push.easy4ipcloud.com^$client=10.0.3.0/24
+||relay.easy4ipcloud.com^$client=10.0.3.0/24
+||stun.easy4ipcloud.com^$client=10.0.3.0/24
+||turn.easy4ipcloud.com^$client=10.0.3.0/24
+||msg.easy4ipcloud.com^$client=10.0.3.0/24
 
 # ==========================================
 # HIKVISION / HIK-CONNECT
 # ==========================================
-||hikvision.com^
-||hik-connect.com^
-||hikvisionapi.com^
-||hikconnect.com^
-||hikvisionvietnam.com^
+||hikvision.com^$client=10.0.3.0/24
+||hik-connect.com^$client=10.0.3.0/24
+||hikvisionapi.com^$client=10.0.3.0/24
+||hikconnect.com^$client=10.0.3.0/24
+||hikvisionvietnam.com^$client=10.0.3.0/24
 # NEW Hik-Connect P2P domains 2024-2025
-||dev.hik-connect.com^
-||litedev.hik-connect.com^
-||eu.hik-connect.com^
-||us.hik-connect.com^
-||ap.hik-connect.com^
-||cloud.hik-connect.com^
-||api.hik-connect.com^
-||push.hik-connect.com^
-||msg.hik-connect.com^
-||tpp.hikvision.com^
-||openapi.hikvision.com^
-||hikddns.com^
-||hik-cloud.com^
-||hikmicro.com^
-||pyronix-cloud.com^
+||dev.hik-connect.com^$client=10.0.3.0/24
+||litedev.hik-connect.com^$client=10.0.3.0/24
+||eu.hik-connect.com^$client=10.0.3.0/24
+||us.hik-connect.com^$client=10.0.3.0/24
+||ap.hik-connect.com^$client=10.0.3.0/24
+||cloud.hik-connect.com^$client=10.0.3.0/24
+||api.hik-connect.com^$client=10.0.3.0/24
+||push.hik-connect.com^$client=10.0.3.0/24
+||msg.hik-connect.com^$client=10.0.3.0/24
+||tpp.hikvision.com^$client=10.0.3.0/24
+||openapi.hikvision.com^$client=10.0.3.0/24
+||hikddns.com^$client=10.0.3.0/24
+||hik-cloud.com^$client=10.0.3.0/24
+||hikmicro.com^$client=10.0.3.0/24
+||pyronix-cloud.com^$client=10.0.3.0/24
 
 # ==========================================
 # EZVIZ (CloudEye - Hikvision consumer brand)
 # ==========================================
-||ezviz.com^
-||ezvizlife.com^
-||ezvizapi.com^
+||ezviz.com^$client=10.0.3.0/24
+||ezvizlife.com^$client=10.0.3.0/24
+||ezvizapi.com^$client=10.0.3.0/24
 # NEW EZVIZ domains 2024-2025
-||api.ezviz.com^
-||open.ezviz.com^
-||i.ezviz.com^
-||cloud.ezviz.com^
-||push.ezviz.com^
-||msg.ezviz.com^
-||ezvizcloud.com^
-||ezviz7.com^
-||ezvis.com^
-||openapi.ezviz.com^
-||ezvizeu.com^
-||ezvizap.com^
-||ezvizvn.com^
+||api.ezviz.com^$client=10.0.3.0/24
+||open.ezviz.com^$client=10.0.3.0/24
+||i.ezviz.com^$client=10.0.3.0/24
+||cloud.ezviz.com^$client=10.0.3.0/24
+||push.ezviz.com^$client=10.0.3.0/24
+||msg.ezviz.com^$client=10.0.3.0/24
+||ezvizcloud.com^$client=10.0.3.0/24
+||ezviz7.com^$client=10.0.3.0/24
+||ezvis.com^$client=10.0.3.0/24
+||openapi.ezviz.com^$client=10.0.3.0/24
+||ezvizeu.com^$client=10.0.3.0/24
+||ezvizap.com^$client=10.0.3.0/24
+||ezvizvn.com^$client=10.0.3.0/24
 
 # ==========================================
 # XMEYE (Rất phổ biến ở VN - Xiongmaitech)
 # ==========================================
-||xmeye.net^
-||xmeye.com^
-||xmcsee.com^
+||xmeye.net^$client=10.0.3.0/24
+||xmeye.com^$client=10.0.3.0/24
+||xmcsee.com^$client=10.0.3.0/24
 # NEW XMEye/Xiongmai domains 2024-2025
-||api.xmeye.net^
-||cloud.xmeye.net^
-||p2p.xmeye.net^
-||push.xmeye.net^
-||xiongmaitech.com^
-||xmsecu.com^
-||xmeye.cn^
-||gw.xmeye.net^
-||nat.xmeye.net^
-||nwc.xmeye.net^
-||uc.xmeye.net^
+||api.xmeye.net^$client=10.0.3.0/24
+||cloud.xmeye.net^$client=10.0.3.0/24
+||p2p.xmeye.net^$client=10.0.3.0/24
+||push.xmeye.net^$client=10.0.3.0/24
+||xiongmaitech.com^$client=10.0.3.0/24
+||xmsecu.com^$client=10.0.3.0/24
+||xmeye.cn^$client=10.0.3.0/24
+||gw.xmeye.net^$client=10.0.3.0/24
+||nat.xmeye.net^$client=10.0.3.0/24
+||nwc.xmeye.net^$client=10.0.3.0/24
+||uc.xmeye.net^$client=10.0.3.0/24
 
 # ==========================================
 # YOOSEE (Phổ biến camera giá rẻ - Gwell)
 # ==========================================
-||yoosee.co^
-||yoosee.com^
+||yoosee.co^$client=10.0.3.0/24
+||yoosee.com^$client=10.0.3.0/24
 # NEW Yoosee domains 2024-2025
-||api.yoosee.co^
-||cloud.yoosee.co^
-||p2p.yoosee.co^
-||gwelltimes.com^
-||gwell.cc^
-||gwsecu.com^
-||cloudlinks.cn^
-||open.yoosee.co^
+||api.yoosee.co^$client=10.0.3.0/24
+||cloud.yoosee.co^$client=10.0.3.0/24
+||p2p.yoosee.co^$client=10.0.3.0/24
+||gwelltimes.com^$client=10.0.3.0/24
+||gwell.cc^$client=10.0.3.0/24
+||gwsecu.com^$client=10.0.3.0/24
+||cloudlinks.cn^$client=10.0.3.0/24
+||open.yoosee.co^$client=10.0.3.0/24
 
 # ==========================================
 # V380 / V380 PRO (Macro Video)
 # ==========================================
-||v380.net^
-||v380s.com^
+||v380.net^$client=10.0.3.0/24
+||v380s.com^$client=10.0.3.0/24
 # NEW V380 domains 2024-2025
-||api.v380.net^
-||cloud.v380.net^
-||p2p.v380.net^
-||push.v380.net^
-||macrovideo.com.cn^
-||v380pro.com^
-||v380cam.com^
+||api.v380.net^$client=10.0.3.0/24
+||cloud.v380.net^$client=10.0.3.0/24
+||p2p.v380.net^$client=10.0.3.0/24
+||push.v380.net^$client=10.0.3.0/24
+||macrovideo.com.cn^$client=10.0.3.0/24
+||v380pro.com^$client=10.0.3.0/24
+||v380cam.com^$client=10.0.3.0/24
 
 # ==========================================
 # iCSEE / CamHi
 # ==========================================
-||icsee.me^
-||camhipro.com^
-||camhi.net^
+||icsee.me^$client=10.0.3.0/24
+||camhipro.com^$client=10.0.3.0/24
+||camhi.net^$client=10.0.3.0/24
 # NEW iCSEE/CamHi domains 2024-2025
-||api.icsee.me^
-||cloud.icsee.me^
-||p2p.icsee.me^
-||push.icsee.me^
-||camhi.com^
-||eseecloud.com^
-||eseecloud3.com^
-||vrcam.net^
-||ippro.co^
+||api.icsee.me^$client=10.0.3.0/24
+||cloud.icsee.me^$client=10.0.3.0/24
+||p2p.icsee.me^$client=10.0.3.0/24
+||push.icsee.me^$client=10.0.3.0/24
+||camhi.com^$client=10.0.3.0/24
+||eseecloud.com^$client=10.0.3.0/24
+||eseecloud3.com^$client=10.0.3.0/24
+||vrcam.net^$client=10.0.3.0/24
+||ippro.co^$client=10.0.3.0/24
 
 # ==========================================
 # XIAOMI / MI HOME CAMERAS
 # ==========================================
-||mi.com^$app=mihome
-||mijia.com^
-||xiaomi.com^$app=camera
-||xiaomiyoupin.com^
+||mi.com^$app=mihome,client=10.0.3.0/24
+||mijia.com^$client=10.0.3.0/24
+||xiaomi.com^$app=camera,client=10.0.3.0/24
+||xiaomiyoupin.com^$client=10.0.3.0/24
 # NEW Xiaomi camera domains 2024-2025
-||api.io.mi.com^
-||sg.api.io.mi.com^
-||us.api.io.mi.com^
-||de.api.io.mi.com^
-||ru.api.io.mi.com^
-||i.mi.com^
-||account.xiaomi.com^
-||micloud.xiaomi.net^
-||mishop.io.mi.com^
-||home.mi.com^
-||iot.mi.com^
+||api.io.mi.com^$client=10.0.3.0/24
+||sg.api.io.mi.com^$client=10.0.3.0/24
+||us.api.io.mi.com^$client=10.0.3.0/24
+||de.api.io.mi.com^$client=10.0.3.0/24
+||ru.api.io.mi.com^$client=10.0.3.0/24
+||i.mi.com^$client=10.0.3.0/24
+||account.xiaomi.com^$client=10.0.3.0/24
+||micloud.xiaomi.net^$client=10.0.3.0/24
+||mishop.io.mi.com^$client=10.0.3.0/24
+||home.mi.com^$client=10.0.3.0/24
+||iot.mi.com^$client=10.0.3.0/24
 
 # ==========================================
 # TP-LINK TAPO
 # ==========================================
-||tp-link.com^$app=tapo
-||tplinkcloud.com^
-||tplinkapps.com^
-||tapo.com^
+||tp-link.com^$app=tapo,client=10.0.3.0/24
+||tplinkcloud.com^$client=10.0.3.0/24
+||tplinkapps.com^$client=10.0.3.0/24
+||tapo.com^$client=10.0.3.0/24
 # NEW Tapo domains 2024-2025
-||api.tplinkcloud.com^
-||cloud.tplinkcloud.com^
-||tapocare.com^
-||tapo.vip^
-||kasa.tp-link.com^
-||kasacare.com^
-||eu.tplinkcloud.com^
-||us.tplinkcloud.com^
-||apac.tplinkcloud.com^
+||api.tplinkcloud.com^$client=10.0.3.0/24
+||cloud.tplinkcloud.com^$client=10.0.3.0/24
+||tapocare.com^$client=10.0.3.0/24
+||tapo.vip^$client=10.0.3.0/24
+||kasa.tp-link.com^$client=10.0.3.0/24
+||kasacare.com^$client=10.0.3.0/24
+||eu.tplinkcloud.com^$client=10.0.3.0/24
+||us.tplinkcloud.com^$client=10.0.3.0/24
+||apac.tplinkcloud.com^$client=10.0.3.0/24
 
 # ==========================================
 # REOLINK
 # ==========================================
-||reolink.com^
-||reolink-storage.s3.amazonaws.com^
+||reolink.com^$client=10.0.3.0/24
+||reolink-storage.s3.amazonaws.com^$client=10.0.3.0/24
 # NEW Reolink domains 2024-2025
-||api.reolink.com^
-||cloud.reolink.com^
-||push.reolink.com^
-||p2p.reolink.com^
-||download.reolink.com^
-||reolinkcam.com^
+||api.reolink.com^$client=10.0.3.0/24
+||cloud.reolink.com^$client=10.0.3.0/24
+||push.reolink.com^$client=10.0.3.0/24
+||p2p.reolink.com^$client=10.0.3.0/24
+||download.reolink.com^$client=10.0.3.0/24
+||reolinkcam.com^$client=10.0.3.0/24
 
 # ==========================================
 # THƯƠNG HIỆU VIỆT NAM
 # ==========================================
 
 # KBVISION / KBONE
-||kbone.vn^
-||kbvision.vn^
-||kbvision.com^
-||kabevision.com^
+||kbone.vn^$client=10.0.3.0/24
+||kbvision.vn^$client=10.0.3.0/24
+||kbvision.com^$client=10.0.3.0/24
+||kabevision.com^$client=10.0.3.0/24
 # NEW KBvision domains
-||api.kbvision.vn^
-||cloud.kbvision.vn^
-||p2p.kbvision.vn^
+||api.kbvision.vn^$client=10.0.3.0/24
+||cloud.kbvision.vn^$client=10.0.3.0/24
+||p2p.kbvision.vn^$client=10.0.3.0/24
 
 # VANTECH
-||vantech.vn^
-||vantechvietnam.com^
-||cloud.vantech.vn^
+||vantech.vn^$client=10.0.3.0/24
+||vantechvietnam.com^$client=10.0.3.0/24
+||cloud.vantech.vn^$client=10.0.3.0/24
 
 # QUESTEK
-||questek.vn^
-||questekglobal.com^
+||questek.vn^$client=10.0.3.0/24
+||questekglobal.com^$client=10.0.3.0/24
 
 # J-TECH
-||j-tech.vn^
-||j-techvn.com^
+||j-tech.vn^$client=10.0.3.0/24
+||j-techvn.com^$client=10.0.3.0/24
 
 # REVOTECH
-||revotech.vn^
+||revotech.vn^$client=10.0.3.0/24
 
 # FPT CAMERA (Nhà mạng VN)
-||fptcamera.vn^
-||camera.fpt.vn^
-||fptcameraiq.vn^
-||fptplay.vn^$app=camera
-||fpt.vn^$app=camera
-||fptsmarthome.vn^
-||smarthome.fpt.vn^
-||cloud.fptcamera.vn^
-||api.fptcamera.vn^
-||fptlife.vn^
-||fptsmartcloud.com^
+||fptcamera.vn^$client=10.0.3.0/24
+||camera.fpt.vn^$client=10.0.3.0/24
+||fptcameraiq.vn^$client=10.0.3.0/24
+||fptplay.vn^$app=camera,client=10.0.3.0/24
+||fpt.vn^$app=camera,client=10.0.3.0/24
+||fptsmarthome.vn^$client=10.0.3.0/24
+||smarthome.fpt.vn^$client=10.0.3.0/24
+||cloud.fptcamera.vn^$client=10.0.3.0/24
+||api.fptcamera.vn^$client=10.0.3.0/24
+||fptlife.vn^$client=10.0.3.0/24
+||fptsmartcloud.com^$client=10.0.3.0/24
 
 # VIETTEL CAMERA
-||viettelcamera.vn^
-||thingplus.vn^
-||cameraddns.net^
-||vhome.vn^
-||home.viettel.vn^
-||smarthome.viettel.vn^
-||iot.viettel.vn^
+||viettelcamera.vn^$client=10.0.3.0/24
+||thingplus.vn^$client=10.0.3.0/24
+||cameraddns.net^$client=10.0.3.0/24
+||vhome.vn^$client=10.0.3.0/24
+||home.viettel.vn^$client=10.0.3.0/24
+||smarthome.viettel.vn^$client=10.0.3.0/24
+||iot.viettel.vn^$client=10.0.3.0/24
 
 # VNPT CAMERA / iGate
-||vnptsmarthome.vn^
-||igate.vnpt.vn^
-||smarthome.vnpt.vn^
-||cybercam.vnpt.vn^
-||camera.vnpt.vn^
+||vnptsmarthome.vn^$client=10.0.3.0/24
+||igate.vnpt.vn^$client=10.0.3.0/24
+||smarthome.vnpt.vn^$client=10.0.3.0/24
+||cybercam.vnpt.vn^$client=10.0.3.0/24
+||camera.vnpt.vn^$client=10.0.3.0/24
 
 # ==========================================
 # TUTK / KALAY P2P PLATFORM
 # (Nền tảng P2P phổ biến nhất cho camera giá rẻ)
 # ==========================================
-||tutk.com^
-||kalay.us^
-||iotcplatform.com^
+||tutk.com^$client=10.0.3.0/24
+||kalay.us^$client=10.0.3.0/24
+||iotcplatform.com^$client=10.0.3.0/24
 # NEW TUTK/Kalay domains 2024-2025
-||throughtek.com^
-||tutk.io^
-||kalay.io^
-||kalay.net^
-||kalay.com^
-||tutk.net^
-||p2p.tutk.com^
-||api.tutk.com^
-||cloud.tutk.com^
-||stun.tutk.com^
-||relay.tutk.com^
-||gslb.tutk.com^
-||dispatcher.tutk.com^
+||throughtek.com^$client=10.0.3.0/24
+||tutk.io^$client=10.0.3.0/24
+||kalay.io^$client=10.0.3.0/24
+||kalay.net^$client=10.0.3.0/24
+||kalay.com^$client=10.0.3.0/24
+||tutk.net^$client=10.0.3.0/24
+||p2p.tutk.com^$client=10.0.3.0/24
+||api.tutk.com^$client=10.0.3.0/24
+||cloud.tutk.com^$client=10.0.3.0/24
+||stun.tutk.com^$client=10.0.3.0/24
+||relay.tutk.com^$client=10.0.3.0/24
+||gslb.tutk.com^$client=10.0.3.0/24
+||dispatcher.tutk.com^$client=10.0.3.0/24
 
 # ==========================================
 # TUYA SMART PLATFORM
 # (Nền tảng IoT cho nhiều camera generic)
 # ==========================================
-||tuya.com^
-||tuyaus.com^
-||tuyaeu.com^
-||tuyacn.com^
-||smartlife.com^
-||smart-life.com^
+||tuya.com^$client=10.0.3.0/24
+||tuyaus.com^$client=10.0.3.0/24
+||tuyaeu.com^$client=10.0.3.0/24
+||tuyacn.com^$client=10.0.3.0/24
+||smartlife.com^$client=10.0.3.0/24
+||smart-life.com^$client=10.0.3.0/24
 # NEW Tuya domains 2024-2025
-||api.tuya.com^
-||openapi.tuya.com^
-||cloud.tuya.com^
-||a1.tuyaus.com^
-||a1.tuyaeu.com^
-||a1.tuyacn.com^
-||m1.tuyaus.com^
-||m1.tuyaeu.com^
-||m1.tuyacn.com^
-||px1.tuyaus.com^
-||px1.tuyaeu.com^
-||ms.tuyaus.com^
-||ms.tuyaeu.com^
-||ms.tuyacn.com^
-||images.tuyaus.com^
-||images.tuyaeu.com^
-||tuyaoem.com^
-||tuya-inc.com^
+||api.tuya.com^$client=10.0.3.0/24
+||openapi.tuya.com^$client=10.0.3.0/24
+||cloud.tuya.com^$client=10.0.3.0/24
+||a1.tuyaus.com^$client=10.0.3.0/24
+||a1.tuyaeu.com^$client=10.0.3.0/24
+||a1.tuyacn.com^$client=10.0.3.0/24
+||m1.tuyaus.com^$client=10.0.3.0/24
+||m1.tuyaeu.com^$client=10.0.3.0/24
+||m1.tuyacn.com^$client=10.0.3.0/24
+||px1.tuyaus.com^$client=10.0.3.0/24
+||px1.tuyaeu.com^$client=10.0.3.0/24
+||ms.tuyaus.com^$client=10.0.3.0/24
+||ms.tuyaeu.com^$client=10.0.3.0/24
+||ms.tuyacn.com^$client=10.0.3.0/24
+||images.tuyaus.com^$client=10.0.3.0/24
+||images.tuyaeu.com^$client=10.0.3.0/24
+||tuyaoem.com^$client=10.0.3.0/24
+||tuya-inc.com^$client=10.0.3.0/24
 
 # ==========================================
 # YCC365 Plus / PixPlus (Closeli)
 # ==========================================
-||ycc365plus.com^
-||closeli.com^
-||closeli.cn^
-||pixplus.co^
-||api.ycc365plus.com^
-||cloud.ycc365plus.com^
+||ycc365plus.com^$client=10.0.3.0/24
+||closeli.com^$client=10.0.3.0/24
+||closeli.cn^$client=10.0.3.0/24
+||pixplus.co^$client=10.0.3.0/24
+||api.ycc365plus.com^$client=10.0.3.0/24
+||cloud.ycc365plus.com^$client=10.0.3.0/24
 
 # ==========================================
 # DANALE
 # ==========================================
-||danale.com^
-||danale.cn^
-||api.danale.com^
+||danale.com^$client=10.0.3.0/24
+||danale.cn^$client=10.0.3.0/24
+||api.danale.com^$client=10.0.3.0/24
 
 # ==========================================
 # YI CAMERA / YI IOT (YI Technology)
 # ==========================================
-||yitechnology.com^
-||kamihome.com^
-||yi.com^
-||yicamera.com^
+||yitechnology.com^$client=10.0.3.0/24
+||kamihome.com^$client=10.0.3.0/24
+||yi.com^$client=10.0.3.0/24
+||yicamera.com^$client=10.0.3.0/24
 # NEW YI domains 2024-2025
-||api.yitechnology.com^
-||cloud.yitechnology.com^
-||push.yitechnology.com^
-||api.kamihome.com^
-||cloud.kamihome.com^
-||kami.vision^
+||api.yitechnology.com^$client=10.0.3.0/24
+||cloud.yitechnology.com^$client=10.0.3.0/24
+||push.yitechnology.com^$client=10.0.3.0/24
+||api.kamihome.com^$client=10.0.3.0/24
+||cloud.kamihome.com^$client=10.0.3.0/24
+||kami.vision^$client=10.0.3.0/24
 
 # ==========================================
 # CÁC THƯƠNG HIỆU CAMERA KHÁC
 # ==========================================
 
 # 360 CAMERA / QIHOO
-||360.cn^$app=camera
-||qihoo.com^$app=camera
-||360safe.com^$app=camera
-||360.com^$app=camera
-||360os.com^
+||360.cn^$app=camera,client=10.0.3.0/24
+||qihoo.com^$app=camera,client=10.0.3.0/24
+||360safe.com^$app=camera,client=10.0.3.0/24
+||360.com^$app=camera,client=10.0.3.0/24
+||360os.com^$client=10.0.3.0/24
 
 # ZKTECO / ANVIZ
-||zkteco.com^
-||zktecocloud.com^
-||anviz.com^
-||zkbio.com^
-||zkbiocloudtime.com^
+||zkteco.com^$client=10.0.3.0/24
+||zktecocloud.com^$client=10.0.3.0/24
+||anviz.com^$client=10.0.3.0/24
+||zkbio.com^$client=10.0.3.0/24
+||zkbiocloudtime.com^$client=10.0.3.0/24
 
 # TIANDY
-||tiandy.com^
-||tiandytech.com^
-||cloud.tiandy.com^
+||tiandy.com^$client=10.0.3.0/24
+||tiandytech.com^$client=10.0.3.0/24
+||cloud.tiandy.com^$client=10.0.3.0/24
 
 # UNIVIEW / UNV
-||uniview.com^
-||univiewsecurity.com^
-||ezstation.net^
-||cloud.uniview.com^
-||unv.com^
+||uniview.com^$client=10.0.3.0/24
+||univiewsecurity.com^$client=10.0.3.0/24
+||ezstation.net^$client=10.0.3.0/24
+||cloud.uniview.com^$client=10.0.3.0/24
+||unv.com^$client=10.0.3.0/24
 
 # KGUARD
-||kguard.com^
-||kguard.net^
+||kguard.com^$client=10.0.3.0/24
+||kguard.net^$client=10.0.3.0/24
 
 # AJAX SYSTEMS
-||ajax.systems^
-||ajaxsecuritycloud.com^
+||ajax.systems^$client=10.0.3.0/24
+||ajaxsecuritycloud.com^$client=10.0.3.0/24
 
 # SMARTWARES / ELRO
-||smartwares-app.com^
-||elro.eu^
+||smartwares-app.com^$client=10.0.3.0/24
+||elro.eu^$client=10.0.3.0/24
 
 # ZMODO
-||zmodo.com^
-||myzmod.com^
-||zmodo.net^
+||zmodo.com^$client=10.0.3.0/24
+||myzmod.com^$client=10.0.3.0/24
+||zmodo.net^$client=10.0.3.0/24
 
 # ARLO
-||arlo.com^
-||netgear.com^$app=arlo
-||arlocloud.com^
+||arlo.com^$client=10.0.3.0/24
+||netgear.com^$app=arlo,client=10.0.3.0/24
+||arlocloud.com^$client=10.0.3.0/24
 
 # RING (Amazon)
-||ring.com^
-||ring-cloud.com^
-||account.ring.com^
-||api.ring.com^
-||fw.ring.com^
-||app.ring.com^
+||ring.com^$client=10.0.3.0/24
+||ring-cloud.com^$client=10.0.3.0/24
+||account.ring.com^$client=10.0.3.0/24
+||api.ring.com^$client=10.0.3.0/24
+||fw.ring.com^$client=10.0.3.0/24
+||app.ring.com^$client=10.0.3.0/24
 
 # NEST (Google)
-||nest.com^
-||nestcam.com^
-||dropcam.com^
+||nest.com^$client=10.0.3.0/24
+||nestcam.com^$client=10.0.3.0/24
+||dropcam.com^$client=10.0.3.0/24
 
 # SWANN
-||swann.com^
-||swanneye.com^
-||swanncloud.com^
+||swann.com^$client=10.0.3.0/24
+||swanneye.com^$client=10.0.3.0/24
+||swanncloud.com^$client=10.0.3.0/24
 
 # LOREX
-||lorex.com^
-||lorextechnology.com^
-||lorex.cloud^
+||lorex.com^$client=10.0.3.0/24
+||lorextechnology.com^$client=10.0.3.0/24
+||lorex.cloud^$client=10.0.3.0/24
 
 # SRICAM
-||sricam.com^
-||sricctv.com^
+||sricam.com^$client=10.0.3.0/24
+||sricctv.com^$client=10.0.3.0/24
 
 # WANSCAM
-||wanscam.com^
-||wanscam.net^
+||wanscam.com^$client=10.0.3.0/24
+||wanscam.net^$client=10.0.3.0/24
 
 # FLOUREON
-||floureon.com^
+||floureon.com^$client=10.0.3.0/24
 
 # ZOSI
-||zositech.com^
-||zosi.com^
-||zosismart.com^
+||zositech.com^$client=10.0.3.0/24
+||zosi.com^$client=10.0.3.0/24
+||zosismart.com^$client=10.0.3.0/24
 
 # JENNOV
-||jennov.com^
+||jennov.com^$client=10.0.3.0/24
 
 # ANNKE
-||annke.com^
-||annkecloud.com^
+||annke.com^$client=10.0.3.0/24
+||annkecloud.com^$client=10.0.3.0/24
 
 # AMCREST
-||amcrest.com^
-||amcrestcloud.com^
-||amcrestview.com^
+||amcrest.com^$client=10.0.3.0/24
+||amcrestcloud.com^$client=10.0.3.0/24
+||amcrestview.com^$client=10.0.3.0/24
 
 # FOSCAM
-||foscam.com^
-||myfoscam.com^
-||foscamcloud.com^
+||foscam.com^$client=10.0.3.0/24
+||myfoscam.com^$client=10.0.3.0/24
+||foscamcloud.com^$client=10.0.3.0/24
 
 # UBIQUITI / UNIFI PROTECT
-||ui.com^$app=protect
-||unifi.ui.com^
-||ubnt.com^$app=camera
+||ui.com^$app=protect,client=10.0.3.0/24
+||unifi.ui.com^$client=10.0.3.0/24
+||ubnt.com^$app=camera,client=10.0.3.0/24
 
 # WYZE
-||wyze.com^
-||wyzecam.com^
-||api.wyze.com^
+||wyze.com^$client=10.0.3.0/24
+||wyzecam.com^$client=10.0.3.0/24
+||api.wyze.com^$client=10.0.3.0/24
 
 # EUFY / ANKER
-||eufylife.com^
-||eufy.com^
-||anker-in.com^$app=eufy
+||eufylife.com^$client=10.0.3.0/24
+||eufy.com^$client=10.0.3.0/24
+||anker-in.com^$app=eufy,client=10.0.3.0/24
 
 # BLINK (Amazon)
-||blinkforhome.com^
-||immedia-semi.com^
+||blinkforhome.com^$client=10.0.3.0/24
+||immedia-semi.com^$client=10.0.3.0/24
 
 # ==========================================
 # OTHER P2P PLATFORMS
 # ==========================================
 
 # NVSIP (Sunywo)
-||nvsip.com^
-||sunywo.com^
+||nvsip.com^$client=10.0.3.0/24
+||sunywo.com^$client=10.0.3.0/24
 
 # iCAM / UBELL / UBOX (uBIA)
-||ubia.cn^
-||ubell.com.cn^
-||ubox.net^
+||ubia.cn^$client=10.0.3.0/24
+||ubell.com.cn^$client=10.0.3.0/24
+||ubox.net^$client=10.0.3.0/24
 
 # CARECAM (HuiYun)
-||carecam.vn^
-||carecam.com^
-||huiyuncloud.com^
+||carecam.vn^$client=10.0.3.0/24
+||carecam.com^$client=10.0.3.0/24
+||huiyuncloud.com^$client=10.0.3.0/24
 
 # TOSEE (Tocoding)
-||tosee.net^
-||tocoding.com^
+||tosee.net^$client=10.0.3.0/24
+||tocoding.com^$client=10.0.3.0/24
 
 # GOOLINK (Vnow)
-||goolink.com^
-||vnowlink.com^
+||goolink.com^$client=10.0.3.0/24
+||vnowlink.com^$client=10.0.3.0/24
 
 # UMEYE
-||umeye.com^
-||umeye.net^
+||umeye.com^$client=10.0.3.0/24
+||umeye.net^$client=10.0.3.0/24
 
 # SEETONG (Topsee)
-||seetong.com^
-||topsee.com.cn^
+||seetong.com^$client=10.0.3.0/24
+||topsee.com.cn^$client=10.0.3.0/24
 
 # IPC360 (Puwell)
-||ipc360.com^
-||puwell.com^
+||ipc360.com^$client=10.0.3.0/24
+||puwell.com^$client=10.0.3.0/24
 
 # FINDCAM / ZSCAM
-||findcam.com^
-||zscam.com^
+||findcam.com^$client=10.0.3.0/24
+||zscam.com^$client=10.0.3.0/24
 
 # ==========================================
 # GENERIC CAMERA PATTERNS (REGEX)
 # ==========================================
 
 # Camera API domains
-/.*camera.*api.*\.com/
-/.*cam.*cloud.*\.com/
-/.*surveillance.*api.*\.com/
-/.*ipcam.*api.*\.com/
-/.*dvr.*cloud.*\.com/
-/.*nvr.*api.*\.com/
-/.*cctv.*cloud.*\.com/
+/.*camera.*api.*\.com/$client=10.0.3.0/24
+/.*cam.*cloud.*\.com/$client=10.0.3.0/24
+/.*surveillance.*api.*\.com/$client=10.0.3.0/24
+/.*ipcam.*api.*\.com/$client=10.0.3.0/24
+/.*dvr.*cloud.*\.com/$client=10.0.3.0/24
+/.*nvr.*api.*\.com/$client=10.0.3.0/24
+/.*cctv.*cloud.*\.com/$client=10.0.3.0/24
 
 # Camera services
-/.*camera.*storage.*\.com/
-/.*video.*storage.*\.com/
-/.*cam.*storage.*\.com/
+/.*camera.*storage.*\.com/$client=10.0.3.0/24
+/.*video.*storage.*\.com/$client=10.0.3.0/24
+/.*cam.*storage.*\.com/$client=10.0.3.0/24
 
 # Firmware updates
-/.*upgrade.*camera.*\.com/
-/.*firmware.*camera.*\.com/
-/.*update.*camera.*\.com/
-/.*ota.*camera.*\.com/
+/.*upgrade.*camera.*\.com/$client=10.0.3.0/24
+/.*firmware.*camera.*\.com/$client=10.0.3.0/24
+/.*update.*camera.*\.com/$client=10.0.3.0/24
+/.*ota.*camera.*\.com/$client=10.0.3.0/24
 
 # Push notifications for cameras
-/.*push.*camera.*\.com/
-/.*notification.*camera.*\.com/
-/.*alert.*camera.*\.com/
+/.*push.*camera.*\.com/$client=10.0.3.0/24
+/.*notification.*camera.*\.com/$client=10.0.3.0/24
+/.*alert.*camera.*\.com/$client=10.0.3.0/24
 
 # Analytics & tracking
-/.*analytics.*camera.*\.com/
-/.*tracking.*camera.*\.com/
-/.*stats.*camera.*\.com/
+/.*analytics.*camera.*\.com/$client=10.0.3.0/24
+/.*tracking.*camera.*\.com/$client=10.0.3.0/24
+/.*stats.*camera.*\.com/$client=10.0.3.0/24
 
 # P2P patterns
-/.*p2p.*cam.*\.com/
-/.*stun.*cam.*\.com/
-/.*relay.*cam.*\.com/
-/.*turn.*cam.*\.com/
+/.*p2p.*cam.*\.com/$client=10.0.3.0/24
+/.*stun.*cam.*\.com/$client=10.0.3.0/24
+/.*relay.*cam.*\.com/$client=10.0.3.0/24
+/.*turn.*cam.*\.com/$client=10.0.3.0/24
 
 # ==========================================
 # CLOUD STORAGE SERVICES (Camera specific)
 # ==========================================
-||camera-storage.amazonaws.com^
-/.*cam.*cloud.*\.amazonaws\.com/
-/.*camera.*cloud.*\.aliyun\.com/
-/.*surveillance.*cloud.*\.com/
-/.*ipc.*\.oss-.*\.aliyuncs\.com/
-/.*camera.*\.oss-.*\.aliyuncs\.com/
+||camera-storage.amazonaws.com^$client=10.0.3.0/24
+/.*cam.*cloud.*\.amazonaws\.com/$client=10.0.3.0/24
+/.*camera.*cloud.*\.aliyun\.com/$client=10.0.3.0/24
+/.*surveillance.*cloud.*\.com/$client=10.0.3.0/24
+/.*ipc.*\.oss-.*\.aliyuncs\.com/$client=10.0.3.0/24
+/.*camera.*\.oss-.*\.aliyuncs\.com/$client=10.0.3.0/24
 
 # ==========================================
 # MQTT BROKERS (Camera IoT)
 # ==========================================
-/.*mqtt.*cam.*\.com/
-/.*mqtt.*ipc.*\.com/
-/.*broker.*cam.*\.com/
+/.*mqtt.*cam.*\.com/$client=10.0.3.0/24
+/.*mqtt.*ipc.*\.com/$client=10.0.3.0/24
+/.*broker.*cam.*\.com/$client=10.0.3.0/24
 
 # ==========================================
 # WebRTC STUN/TURN Servers (Camera P2P)
 # ==========================================
-/.*stun.*ipc.*\.com/
-/.*turn.*ipc.*\.com/
-/.*stun.*camera.*\.com/
-/.*turn.*camera.*\.com/
+/.*stun.*ipc.*\.com/$client=10.0.3.0/24
+/.*turn.*ipc.*\.com/$client=10.0.3.0/24
+/.*stun.*camera.*\.com/$client=10.0.3.0/24
+/.*turn.*camera.*\.com/$client=10.0.3.0/24
 
 # ==========================================
 # WHITELIST EXAMPLES (Nếu cần)
