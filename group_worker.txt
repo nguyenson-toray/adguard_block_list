@@ -1,0 +1,117 @@
+# ===========================================================
+# GROUP_WORKER — MOBILE PHONE ALLOWLIST (AdGuard Home)
+# Dải áp dụng: 10.0.3.128/25  (10.0.3.128 - 10.0.3.255)
+# Chính sách: BLOCK TẤT CẢ, chỉ MỞ các dịch vụ liệt kê bên dưới
+# Cập nhật: 2026-06-03
+# -----------------------------------------------------------
+# LƯU Ý:
+# - $client hoạt động trong list nhập của AdGuard Home.
+# - @@ (allow) luôn ưu tiên hơn rule chặn *.
+# - Trùng vai trò với SECTION C (Group_Worker) trong
+#   "Custom filtering rules.txt" — nếu dùng file này thì nên
+#   gỡ SECTION C để tránh quản lý 2 nơi.
+# ===========================================================
+
+# -----------------------------------------------------------
+# 0. CHẶN TẤT CẢ DNS QUERY CHO DẢI 10.0.3.128/25
+# -----------------------------------------------------------
+*$client=10.0.3.128/25
+
+# -----------------------------------------------------------
+# 1. KIỂM TRA KẾT NỐI INTERNET (captive portal)
+# -----------------------------------------------------------
+@@||connectivitycheck.gstatic.com^$client=10.0.3.128/25
+@@||connectivitycheck.android.com^$client=10.0.3.128/25
+@@||clients3.google.com^$client=10.0.3.128/25
+@@||clients1.google.com^$client=10.0.3.128/25
+@@||captive.apple.com^$client=10.0.3.128/25
+@@||gsp-ssl.ls.apple.com^$client=10.0.3.128/25
+@@||apple-dns.net^$client=10.0.3.128/25
+@@||msftconnecttest.com^$client=10.0.3.128/25
+@@||msftncsi.com^$client=10.0.3.128/25
+
+# -----------------------------------------------------------
+# 2. OS ESSENTIALS — Time sync & OCSP (cần cho TLS/cert)
+# -----------------------------------------------------------
+@@||time.apple.com^$client=10.0.3.128/25
+@@||time-ios.apple.com^$client=10.0.3.128/25
+@@||ntp.apple.com^$client=10.0.3.128/25
+@@||time.windows.com^$client=10.0.3.128/25
+@@||time.google.com^$client=10.0.3.128/25
+@@||time.android.com^$client=10.0.3.128/25
+@@||ocsp.apple.com^$client=10.0.3.128/25
+@@||ocsp2.apple.com^$client=10.0.3.128/25
+@@||ocsp.digicert.com^$client=10.0.3.128/25
+@@||ocsp.pki.goog^$client=10.0.3.128/25
+@@||o.lencr.org^$client=10.0.3.128/25
+
+# -----------------------------------------------------------
+# 3. PUSH NOTIFICATIONS (để nhận tin nhắn / cuộc gọi)
+# -----------------------------------------------------------
+# Android FCM
+@@||mtalk.google.com^$client=10.0.3.128/25
+@@||fcm.googleapis.com^$client=10.0.3.128/25
+@@||fcm-xmpp.googleapis.com^$client=10.0.3.128/25
+@@||firebaseinstallations.googleapis.com^$client=10.0.3.128/25
+@@||firebasedynamiclinks.googleapis.com^$client=10.0.3.128/25
+@@||android.googleapis.com^$client=10.0.3.128/25
+# iOS APNs
+@@||push.apple.com^$client=10.0.3.128/25
+
+# -----------------------------------------------------------
+# 4. ZALO — chat, gọi điện, push
+# -----------------------------------------------------------
+@@||zalo.me^$client=10.0.3.128/25
+@@||zaloapp.com^$client=10.0.3.128/25
+@@||zadn.vn^$client=10.0.3.128/25
+@@||zalocdn.com^$client=10.0.3.128/25
+@@||zapps.vn^$client=10.0.3.128/25
+@@||zapps.me^$client=10.0.3.128/25
+@@||123c.vn^$client=10.0.3.128/25
+@@||vng.com.vn^$client=10.0.3.128/25
+@@||srv.zdn.vn^$client=10.0.3.128/25
+@@||stc.zdn.vn^$client=10.0.3.128/25
+@@||photo*.vn^$client=10.0.3.128/25
+
+# -----------------------------------------------------------
+# 5. GOOGLE — Gmail, Docs/Drive, Apps Script
+# (chỉ mở subdomain dịch vụ, không mở toàn bộ google.com)
+# -----------------------------------------------------------
+@@||accounts.google.com^$client=10.0.3.128/25
+@@||gmail.com^$client=10.0.3.128/25
+@@||mail.google.com^$client=10.0.3.128/25
+@@||googlemail.com^$client=10.0.3.128/25
+@@||docs.google.com^$client=10.0.3.128/25
+@@||sheets.google.com^$client=10.0.3.128/25
+@@||slides.google.com^$client=10.0.3.128/25
+@@||drive.google.com^$client=10.0.3.128/25
+@@||script.google.com^$client=10.0.3.128/25
+@@||script.googleusercontent.com^$client=10.0.3.128/25
+@@||googleusercontent.com^$client=10.0.3.128/25
+@@||apis.google.com^$client=10.0.3.128/25
+@@||content.googleapis.com^$client=10.0.3.128/25
+@@||googleapis.com^$client=10.0.3.128/25
+@@||gstatic.com^$client=10.0.3.128/25
+
+# -----------------------------------------------------------
+# 6. NGÂN HÀNG — Vietcombank
+# (||vietcombank.com.vn^ bao trùm vcbdigibank./digibankm5./www.)
+# -----------------------------------------------------------
+@@||vietcombank.com.vn^$client=10.0.3.128/25
+
+# -----------------------------------------------------------
+# 7. APP CHÍNH PHỦ — VNeID & VSSID
+# (cả 2 thuộc *.gov.vn; mở gov.vn để app hoạt động ổn định)
+# -----------------------------------------------------------
+@@||vneid.gov.vn^$client=10.0.3.128/25
+@@||baohiemxahoi.gov.vn^$client=10.0.3.128/25
+@@||vss.gov.vn^$client=10.0.3.128/25
+@@||gov.vn^$client=10.0.3.128/25
+
+# ===========================================================
+# GHI CHÚ:
+# - Nếu app nào không vào được, mở Query Log lọc theo IP
+#   10.0.3.128-255, xem domain bị chặn rồi thêm @@...$client=10.0.3.128/25
+# - Google chỉ mở Gmail/Docs/Script; Google Search và dịch vụ
+#   khác vẫn bị chặn. Nếu cần, thêm @@||www.google.com^.
+# ===========================================================
