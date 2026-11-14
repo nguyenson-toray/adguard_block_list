@@ -1,52 +1,67 @@
 ! ============================================
-! ZALO SOCIAL BLOCK — Chặn Feed/Story/Status
-! Giữ: Chat, Call, Media trong tin nhắn
+! ZALO SOCIAL BLOCK — Group_Staff + Group_Worker (10.0.3.0/24)
+! Cho phép: Nhắn tin, Gọi thoại, Gọi video, Ảnh/Video/File trong tin nhắn, Mini App
+! Chặn: Nhật ký (Feed), Story, Zalo Video, Khám phá, Game, Shop, ZaloPay, Quảng cáo
+! Version: 2.3 — 2026-11-14
 ! ============================================
+! Lưu ý:
+! - Mọi rule chặn đều có $client=10.0.3.0/24 => áp cho cả Group_Staff và Group_Worker.
+! - DNS chỉ chặn được theo tên miền. Phần chữ của Nhật ký đi chung API với chat,
+!   nên có thể vẫn hiện chữ; ảnh/video của Feed, Story sẽ không tải được.
+! - Rule chặn có $important để thắng @@||zadn.vn^ trong group_worker.txt
+!   (nếu không, @@ trong group_worker sẽ mở lại toàn bộ Feed/Story cho Worker).
+! - Máy worker phải dùng DNS 10.0.1.6 trực tiếp (không qua DC 10.0.1.3),
+!   nếu không $client sẽ không khớp.
 
-! --- Zalo Social Feed ---
-||zpsocial1-f*.zadn.vn^
-||zpsocial2-f*.zadn.vn^
-||zpsocial3-f*.zadn.vn^
-||zpsocial4-f*.zadn.vn^
-||zpsocial5-f*.zadn.vn^
+! --- Nhật ký / Social Feed (gộp zpsocial1..N) ---
+||zpsocial*.zadn.vn^$client=10.0.3.0/24,important
+||zpsocial*.zdn.vn^$client=10.0.3.0/24,important
 
 ! --- News Feed / Video Feed ---
-||zfeed*.zadn.vn^
-||feed*.zadn.vn^
-||newsfeed*.zadn.vn^
+||zfeed*.zadn.vn^$client=10.0.3.0/24,important
+||feed*.zadn.vn^$client=10.0.3.0/24,important
+||newsfeed*.zadn.vn^$client=10.0.3.0/24,important
 
 ! --- Story / Trạng thái ---
-||story*.zadn.vn^
-||zstory*.zadn.vn^
+||story*.zadn.vn^$client=10.0.3.0/24,important
+||zstory*.zadn.vn^$client=10.0.3.0/24,important
 
 ! --- Official Account (OA) / Bài viết ---
-! --- ||oa.zadn.vn^
-! --- ||oa-*.zadn.vn^
-! --- ||article*.zadn.vn^
-! --- ||blog*.zadn.vn^
+! Bật article/blog (nội dung bài viết OA = social).
+! KHÔNG chặn oa.zadn.vn vì tin nhắn OA (ngân hàng, dịch vụ) có thể đi qua đây.
+||article*.zadn.vn^$client=10.0.3.0/24,important
+||blog*.zadn.vn^$client=10.0.3.0/24,important
+! ||oa.zadn.vn^$client=10.0.3.0/24
+! ||oa-*.zadn.vn^$client=10.0.3.0/24
 
 ! --- Zalo TV / Video public ---
-||tv.zadn.vn^
-||zalo.tv^
-||video*.zadn.vn^
-||zfeed-video*.zadn.vn^
-||vod*.zadn.vn^
+! Bỏ ||video*.zadn.vn^ (quá rộng, dễ chặn nhầm video trong tin nhắn).
+! Nếu log cho thấy video Feed dùng host video*, thêm lại host cụ thể.
+||tv.zadn.vn^$client=10.0.3.0/24,important
+||zalo.tv^$client=10.0.3.0/24,important
+||zfeed-video*.zadn.vn^$client=10.0.3.0/24,important
+||vod*.zadn.vn^$client=10.0.3.0/24,important
 
-! --- Mini App / Game / Shop (không cần thiết cho công việc) ---
-||zapps.me^
-||zapps.vn^
-||shop*.zadn.vn^
-||zshop*.zadn.vn^
-||game*.zadn.vn^
+! --- Khám phá / Tin tức trong Zalo ---
+||baomoi.com^$client=10.0.3.0/24,important
 
-! --- Quảng cáo Zalo ---
-||ads*.zadn.vn^
-||adservice*.zadn.vn^
-||tracking*.zadn.vn^
+! --- Game / Shop (Mini App được CHO PHÉP — xem whitelist) ---
+||shop*.zadn.vn^$client=10.0.3.0/24,important
+||zshop*.zadn.vn^$client=10.0.3.0/24,important
+||game*.zadn.vn^$client=10.0.3.0/24,important
+
+! --- ZaloPay (không cần cho công việc) ---
+||zalopay.vn^$client=10.0.3.0/24,important
+||zalopay.com.vn^$client=10.0.3.0/24,important
+
+! --- Quảng cáo / Tracking ---
+||ads*.zadn.vn^$client=10.0.3.0/24,important
+||adservice*.zadn.vn^$client=10.0.3.0/24,important
+||tracking*.zadn.vn^$client=10.0.3.0/24,important
+||adtima.vn^$client=10.0.3.0/24,important
 
 ! ============================================
-! WHITELIST — Đảm bảo Chat/Call hoạt động
-! (Thêm vào nếu bị block nhầm)
+! WHITELIST — Đảm bảo Chat / Call / Media tin nhắn
 ! ============================================
 @@||chat*.zalo.me^
 @@||wpa.chat.zalo.me^
@@ -61,3 +76,12 @@
 @@||auth*.zadn.vn^
 @@||login*.zadn.vn^
 @@||stc*.zadn.vn^
+
+! --- Mini App (cho phép) ---
+@@||zapps.me^
+@@||zapps.vn^
+@@||h5.zdn.vn^
+@@||h5.zadn.vn^
+
+! --- File / ảnh / video gửi trong tin nhắn (Zalo File Cloud) ---
+@@||*-zfcloud.zdn.vn^
