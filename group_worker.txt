@@ -73,7 +73,7 @@
 # Feed/Story trên zdn.vn bị chặn bởi zalo_social ($important)
 @@||zdn.vn^$client=10.0.3.128/25
 @@||photo*.vn^$client=10.0.3.128/25
-
+@@||dlfl.vn.^$client=10.0.3.128/25
 # -----------------------------------------------------------
 # 5. GOOGLE — Gmail, Docs/Drive, Apps Script
 # (chỉ mở subdomain dịch vụ, không mở toàn bộ google.com)
