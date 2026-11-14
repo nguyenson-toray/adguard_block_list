@@ -1,0 +1,606 @@
+! =====================================================================
+! 01_global.txt — ÁP DỤNG TOÀN MẠNG 10.0.0.0/22
+! Version 1.0 — 2026-11-14 — AdGuard Home v0.107.80
+! ---------------------------------------------------------------------
+! Thay thế 8 file cũ: block_bartender, block_adobe_acrobat_foxit_PDF_editor,
+!   download_software.txt, film.txt, game.txt, sofware_crack.txt, bet,
+!   xo_so_lo_de
+! ---------------------------------------------------------------------
+! QUY ƯỚC (giữ nguyên khi sửa file):
+! 1. File này KHÔNG dùng $client và KHÔNG dùng $important.
+!    => 10.0.2.x chỉ bị chặn bởi file này + Client settings trên UI.
+! 2. Chỉ có ĐÚNG 1 nhóm @@ (mục 0 — kiểm tra kết nối Internet).
+!    KHÔNG thêm @@ khác vào đây: @@ không có $client sẽ mở cho cả mạng
+!    và đè lên rule chặn thường của MỌI list khác.
+! 3. Chỉ dùng modifier AdGuard Home hỗ trợ: client, important, dnsrewrite,
+!    dnstype, denyallow, badfilter, ctag. KHÔNG dùng $app, $path,
+!    $third-party, $time, $document — cả dòng sẽ bị bỏ qua.
+! 4. ||domain.com^ đã bao gồm mọi subdomain, không cần liệt kê api./cdn./www.
+! 5. Không viết ghi chú cùng dòng với rule.
+! 6. Regex không dùng ký tự $ và dấu phẩy.
+! =====================================================================
+
+
+! #####################################################################
+! 0. CHO PHÉP KIỂM TRA KẾT NỐI INTERNET (toàn mạng)
+!    Để thiết bị không báo "Không có Internet" dù bị chặn ở list khác.
+! #####################################################################
+! Android / Google
+@@||connectivitycheck.gstatic.com^
+@@||connectivitycheck.android.com^
+@@||clients1.google.com^
+@@||clients3.google.com^
+! Apple
+@@||captive.apple.com^
+! Windows
+@@||msftconnecttest.com^
+@@||msftncsi.com^
+! Firefox
+@@||detectportal.firefox.com^
+! Xiaomi / Huawei / Oppo-Realme / Vivo (tên host theo hãng, kiểm tra lại bằng Query Log)
+@@||connect.rom.miui.com^
+@@||connectivitycheck.platform.hicloud.com^
+@@||conn1.coloros.com^
+@@||conn2.coloros.com^
+@@||conn1.oppomobile.com^
+@@||conn2.oppomobile.com^
+@@||wifi.vivo.com.cn^
+
+
+! #####################################################################
+! 1. BARTENDER / SEAGULL SCIENTIFIC
+!    Không ảnh hưởng Seagull License Server nội bộ (LAN, cổng 5160).
+! #####################################################################
+||seagullscientific.com^
+||seagullsoftware.com^
+||seagulldns.com^
+||bartendersoftware.com^
+||bartenderbarcodesoftware.com^
+||bartender.com^
+||bartendercloud.com^
+||mojix.com^
+||seagull*.amazonaws.com^
+
+
+! #####################################################################
+! 2. ADOBE ACROBAT + FOXIT PDF EDITOR
+!    Chặn activation, license, telemetry, update, cloud, AI.
+!    Nên dùng kèm list ngoài: https://a.dove.isdumb.one/pihole
+! #####################################################################
+! --- Adobe: activation / license ---
+||genuine.adobe.com^
+||adobegenuine.com^
+||lcs-robs.adobe.com^
+||licenses.adobe.com^
+||activate.adobe.com^
+||practivate.adobe.com^
+||ereg.adobe.com^
+||na1r.services.adobe.com^
+||adobeid-na1.services.adobe.com^
+||hl2rcv.adobe.com^
+||wip*.adobe.com^
+||3dns*.adobe.com^
+||wwis-dubc1-vip*.adobe.com^
+! --- Adobe: telemetry ---
+||adobe.io^
+||adobestats.io^
+||stats.adobe.com^
+||sstats.adobe.com^
+||metrics.adobe.com^
+||rtmetrics.adobe.com^
+||telemetry.adobe.com^
+||hb.adobe.com^
+||t.adobe.com^
+||www.adobetag.com^
+||adobedtm.com^
+||demdex.net^
+||everesttech.net^
+||omtrdc.net^
+! --- Adobe: update / download ---
+||armmf.adobe.com^
+||ardownload*.adobe.com^
+||acroipm*.adobe.com^
+||get.adobe.com^
+||www-archive.adobe.com^
+||fpdownload.adobe.com^
+||fpdownload*.macromedia.com^
+! --- Adobe: cloud / sign / AI / help ---
+||cloud.acrobat.com^
+||files.acrobat.com^
+||sign.acrobat.com^
+||echocdn.acrobat.com^
+||documentcloud.adobe.com^
+||echosign.adobe.com^
+||echosign.com^
+||firefly.adobe.com^
+||genai.services.adobe.com^
+||helpx.adobe.com^
+! --- Foxit (toàn bộ) ---
+||foxitsoftware.com^
+||foxitcloud.com^
+||foxit.com^
+||foxitservice.com^
+||foxitreader.com^
+||foxit-software.com^
+
+
+! #####################################################################
+! 3. WPS OFFICE — tải / cập nhật
+! #####################################################################
+||wdl1.pcfg.cache.wpscdn.com^
+||ds.cache.wpscdn.com^
+||docs.cache.wpscdn.com^
+||qn.cache.wpscdn.com^
+||global-static.wpscdn.com^
+||dyn.kingsoftstore.wps.com^
+||496760.volcmcdn3.com^
+||4wps.net^
+
+
+! #####################################################################
+! 4. PHIM / STREAMING LẬU / TRỰC TIẾP BÓNG ĐÁ LẬU
+! #####################################################################
+! --- Mọi tên miền có chữ "phim" ---
+/phim[a-z0-9-]*\.(vn|com|net|tv|org|cc|me|io|pro|vip|top|xyz|info|club)/
+! --- Trang phim không có chữ "phim" ---
+||bilutv.com^
+||bilutv.net^
+||bilutv.org^
+||bilutv.tv^
+||fmovies.vn^
+||fmovies.com.vn^
+||hdviet.com^
+||hdviet.net^
+||hdviet.org^
+||cinehub.vn^
+||cinehub.com^
+||koreandrama.vn^
+||koreandrama.com.vn^
+||hdkorea.com^
+||hdkorea.net^
+||123movies.vn^
+||gomovies.vn^
+||gomovies.com.vn^
+||putlocker.vn^
+||putlocker.com.vn^
+||solarmovie.vn^
+||solarmovie.com.vn^
+||vnsharing.net^
+||vntorrent.org^
+! --- Anime ---
+/anime[a-z0-9-]*\.(vn|tv)/
+||animeviet.com^
+||animeviet.net^
+||animehay.com^
+||anime47.com^
+||anime47.net^
+||animevsub.com^
+||vuighe.net^
+||vuighe.com^
+! --- Trực tiếp bóng đá lậu ---
+/(xoilac|cakhia|rakhoi|socolive|vaoroi|thevang|colatv|90phut)/
+||mitom*.tv^
+||mitom*.com^
+||vebo*.tv^
+||vebotv.com^
+||banhkhuc.tv^
+||xembd.com^
+||xembongda.com^
+! --- IPTV / M3U ---
+/(iptv|m3u)[a-z0-9-]*\.vn/
+||iptv.com.vn^
+||vn-iptv.com^
+||iptvvietnam.net^
+||m3uvn.com^
+! --- Host video dùng cho trang phim lậu ---
+||streamtape.com^
+||doodstream.com^
+||upstream.to^
+||fembed.com^
+||supervideo.tv^
+||streamango.com^
+||openload.co^
+||rapidvideo.com^
+! --- Người lớn ---
+||sex18.com.vn^
+||javhd.vn^
+||xvideovn.com^
+||pornhub-premium.com^
+||xhamster.com^
+||xnxx.com^
+||redtube.com^
+
+
+! #####################################################################
+! 5. GAME
+! #####################################################################
+! --- Garena (Liên Quân, Free Fire, FIFA Online...) ---
+||garena.vn^
+||garena.com^
+||garena.tv^
+||booyah.live^
+! --- Riot (LoL, Valorant, Wild Rift) ---
+||riotgames.com^
+||leagueoflegends.com^
+||playvalorant.com^
+||valorant-api.com^
+||riot-wildrift.com^
+! --- Mobile Legends / PUBG ---
+||mobilelegends.com^
+||mobilelegends-api.com^
+||ml.moonton.com^
+||pubgmobile.com^
+||pubgm.proximabeta.com^
+||igamecj.com^
+||pubg.com^
+||bluehole.net^
+! --- Nền tảng / launcher ---
+||steampowered.com^
+||steamcommunity.com^
+||steamcdn-a.akamaihd.net^
+||dota2.com^
+||blog.counter-strike.net^
+||epicgames.com^
+||unrealengine.com^
+||fortnite.com^
+||origin.com^
+||ea.com^
+||apexlegends.com^
+||needforspeed.com^
+||battle.net^
+||blizzard.com^
+||worldofwarcraft.com^
+||uplay.com^
+||ubisoft.com^
+||finalfantasyxiv.com^
+||genshin.hoyoverse.com^
+||hoyolab.com^
+||fo4.nexon.com^
+||fifaonline4.nexon.com^
+||crossfire.z8games.com^
+! --- Casual ---
+||king.com^
+||candycrushsaga.com^
+||supercell.com^
+||clashofclans.com^
+||clashroyale.com^
+||speeddrifters.com^
+! --- Nhà phát hành Việt Nam ---
+/game[a-z0-9-]*\.(vn|com\.vn)/
+||volam.vn^
+||volam.com.vn^
+||kiemthe.com.vn^
+||jx.zing.vn^
+||zonv.vn^
+||funtap.vn^
+||funtap.com^
+||sohagame.com^
+||gosu.vn^
+||gosu.com.vn^
+! --- Stream game / chat game ---
+||twitch.tv^
+||fb.gg^
+||gaming.youtube.com^
+||discord.com^
+||discord.gg^
+||discordapp.com^
+||teamspeak.com^
+! --- Crypto / NFT game ---
+||axieinfinity.com^
+||roninchain.com^
+||axie.tech^
+||thesandbox.game^
+||decentraland.org^
+||gameanalytics.com^
+
+
+! #####################################################################
+! 6. PHẦN MỀM CRACK / WAREZ / TORRENT
+! #####################################################################
+/(fullcrack|crackvn|crackviet|keygen|warez|kmspico|kmsauto)/
+! --- Việt Nam ---
+||fshare24h.net^
+||4share24h.com^
+! --- Torrent ---
+||thepiratebay.org^
+||1337x.to^
+||rarbg.to^
+||kickass.to^
+||extratorrent.cc^
+||rutracker.org^
+||limetorrents.info^
+||torrentz2.eu^
+||nyaa.si^
+||whatbox.ca^
+||seedbox.io^
+! --- Crack phần mềm / Windows / Office / Adobe ---
+||crackwatch.com^
+||crackedsoftware.org^
+||getintopc.com^
+||filehippo.com^
+||softonic.com^
+||download.com^
+||windows-activator.com^
+||officetoolkit.com^
+||office365crack.com^
+||msofficecrack.com^
+||officecrack.org^
+||adobecrack.org^
+||photoshopcrack.net^
+||adobezii.com^
+||serialkey.org^
+||crackserial.com^
+||serialnumber.org^
+||patchcrack.com^
+||softwarepatch.com^
+||crackpatch.org^
+! --- Game crack / repack ---
+||skidrowreloaded.com^
+||skidrowgames.com^
+||codexgames.com^
+||fitgirl-repacks.site^
+||dodi-repacks.site^
+||masquerade.site^
+||elamigos-games.com^
+||oceanofgames.com^
+||steamunlocked.net^
+||igg-games.com^
+||gamestorrent.co^
+||repack-games.com^
+! --- APK mod ---
+||apkmod.com^
+||happymod.com^
+||an1.com^
+||revdl.com^
+||rexdl.com^
+||androidoyun.club^
+||apkmody.io^
+||apkdone.com^
+! --- File host / rút gọn link rủi ro ---
+||zippyshare.com^
+||uploaded.net^
+||rapidgator.net^
+||turbobit.net^
+||nitroflare.com^
+||clicknupload.org^
+||ddownload.com^
+||ddlbase.net^
+||uploadgig.com^
+||adfly.net^
+||linkbucks.com^
+||shorte.st^
+||ouo.io^
+||bc.vc^
+! --- Ebook / khóa học lậu ---
+||libgen.is^
+||sci-hub.se^
+||b-ok.org^
+||pdfdrive.com^
+||coursehunter.net^
+||freetutorials.us^
+||downloadfreecourse.com^
+! --- Quảng cáo độc hại / đào coin ---
+||popads.net^
+||popcash.net^
+||propellerads.com^
+||exoclick.com^
+||juicyads.com^
+||coinhive.com^
+||jsecoin.com^
+||crypto-loot.com^
+||coinerra.com^
+
+
+! #####################################################################
+! 7. CÁ CƯỢC / CASINO / GAME BÀI / TỈ SỐ BÓNG ĐÁ
+! #####################################################################
+! --- Mẫu chung (mọi TLD) ---
+/(casino|betting|gambl|sportsbook|bookmaker|taixiu|xocdia|baccarat|sicbo|togel|poker)/
+/(cacuoc|cadobongda|cadoonline|nhacai|cuocbongda|gamebai|soikeo)/
+/(fun88|new88|lucky88|i9bet|8xbet|188bet|12bet|sbobet|v9bet|1xbet|dafabet|bet365|vsbet|rikvip|hitclub|789bet|kubet|shbet|jun88|five88|may88|typhu88|sodo66|sv388)/
+/link(vao)?(w88|bk8|m88|vn88|fi88)/
+||*.bet^
+! --- Nhà cái tên ngắn (khớp từ đầu nhãn) ---
+||w88*^
+||bk8*^
+||m88*^
+||mansion88.com^
+||vn88*^
+||fb88*^
+||fi88*^
+||6686*^
+||go88*^
+||win79*^
+||hi88*^
+||ee88*^
+||uw88*^
+||zo88*^
+||vic88*^
+||86bet*^
+||bet88*^
+||max79*^
+||vivu88*^
+||sin88*^
+||king88*^
+||b52*.club^
+||b52game.com^
+||taib52.com^
+||k8.com^
+||k8vn.com^
+||k8cc.com^
+||k8vina.com^
+||k8bet.com^
+||j88.com^
+||ok9.com^
+||debet.com^
+||topbet.com^
+||nbet.com^
+||iwin.com^
+||hit.club^
+||letou*.com^
+||sunwin.com^
+||sunwin.club^
+||sunwin.win^
+||sunwin88.com^
+||taisunwin.com^
+||rikclub.com^
+||dafaviet.com^
+||dafa888.com^
+||dafasports.com^
+||188asia.com^
+||mobile365.com^
+||pinnacle.com^
+||pinnaclesports.com^
+||betway.com^
+||betwayasia.com^
+||baivip.com^
+||vipgame.com^
+||gamevip.com^
+||game-bai.com^
+||slotgame.com^
+||megaslot.com^
+||slot88.com^
+||pgslot.com^
+||pragmaticplay.com^
+||spadegaming.com^
+||microgaming.com^
+||top10nhacai.com^
+! --- E-sports / crypto betting ---
+||bet-at-home.com^
+||ggbet.com^
+||thunderpick.com^
+||rivalry.com^
+||unikrn.com^
+||betspawn.com^
+||stake.com^
+||roobet.com^
+||bc.game^
+||bcgame.com^
+||duelbits.com^
+||rollbit.com^
+||cloudbet.com^
+||fortunejack.com^
+||sportsbet.io^
+! --- Tỉ số / livescore ---
+/(livescore|flashscore|bongdaso)/
+||fsdatacentre.com^
+||livesportmedia.eu^
+||livesport.eu^
+||lsapp.eu^
+||lsm-static.com^
+||livescores.com^
+||sofascore.com^
+||soccerway.com^
+||goalzz.com^
+||365scores.com^
+||fotmob.com^
+||aiscore.com^
+||nowgoal*.com^
+||nowgoal.vn^
+||goaloo*.com^
+||whoscored.com^
+||soccerstats.com^
+||flashresults.com^
+||besoccer.com^
+||scorespro.com^
+||footystats.org^
+||forebet.com^
+||scorebat.com^
+! --- Bóng đá Việt Nam (tỉ số, kèo) ---
+||bongda.com.vn^
+||bongdanet.vn^
+||bongda.net^
+||bongdalive.vn^
+||bongdaplus.vn^
+||bongdalu.com^
+||tiso.vn^
+||tysobongda.com^
+||ketquabongda.com^
+||kqbd.com^
+||tructiepbongda.com^
+||tructiepbongda.vn^
+||tructiep.vn^
+||keonhacai*.com^
+||tylebongda.com^
+||tylekeo.com^
+||tyso.com^
+||tylebd.com^
+
+
+! #####################################################################
+! 8. XỔ SỐ / LÔ ĐỀ / VIETLOTT
+! #####################################################################
+! --- Mẫu chung (mọi TLD) ---
+/(xoso|xsmb|xsmn|xsmt|kqxs|xskt|soicau|ketquaxs|vietlott|rongbachkim|dudoanxs|thongkexs)/
+/(lodeonline|lodeviet|lodetrenmang|lodeuytin|lodethethao|danhde|danh-lo-de|caulo|bachthu|nhacat)/
+/(vesoonline|vesodientu|muaveso|muasotrenmang)/
+/lott(o|er)/
+||*lode*.vn^
+! --- Kết quả xổ số ---
+||az24.vn^
+||minhngoc.net^
+||minhngoc.net.vn^
+||minhngoc.com.vn^
+||xsminhngoc.com^
+||minhchinh.com^
+||ketqua.net^
+||mketqua.net^
+||mketqua.com^
+||xshomnay.net^
+||xshomnay.vn^
+||xshomnay.com^
+||xstoday.com^
+||xshangngay.com^
+||xs3mien.com^
+||xs3mien.net^
+||xs3m.com^
+||xstv.com^
+||xshn.com^
+||xsquangninh.com^
+||xsthainguyen.com^
+||xs247.com^
+||xs888.com^
+||tkxs.com^
+||phansoixs.com^
+||dubaoxs.com^
+||thongkeloto.com^
+||veso.vn^
+||vesovn.com^
+! --- Vietlott ---
+||mega645.vn^
+||power655.vn^
+||max3d.vn^
+||keno.vn^
+||xsokeno.com^
+||ketquamega645.com^
+||ketquapower655.com^
+! --- Lô đề ---
+||lode.com^
+||lode88.com^
+||lode68.com^
+||lode99.com^
+||lode386.com^
+||lodevn.com^
+||lodexs.com^
+||loto.vn^
+||loto88.com^
+||lotoviet.com^
+||lotovn.com^
+||lotode.com^
+||lotode.vn^
+||trangdaude.com^
+||ketquade.com^
+! --- Phát hiện từ DNS log ---
+||vip66.uno^
+||vip-66.com^
+||227290wss.com^
+||qmcapp.com^
+||luckypay5555.com^
+||luckypay.com^
+! --- Xổ số quốc tế ---
+||jackpot.com^
+||wintrillions.com^
+||playeuromillions.com^
+||playuslotteries.com^
+||powerball.com^
+||megamillions.com^

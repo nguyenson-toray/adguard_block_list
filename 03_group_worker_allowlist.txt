@@ -1,0 +1,96 @@
+! =====================================================================
+! 03_group_worker_allowlist.txt — GROUP_WORKER 10.0.3.128/25
+! Version 2.0 — 2026-11-14 — AdGuard Home v0.107.80
+! ---------------------------------------------------------------------
+! Thay thế: group_worker.txt
+! Chính sách: CHẶN TẤT CẢ, chỉ mở Zalo, Gmail/Docs, Vietcombank, VNeID/VssID.
+! List này độc lập: tắt list trên UI => Worker dùng chung chính sách với
+! Staff (01_global + 02_phone).
+! ---------------------------------------------------------------------
+! QUY ƯỚC (giữ nguyên khi sửa file):
+! 1. Mọi rule đều có $client=10.0.3.128/25, KHÔNG dùng $important.
+! 2. Thứ tự ưu tiên của AdGuard Home:
+!      chặn có important (02_phone)  >  @@ (file này)  >  chặn thường (*)
+!    => @@ ở đây KHÔNG mở lại được Zalo social, DoH, đồng bộ ảnh,
+!       cập nhật OS, camera, tin tức đã chặn trong 02_phone.
+! 3. Kiểm tra kết nối Internet (captive portal) đã mở toàn mạng trong
+!    01_global.txt mục 0 — không lặp lại ở đây.
+! 4. Google Search (www.google.com) KHÔNG mở. Muốn mở, thêm:
+!      @@||www.google.com^$client=10.0.3.128/25
+! 5. App không chạy: Query Log > lọc IP máy > thêm @@||host^$client=10.0.3.128/25
+! 6. Nếu "Custom filtering rules" trên UI còn SECTION C (Group_Worker)
+!    thì gỡ đi để chỉ quản lý 1 nơi.
+! =====================================================================
+
+
+! --- 0. CHẶN TẤT CẢ ---
+*$client=10.0.3.128/25
+
+
+! --- 1. Hệ điều hành: giờ, chứng chỉ, định vị cơ bản ---
+@@||time.apple.com^$client=10.0.3.128/25
+@@||time-ios.apple.com^$client=10.0.3.128/25
+@@||ntp.apple.com^$client=10.0.3.128/25
+@@||time.google.com^$client=10.0.3.128/25
+@@||time.android.com^$client=10.0.3.128/25
+@@||ocsp.apple.com^$client=10.0.3.128/25
+@@||ocsp2.apple.com^$client=10.0.3.128/25
+@@||valid.apple.com^$client=10.0.3.128/25
+@@||crl.apple.com^$client=10.0.3.128/25
+@@||gsp-ssl.ls.apple.com^$client=10.0.3.128/25
+@@||apple-dns.net^$client=10.0.3.128/25
+@@||pki.goog^$client=10.0.3.128/25
+@@||ocsp.digicert.com^$client=10.0.3.128/25
+@@||o.lencr.org^$client=10.0.3.128/25
+
+
+! --- 2. Thông báo đẩy (để nhận tin nhắn / cuộc gọi) ---
+! Android FCM + Play Services (đăng ký thiết bị, đăng nhập tài khoản)
+@@||mtalk.google.com^$client=10.0.3.128/25
+@@||mtalk4.google.com^$client=10.0.3.128/25
+@@||alt1-mtalk.google.com^$client=10.0.3.128/25
+@@||alt2-mtalk.google.com^$client=10.0.3.128/25
+@@||android.clients.google.com^$client=10.0.3.128/25
+! iOS APNs
+@@||push.apple.com^$client=10.0.3.128/25
+
+
+! --- 3. Zalo: chat, gọi, file/ảnh/video trong tin nhắn ---
+! Nhật ký / Story / Shop / ZaloPay vẫn bị chặn bởi 02_phone (important).
+@@||zalo.me^$client=10.0.3.128/25
+@@||zaloapp.com^$client=10.0.3.128/25
+@@||zadn.vn^$client=10.0.3.128/25
+@@||zdn.vn^$client=10.0.3.128/25
+@@||zalocdn.com^$client=10.0.3.128/25
+@@||zapps.vn^$client=10.0.3.128/25
+@@||zapps.me^$client=10.0.3.128/25
+@@||dlfl.vn^$client=10.0.3.128/25
+@@||123c.vn^$client=10.0.3.128/25
+@@||vng.com.vn^$client=10.0.3.128/25
+
+
+! --- 4. Google: Gmail, Docs / Sheets / Slides / Drive, Apps Script ---
+@@||accounts.google.com^$client=10.0.3.128/25
+@@||accounts.youtube.com^$client=10.0.3.128/25
+@@||gmail.com^$client=10.0.3.128/25
+@@||googlemail.com^$client=10.0.3.128/25
+@@||mail.google.com^$client=10.0.3.128/25
+@@||docs.google.com^$client=10.0.3.128/25
+@@||sheets.google.com^$client=10.0.3.128/25
+@@||slides.google.com^$client=10.0.3.128/25
+@@||drive.google.com^$client=10.0.3.128/25
+@@||drive.usercontent.google.com^$client=10.0.3.128/25
+@@||script.google.com^$client=10.0.3.128/25
+@@||apis.google.com^$client=10.0.3.128/25
+@@||clients6.google.com^$client=10.0.3.128/25
+@@||googleapis.com^$client=10.0.3.128/25
+@@||gstatic.com^$client=10.0.3.128/25
+@@||googleusercontent.com^$client=10.0.3.128/25
+
+
+! --- 5. Ngân hàng: Vietcombank ---
+@@||vietcombank.com.vn^$client=10.0.3.128/25
+
+
+! --- 6. App chính phủ: VNeID, VssID (toàn bộ *.gov.vn) ---
+@@||gov.vn^$client=10.0.3.128/25

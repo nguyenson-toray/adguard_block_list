@@ -1,0 +1,508 @@
+! =====================================================================
+! 02_phone_10.0.3.x.txt — ĐIỆN THOẠI NHÂN VIÊN 10.0.3.0/24
+!   (Group_Staff 10.0.3.0/25 + Group_Worker 10.0.3.128/25)
+! Version 1.0 — 2026-11-14 — AdGuard Home v0.107.80
+! ---------------------------------------------------------------------
+! Thay thế 7 file cũ: news.txt, zalo_social, zalo_social_2.2.txt,
+!   doh_provider, camera.txt, camera_block_10.0.3.x, photo_sync,
+!   block_apple_google_os_update.txt (chỉ giữ phần chặn cập nhật OS)
+! ---------------------------------------------------------------------
+! QUY ƯỚC (giữ nguyên khi sửa file):
+! 1. MỌI rule đều kết thúc bằng  $client=10.0.3.0/24,important
+!    - client  => không đụng tới 10.0.0.x / 10.0.1.x / 10.0.2.x
+!    - important => thắng mọi @@ thường, kể cả @@||zadn.vn^,
+!      @@||googleapis.com^ trong 03_group_worker_allowlist.txt
+! 2. File này KHÔNG chứa @@.
+!    Gỡ chặn nhầm 1 host: thêm vào Custom filtering rules
+!      @@||host.com^$client=10.0.3.0/24,important
+!    (@@ thường KHÔNG gỡ được rule có important)
+! 3. Thiết bị phải hỏi DNS trực tiếp 10.0.1.6; nếu đi qua DNS trung gian
+!    (DC 10.0.1.3) thì AdGuard không thấy IP thật, $client không khớp.
+! 4. KHÔNG còn chặn YouTube / Play Store / App Store / iCloud.
+! =====================================================================
+
+
+! #####################################################################
+! 1. TIN TỨC — báo lá cải, trang tổng hợp, MXH tin tức
+!    Báo chính thống (vnexpress, tuoitre, thanhnien...) KHÔNG bị chặn.
+! #####################################################################
+! --- Trang tổng hợp ---
+||baomoi.com^$client=10.0.3.0/24,important
+||baomoi.vn^$client=10.0.3.0/24,important
+||epi.com.vn^$client=10.0.3.0/24,important
+||24h.com.vn^$client=10.0.3.0/24,important
+||soha.vn^$client=10.0.3.0/24,important
+||vntoday.vn^$client=10.0.3.0/24,important
+||vnngaynay.vn^$client=10.0.3.0/24,important
+||tinnong.vn^$client=10.0.3.0/24,important
+||tinmoi.vn^$client=10.0.3.0/24,important
+||tintuc.vn^$client=10.0.3.0/24,important
+||tintucvietnam.vn^$client=10.0.3.0/24,important
+||infonet.vn^$client=10.0.3.0/24,important
+||baonet.vn^$client=10.0.3.0/24,important
+||newsvietnam.com^$client=10.0.3.0/24,important
+||vntopic.com^$client=10.0.3.0/24,important
+||vtcnews.vn^$client=10.0.3.0/24,important
+! --- Showbiz / giải trí ---
+||kenh14.vn^$client=10.0.3.0/24,important
+||saostar.vn^$client=10.0.3.0/24,important
+||tiin.vn^$client=10.0.3.0/24,important
+||2sao.vn^$client=10.0.3.0/24,important
+||2sao.com.vn^$client=10.0.3.0/24,important
+||yan.vn^$client=10.0.3.0/24,important
+||yeah1.com^$client=10.0.3.0/24,important
+||yeah1.tv^$client=10.0.3.0/24,important
+||vietgiaitri.com^$client=10.0.3.0/24,important
+||thegioitre.vn^$client=10.0.3.0/24,important
+||bestie.vn^$client=10.0.3.0/24,important
+||beat.vn^$client=10.0.3.0/24,important
+||saigononline.vn^$client=10.0.3.0/24,important
+||topvietnam.vn^$client=10.0.3.0/24,important
+! --- Đời sống / tâm sự ---
+||nguoiduatin.vn^$client=10.0.3.0/24,important
+||doisongphapluat.com.vn^$client=10.0.3.0/24,important
+||phapluatplus.baophapluat.vn^$client=10.0.3.0/24,important
+||phunutoday.vn^$client=10.0.3.0/24,important
+||giadinhmoi.vn^$client=10.0.3.0/24,important
+||thoidaiplus.giadinh.net.vn^$client=10.0.3.0/24,important
+||thoidaiplus.suckhoedoisong.vn^$client=10.0.3.0/24,important
+||eva.vn^$client=10.0.3.0/24,important
+||afamily.vn^$client=10.0.3.0/24,important
+||webtretho.com^$client=10.0.3.0/24,important
+||emdep.vn^$client=10.0.3.0/24,important
+||petrotimes.vn^$client=10.0.3.0/24,important
+! --- Công nghệ / game tổng hợp ---
+||genk.vn^$client=10.0.3.0/24,important
+||techz.vn^$client=10.0.3.0/24,important
+||vnreview.vn^$client=10.0.3.0/24,important
+||gamek.vn^$client=10.0.3.0/24,important
+||kenhtingame.com^$client=10.0.3.0/24,important
+||2game.vn^$client=10.0.3.0/24,important
+||50mm.vn^$client=10.0.3.0/24,important
+! --- Zing News / ZNews (KHÔNG chặn gốc zing.vn để giữ Zing MP3) ---
+||zingnews.vn^$client=10.0.3.0/24,important
+||znews.vn^$client=10.0.3.0/24,important
+||news.zing.vn^$client=10.0.3.0/24,important
+||tv.zing.vn^$client=10.0.3.0/24,important
+! --- Mạng xã hội có tin tức ---
+||lotus.vn^$client=10.0.3.0/24,important
+||gapo.vn^$client=10.0.3.0/24,important
+||hahalolo.com^$client=10.0.3.0/24,important
+||mocha.com.vn^$client=10.0.3.0/24,important
+||api.mocha.vn^$client=10.0.3.0/24,important
+||cdn.mocha.vn^$client=10.0.3.0/24,important
+||netcalo.com^$client=10.0.3.0/24,important
+||spiderum.com^$client=10.0.3.0/24,important
+
+
+! #####################################################################
+! 2. ZALO SOCIAL — chặn Nhật ký, Story, Zalo Video, Shop, Game, ZaloPay
+!    GIỮ: nhắn tin, gọi, ảnh/video/file trong tin nhắn, Mini App, OA.
+!    Lưu ý: tên host dạng zfeed*/story*/shop*... là suy theo mẫu, CHƯA
+!    kiểm chứng. Mở Nhật ký trên 1 máy test, lọc Query Log theo IP máy đó
+!    rồi bổ sung host thật (vd f*-zpsocial.zdn.vn, f*-zpcloud.zdn.vn).
+! #####################################################################
+! --- Nhật ký / Feed ---
+||zpsocial*.zadn.vn^$client=10.0.3.0/24,important
+||zpsocial*.zdn.vn^$client=10.0.3.0/24,important
+||zfeed*.zadn.vn^$client=10.0.3.0/24,important
+||feed*.zadn.vn^$client=10.0.3.0/24,important
+||newsfeed*.zadn.vn^$client=10.0.3.0/24,important
+! --- Story ---
+||story*.zadn.vn^$client=10.0.3.0/24,important
+||zstory*.zadn.vn^$client=10.0.3.0/24,important
+! --- Bài viết OA (KHÔNG chặn oa.zadn.vn: tin nhắn OA ngân hàng đi qua đây) ---
+||article*.zadn.vn^$client=10.0.3.0/24,important
+||blog*.zadn.vn^$client=10.0.3.0/24,important
+! --- Zalo Video / TV ---
+||tv.zadn.vn^$client=10.0.3.0/24,important
+||vod*.zadn.vn^$client=10.0.3.0/24,important
+||zalo.tv^$client=10.0.3.0/24,important
+! --- Shop / Game ---
+||shop*.zadn.vn^$client=10.0.3.0/24,important
+||zshop*.zadn.vn^$client=10.0.3.0/24,important
+||game*.zadn.vn^$client=10.0.3.0/24,important
+! --- ZaloPay ---
+||zalopay.vn^$client=10.0.3.0/24,important
+||zalopay.com.vn^$client=10.0.3.0/24,important
+! --- Quảng cáo / tracking ---
+||ads*.zadn.vn^$client=10.0.3.0/24,important
+||adservice*.zadn.vn^$client=10.0.3.0/24,important
+||tracking*.zadn.vn^$client=10.0.3.0/24,important
+||adtima.vn^$client=10.0.3.0/24,important
+
+
+! #####################################################################
+! 3. DoH / DoT / PRIVATE RELAY — chống vượt DNS
+!    DNS chỉ chặn được client tìm DoH bằng tên miền. Cần thêm ở firewall:
+!    chặn TCP/UDP 853, chặn cổng 53 ra ngoài (trừ 10.0.1.6), chặn 443 tới
+!    1.1.1.1 / 1.0.0.1 / 8.8.8.8 / 8.8.4.4 / 9.9.9.9.
+! #####################################################################
+! --- Google ---
+||dns.google^$client=10.0.3.0/24,important
+||dns.google.com^$client=10.0.3.0/24,important
+||8888.google^$client=10.0.3.0/24,important
+! --- Cloudflare ---
+||cloudflare-dns.com^$client=10.0.3.0/24,important
+||one.one.one.one^$client=10.0.3.0/24,important
+||dns.cloudflare.com^$client=10.0.3.0/24,important
+! --- Quad9 ---
+||dns.quad9.net^$client=10.0.3.0/24,important
+||dns9.quad9.net^$client=10.0.3.0/24,important
+||dns10.quad9.net^$client=10.0.3.0/24,important
+||dns11.quad9.net^$client=10.0.3.0/24,important
+! --- NextDNS / AdGuard / OpenDNS ---
+||dns.nextdns.io^$client=10.0.3.0/24,important
+||adguard-dns.com^$client=10.0.3.0/24,important
+||dns.adguard.com^$client=10.0.3.0/24,important
+||doh.opendns.com^$client=10.0.3.0/24,important
+||doh.familyshield.opendns.com^$client=10.0.3.0/24,important
+! --- Alibaba / Tencent-DNSPod / 360 ---
+||dns.alidns.com^$client=10.0.3.0/24,important
+||doh.pub^$client=10.0.3.0/24,important
+||dot.pub^$client=10.0.3.0/24,important
+||dns.pub^$client=10.0.3.0/24,important
+||doh.360.cn^$client=10.0.3.0/24,important
+||dot.360.cn^$client=10.0.3.0/24,important
+! --- Khác ---
+||doh.cleanbrowsing.org^$client=10.0.3.0/24,important
+||dns.mullvad.net^$client=10.0.3.0/24,important
+||doh.mullvad.net^$client=10.0.3.0/24,important
+||controld.com^$client=10.0.3.0/24,important
+||rethinkdns.com^$client=10.0.3.0/24,important
+||dns.switch.ch^$client=10.0.3.0/24,important
+||doh.applied-privacy.net^$client=10.0.3.0/24,important
+||doh.dns.sb^$client=10.0.3.0/24,important
+||doh.libredns.gr^$client=10.0.3.0/24,important
+||dns.twnic.tw^$client=10.0.3.0/24,important
+||ordns.he.net^$client=10.0.3.0/24,important
+||dns.vnnic.vn^$client=10.0.3.0/24,important
+! --- Firefox canary ---
+||use-application-dns.net^$client=10.0.3.0/24,important
+! --- Apple iCloud Private Relay ---
+! Apple khuyến nghị trả NXDOMAIN để iPhone tự tắt Private Relay ngay.
+! Dòng dnsrewrite làm việc đó; 3 dòng chặn thường bên dưới là dự phòng.
+||mask.icloud.com^$client=10.0.3.0/24,dnsrewrite=NXDOMAIN;;
+||mask-h2.icloud.com^$client=10.0.3.0/24,dnsrewrite=NXDOMAIN;;
+||mask.icloud.com^$client=10.0.3.0/24,important
+||mask-h2.icloud.com^$client=10.0.3.0/24,important
+||mask-api.icloud.com^$client=10.0.3.0/24,important
+
+
+! #####################################################################
+! 4. CAMERA — app xem camera qua cloud / P2P
+!    DNS chỉ chặn được một phần (app P2P có thể dùng IP trực tiếp).
+! #####################################################################
+! --- Imou / Dahua / Easy4IP ---
+||imou.com^$client=10.0.3.0/24,important
+||imoulife.com^$client=10.0.3.0/24,important
+||dahuatech.com^$client=10.0.3.0/24,important
+||dahuacloud.com^$client=10.0.3.0/24,important
+||dmss.dahuasecurity.com^$client=10.0.3.0/24,important
+||dhitech.com^$client=10.0.3.0/24,important
+||lechange.com^$client=10.0.3.0/24,important
+||open.lechange.cn^$client=10.0.3.0/24,important
+||ib.isappcloud.com^$client=10.0.3.0/24,important
+||dolynkcloud.com^$client=10.0.3.0/24,important
+||dolynk.com^$client=10.0.3.0/24,important
+||easy4ipcloud.com^$client=10.0.3.0/24,important
+||easy4ip.com^$client=10.0.3.0/24,important
+! --- Hikvision / Hik-Connect / EZVIZ ---
+||hikvision.com^$client=10.0.3.0/24,important
+||hik-connect.com^$client=10.0.3.0/24,important
+||hikconnect.com^$client=10.0.3.0/24,important
+||hikvisionapi.com^$client=10.0.3.0/24,important
+||hikvisionvietnam.com^$client=10.0.3.0/24,important
+||hikddns.com^$client=10.0.3.0/24,important
+||hik-cloud.com^$client=10.0.3.0/24,important
+||hikmicro.com^$client=10.0.3.0/24,important
+||pyronix-cloud.com^$client=10.0.3.0/24,important
+||ezviz.com^$client=10.0.3.0/24,important
+||ezvizlife.com^$client=10.0.3.0/24,important
+||ezvizapi.com^$client=10.0.3.0/24,important
+||ezvizcloud.com^$client=10.0.3.0/24,important
+||ezviz7.com^$client=10.0.3.0/24,important
+||ezvis.com^$client=10.0.3.0/24,important
+||ezvizeu.com^$client=10.0.3.0/24,important
+||ezvizap.com^$client=10.0.3.0/24,important
+||ezvizvn.com^$client=10.0.3.0/24,important
+! --- XMEye / iCSee / CamHi ---
+||xmeye.net^$client=10.0.3.0/24,important
+||xmeye.com^$client=10.0.3.0/24,important
+||xmeye.cn^$client=10.0.3.0/24,important
+||xmcsee.com^$client=10.0.3.0/24,important
+||xmsecu.com^$client=10.0.3.0/24,important
+||xiongmaitech.com^$client=10.0.3.0/24,important
+||icsee.me^$client=10.0.3.0/24,important
+||camhi.com^$client=10.0.3.0/24,important
+||camhi.net^$client=10.0.3.0/24,important
+||camhipro.com^$client=10.0.3.0/24,important
+||eseecloud.com^$client=10.0.3.0/24,important
+||eseecloud3.com^$client=10.0.3.0/24,important
+||vrcam.net^$client=10.0.3.0/24,important
+||ippro.co^$client=10.0.3.0/24,important
+! --- Yoosee / V380 ---
+||yoosee.co^$client=10.0.3.0/24,important
+||yoosee.com^$client=10.0.3.0/24,important
+||gwelltimes.com^$client=10.0.3.0/24,important
+||gwell.cc^$client=10.0.3.0/24,important
+||gwsecu.com^$client=10.0.3.0/24,important
+||cloudlinks.cn^$client=10.0.3.0/24,important
+||v380.net^$client=10.0.3.0/24,important
+||v380s.com^$client=10.0.3.0/24,important
+||v380pro.com^$client=10.0.3.0/24,important
+||v380cam.com^$client=10.0.3.0/24,important
+||macrovideo.com.cn^$client=10.0.3.0/24,important
+! --- Xiaomi Mi Home (KHÔNG chặn mi.com / xiaomi.com / account.xiaomi.com) ---
+||io.mi.com^$client=10.0.3.0/24,important
+||home.mi.com^$client=10.0.3.0/24,important
+||iot.mi.com^$client=10.0.3.0/24,important
+||mijia.com^$client=10.0.3.0/24,important
+||xiaomiyoupin.com^$client=10.0.3.0/24,important
+! --- TP-Link Tapo / Kasa ---
+||tplinkcloud.com^$client=10.0.3.0/24,important
+||tplinkapps.com^$client=10.0.3.0/24,important
+||tapo.com^$client=10.0.3.0/24,important
+||tapocare.com^$client=10.0.3.0/24,important
+||tapo.vip^$client=10.0.3.0/24,important
+||kasa.tp-link.com^$client=10.0.3.0/24,important
+||kasacare.com^$client=10.0.3.0/24,important
+! --- Reolink ---
+||reolink.com^$client=10.0.3.0/24,important
+||reolinkcam.com^$client=10.0.3.0/24,important
+! --- Thương hiệu Việt Nam ---
+||kbone.vn^$client=10.0.3.0/24,important
+||kbvision.vn^$client=10.0.3.0/24,important
+||kbvision.com^$client=10.0.3.0/24,important
+||kabevision.com^$client=10.0.3.0/24,important
+||vantech.vn^$client=10.0.3.0/24,important
+||vantechvietnam.com^$client=10.0.3.0/24,important
+||questek.vn^$client=10.0.3.0/24,important
+||questekglobal.com^$client=10.0.3.0/24,important
+||j-tech.vn^$client=10.0.3.0/24,important
+||j-techvn.com^$client=10.0.3.0/24,important
+||revotech.vn^$client=10.0.3.0/24,important
+! --- FPT / Viettel / VNPT camera ---
+||fptcamera.vn^$client=10.0.3.0/24,important
+||fptcameraiq.vn^$client=10.0.3.0/24,important
+||camera.fpt.vn^$client=10.0.3.0/24,important
+||smarthome.fpt.vn^$client=10.0.3.0/24,important
+||fptsmarthome.vn^$client=10.0.3.0/24,important
+||fptlife.vn^$client=10.0.3.0/24,important
+||fptsmartcloud.com^$client=10.0.3.0/24,important
+||viettelcamera.vn^$client=10.0.3.0/24,important
+||thingplus.vn^$client=10.0.3.0/24,important
+||cameraddns.net^$client=10.0.3.0/24,important
+||vhome.vn^$client=10.0.3.0/24,important
+||home.viettel.vn^$client=10.0.3.0/24,important
+||smarthome.viettel.vn^$client=10.0.3.0/24,important
+||iot.viettel.vn^$client=10.0.3.0/24,important
+||vnptsmarthome.vn^$client=10.0.3.0/24,important
+||smarthome.vnpt.vn^$client=10.0.3.0/24,important
+||cybercam.vnpt.vn^$client=10.0.3.0/24,important
+||camera.vnpt.vn^$client=10.0.3.0/24,important
+! --- Nền tảng P2P: TUTK/Kalay, Tuya, Closeli, Danale, YI ---
+||tutk.com^$client=10.0.3.0/24,important
+||tutk.io^$client=10.0.3.0/24,important
+||tutk.net^$client=10.0.3.0/24,important
+||throughtek.com^$client=10.0.3.0/24,important
+||kalay.us^$client=10.0.3.0/24,important
+||kalay.io^$client=10.0.3.0/24,important
+||kalay.net^$client=10.0.3.0/24,important
+||kalay.com^$client=10.0.3.0/24,important
+||iotcplatform.com^$client=10.0.3.0/24,important
+||tuya.com^$client=10.0.3.0/24,important
+||tuyaus.com^$client=10.0.3.0/24,important
+||tuyaeu.com^$client=10.0.3.0/24,important
+||tuyacn.com^$client=10.0.3.0/24,important
+||tuyaoem.com^$client=10.0.3.0/24,important
+||tuya-inc.com^$client=10.0.3.0/24,important
+||smartlife.com^$client=10.0.3.0/24,important
+||smart-life.com^$client=10.0.3.0/24,important
+||ycc365plus.com^$client=10.0.3.0/24,important
+||closeli.com^$client=10.0.3.0/24,important
+||closeli.cn^$client=10.0.3.0/24,important
+||pixplus.co^$client=10.0.3.0/24,important
+||danale.com^$client=10.0.3.0/24,important
+||danale.cn^$client=10.0.3.0/24,important
+||yitechnology.com^$client=10.0.3.0/24,important
+||yicamera.com^$client=10.0.3.0/24,important
+||yi.com^$client=10.0.3.0/24,important
+||kamihome.com^$client=10.0.3.0/24,important
+||kami.vision^$client=10.0.3.0/24,important
+! --- P2P khác ---
+||nvsip.com^$client=10.0.3.0/24,important
+||sunywo.com^$client=10.0.3.0/24,important
+||ubia.cn^$client=10.0.3.0/24,important
+||ubell.com.cn^$client=10.0.3.0/24,important
+||ubox.net^$client=10.0.3.0/24,important
+||carecam.vn^$client=10.0.3.0/24,important
+||carecam.com^$client=10.0.3.0/24,important
+||huiyuncloud.com^$client=10.0.3.0/24,important
+||tosee.net^$client=10.0.3.0/24,important
+||tocoding.com^$client=10.0.3.0/24,important
+||goolink.com^$client=10.0.3.0/24,important
+||vnowlink.com^$client=10.0.3.0/24,important
+||umeye.com^$client=10.0.3.0/24,important
+||umeye.net^$client=10.0.3.0/24,important
+||seetong.com^$client=10.0.3.0/24,important
+||topsee.com.cn^$client=10.0.3.0/24,important
+||ipc360.com^$client=10.0.3.0/24,important
+||puwell.com^$client=10.0.3.0/24,important
+||findcam.com^$client=10.0.3.0/24,important
+||zscam.com^$client=10.0.3.0/24,important
+! --- Thương hiệu quốc tế ---
+||360os.com^$client=10.0.3.0/24,important
+||tiandy.com^$client=10.0.3.0/24,important
+||tiandytech.com^$client=10.0.3.0/24,important
+||uniview.com^$client=10.0.3.0/24,important
+||univiewsecurity.com^$client=10.0.3.0/24,important
+||ezstation.net^$client=10.0.3.0/24,important
+||unv.com^$client=10.0.3.0/24,important
+||kguard.com^$client=10.0.3.0/24,important
+||kguard.net^$client=10.0.3.0/24,important
+||ajax.systems^$client=10.0.3.0/24,important
+||ajaxsecuritycloud.com^$client=10.0.3.0/24,important
+||smartwares-app.com^$client=10.0.3.0/24,important
+||elro.eu^$client=10.0.3.0/24,important
+||zmodo.com^$client=10.0.3.0/24,important
+||zmodo.net^$client=10.0.3.0/24,important
+||myzmod.com^$client=10.0.3.0/24,important
+||arlo.com^$client=10.0.3.0/24,important
+||arlocloud.com^$client=10.0.3.0/24,important
+||ring.com^$client=10.0.3.0/24,important
+||ring-cloud.com^$client=10.0.3.0/24,important
+||nest.com^$client=10.0.3.0/24,important
+||nestcam.com^$client=10.0.3.0/24,important
+||dropcam.com^$client=10.0.3.0/24,important
+||swann.com^$client=10.0.3.0/24,important
+||swanneye.com^$client=10.0.3.0/24,important
+||swanncloud.com^$client=10.0.3.0/24,important
+||lorex.com^$client=10.0.3.0/24,important
+||lorextechnology.com^$client=10.0.3.0/24,important
+||lorex.cloud^$client=10.0.3.0/24,important
+||sricam.com^$client=10.0.3.0/24,important
+||sricctv.com^$client=10.0.3.0/24,important
+||wanscam.com^$client=10.0.3.0/24,important
+||wanscam.net^$client=10.0.3.0/24,important
+||floureon.com^$client=10.0.3.0/24,important
+||zositech.com^$client=10.0.3.0/24,important
+||zosi.com^$client=10.0.3.0/24,important
+||zosismart.com^$client=10.0.3.0/24,important
+||jennov.com^$client=10.0.3.0/24,important
+||annke.com^$client=10.0.3.0/24,important
+||annkecloud.com^$client=10.0.3.0/24,important
+||amcrest.com^$client=10.0.3.0/24,important
+||amcrestcloud.com^$client=10.0.3.0/24,important
+||amcrestview.com^$client=10.0.3.0/24,important
+||foscam.com^$client=10.0.3.0/24,important
+||myfoscam.com^$client=10.0.3.0/24,important
+||foscamcloud.com^$client=10.0.3.0/24,important
+||unifi.ui.com^$client=10.0.3.0/24,important
+||wyze.com^$client=10.0.3.0/24,important
+||wyzecam.com^$client=10.0.3.0/24,important
+||eufylife.com^$client=10.0.3.0/24,important
+||eufy.com^$client=10.0.3.0/24,important
+||blinkforhome.com^$client=10.0.3.0/24,important
+||immedia-semi.com^$client=10.0.3.0/24,important
+! --- Chấm công ZKTeco / Anviz ---
+! XÓA 5 dòng dưới nếu công ty chấm công bằng ZKTeco / ZKBio cloud trên điện thoại.
+||zkteco.com^$client=10.0.3.0/24,important
+||zktecocloud.com^$client=10.0.3.0/24,important
+||zkbio.com^$client=10.0.3.0/24,important
+||zkbiocloudtime.com^$client=10.0.3.0/24,important
+||anviz.com^$client=10.0.3.0/24,important
+
+
+! #####################################################################
+! 5. CẬP NHẬT HỆ ĐIỀU HÀNH ĐIỆN THOẠI
+!    KHÔNG chặn android.clients.google.com (Play Services cần để đăng
+!    nhập và nhận thông báo đẩy).
+! #####################################################################
+! --- iOS / iPadOS ---
+||mesu.apple.com^$client=10.0.3.0/24,important
+||gdmf.apple.com^$client=10.0.3.0/24,important
+||mesu-cdn.origin-apple.com.akadns.net^$client=10.0.3.0/24,important
+||appldnld.apple.com^$client=10.0.3.0/24,important
+||updates.cdn-apple.com^$client=10.0.3.0/24,important
+||updates-http.cdn-apple.com^$client=10.0.3.0/24,important
+||gg.apple.com^$client=10.0.3.0/24,important
+||gnf-mdn.apple.com^$client=10.0.3.0/24,important
+||gnf-mr.apple.com^$client=10.0.3.0/24,important
+! --- Android / Pixel ---
+||ota.googlezip.net^$client=10.0.3.0/24,important
+||ota-cache1.googlezip.net^$client=10.0.3.0/24,important
+||ota-cache2.googlezip.net^$client=10.0.3.0/24,important
+! --- Samsung ---
+||fota-cloud-dn.ospserver.net^$client=10.0.3.0/24,important
+||fota-secure-dn.ospserver.net^$client=10.0.3.0/24,important
+||fos2-cloud-dn.ospserver.net^$client=10.0.3.0/24,important
+||fo2-cloud-dn.ospserver.net^$client=10.0.3.0/24,important
+! --- Xiaomi ---
+||update.miui.com^$client=10.0.3.0/24,important
+||update.intl.miui.com^$client=10.0.3.0/24,important
+! --- Huawei ---
+||update.dbankcloud.com^$client=10.0.3.0/24,important
+||update.hicloud.com^$client=10.0.3.0/24,important
+||query.hicloud.com^$client=10.0.3.0/24,important
+! --- Oppo / Realme ---
+||ota.coloros.com^$client=10.0.3.0/24,important
+||component-ota.coloros.com^$client=10.0.3.0/24,important
+||ifota.realmemobile.com^$client=10.0.3.0/24,important
+! --- Vivo ---
+||ota-update.vivo.com.cn^$client=10.0.3.0/24,important
+||sysupgrade.vivoglobal.com^$client=10.0.3.0/24,important
+
+
+! #####################################################################
+! 6. ĐỒNG BỘ ẢNH LÊN CLOUD
+! #####################################################################
+! --- Google Photos ---
+||photos.google.com^$client=10.0.3.0/24,important
+||photos.googleapis.com^$client=10.0.3.0/24,important
+||photosdata-pa.googleapis.com^$client=10.0.3.0/24,important
+||photosettings-pa.googleapis.com^$client=10.0.3.0/24,important
+||photos-ugc.l.googleusercontent.com^$client=10.0.3.0/24,important
+! --- Apple iCloud Photos ---
+! p*-ckdatabase là CloudKit dùng chung: cũng chặn đồng bộ Ghi chú, Lời nhắc qua iCloud.
+||p*-ckdatabase.icloud.com^$client=10.0.3.0/24,important
+||p*-sharedstreams.icloud.com^$client=10.0.3.0/24,important
+||cvws.icloud-content.com^$client=10.0.3.0/24,important
+! --- Samsung Cloud ---
+||vas.samsungcloud.com^$client=10.0.3.0/24,important
+||gos-api.samsungcloud.com^$client=10.0.3.0/24,important
+||syncservice.samsungcloud.com^$client=10.0.3.0/24,important
+||gallery.samsungcloud.com^$client=10.0.3.0/24,important
+||cm-gallery.samsungcloud.com^$client=10.0.3.0/24,important
+||api-gallery.samsungcloud.com^$client=10.0.3.0/24,important
+! --- Xiaomi Mi Cloud ---
+||i.mi.com^$client=10.0.3.0/24,important
+||bs.mi.com^$client=10.0.3.0/24,important
+||micloud.xiaomi.net^$client=10.0.3.0/24,important
+||gallery.cloud.xiaomi.com^$client=10.0.3.0/24,important
+! --- Oppo / HeyTap ---
+||cloud.oppo.com^$client=10.0.3.0/24,important
+||api-cloud.oppo.com^$client=10.0.3.0/24,important
+||cloud.heytap.com^$client=10.0.3.0/24,important
+||api-cloud.heytap.com^$client=10.0.3.0/24,important
+||backup-cloud.heytap.com^$client=10.0.3.0/24,important
+||gallery-cloud.heytap.com^$client=10.0.3.0/24,important
+! --- Vivo ---
+||cloud.vivo.com^$client=10.0.3.0/24,important
+||api-cloud.vivo.com^$client=10.0.3.0/24,important
+||cs.vivo.com^$client=10.0.3.0/24,important
+||gallery-cloud.vivo.com^$client=10.0.3.0/24,important
+! --- Huawei (KHÔNG chặn gốc hicloud.com: còn dùng cho push, kiểm tra kết nối) ---
+||cloud.huawei.com^$client=10.0.3.0/24,important
+||api.hicloud.com^$client=10.0.3.0/24,important
+||cloud-api.hicloud.com^$client=10.0.3.0/24,important
+||gallery.hicloud.com^$client=10.0.3.0/24,important
+||cloud.dbankcloud.com^$client=10.0.3.0/24,important
+||cloud.dbankcdn.com^$client=10.0.3.0/24,important
+! --- Amazon Photos / Flickr / MEGA ---
+||photos.amazon.com^$client=10.0.3.0/24,important
+||drive.amazonaws.com^$client=10.0.3.0/24,important
+||api.flickr.com^$client=10.0.3.0/24,important
+||up.flickr.com^$client=10.0.3.0/24,important
+||g.api.mega.co.nz^$client=10.0.3.0/24,important
+||gfs*.userstorage.mega.co.nz^$client=10.0.3.0/24,important
