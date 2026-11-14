@@ -2,7 +2,7 @@
 # GROUP_WORKER — MOBILE PHONE ALLOWLIST (AdGuard Home)
 # Dải áp dụng: 10.0.3.128/25  (10.0.3.128 - 10.0.3.255)
 # Chính sách: BLOCK TẤT CẢ, chỉ MỞ các dịch vụ liệt kê bên dưới
-# Cập nhật: 2026-06-03
+# Cập nhật: 2026-11-14
 # -----------------------------------------------------------
 # LƯU Ý:
 # - $client hoạt động trong list nhập của AdGuard Home.
@@ -69,8 +69,9 @@
 @@||zapps.me^$client=10.0.3.128/25
 @@||123c.vn^$client=10.0.3.128/25
 @@||vng.com.vn^$client=10.0.3.128/25
-@@||srv.zdn.vn^$client=10.0.3.128/25
-@@||stc.zdn.vn^$client=10.0.3.128/25
+# zdn.vn: CDN Zalo — file/ảnh/video trong tin nhắn (fxxxx-zfcloud.zdn.vn)
+# Feed/Story trên zdn.vn bị chặn bởi zalo_social ($important)
+@@||zdn.vn^$client=10.0.3.128/25
 @@||photo*.vn^$client=10.0.3.128/25
 
 # -----------------------------------------------------------
