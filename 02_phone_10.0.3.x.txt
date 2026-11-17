@@ -1,11 +1,13 @@
 ! =====================================================================
 ! 02_phone_10.0.3.x.txt — ĐIỆN THOẠI NHÂN VIÊN 10.0.3.0/24
 !   (Group_Staff 10.0.3.0/25 + Group_Worker 10.0.3.128/25)
-! Version 1.0 — 2026-11-14 — AdGuard Home v0.107.80
+! Version 1.1 — 2026-11-17 — AdGuard Home v0.107.80
 ! ---------------------------------------------------------------------
-! Thay thế 7 file cũ: news.txt, zalo_social, zalo_social_2.2.txt,
-!   doh_provider, camera.txt, camera_block_10.0.3.x, photo_sync,
-!   block_apple_google_os_update.txt (chỉ giữ phần chặn cập nhật OS)
+! v1.1: rà soát theo nguyên tắc CHỈ CHẶN HOST ĐÃ BIẾT CHẮC CHẮN.
+!   Đã bỏ mọi host suy đoán theo mẫu tên, host không rõ chủ sở hữu và
+!   host có nguy cơ chặn nhầm dịch vụ khác. Muốn thêm lại host nào thì
+!   kiểm bằng Query Log trên máy test trước.
+!   Phần CAMERA đã chuyển sang file riêng.
 ! ---------------------------------------------------------------------
 ! QUY ƯỚC (giữ nguyên khi sửa file):
 ! 1. MỌI rule đều kết thúc bằng  $client=10.0.3.0/24,important
@@ -18,7 +20,7 @@
 !    (@@ thường KHÔNG gỡ được rule có important)
 ! 3. Thiết bị phải hỏi DNS trực tiếp 10.0.1.6; nếu đi qua DNS trung gian
 !    (DC 10.0.1.3) thì AdGuard không thấy IP thật, $client không khớp.
-! 4. KHÔNG còn chặn YouTube / Play Store / App Store / iCloud.
+! 4. KHÔNG còn chặn YouTube / Play Store / App Store.
 ! =====================================================================
 
 
@@ -28,48 +30,35 @@
 ! #####################################################################
 ! --- Trang tổng hợp ---
 ||baomoi.com^$client=10.0.3.0/24,important
-||baomoi.vn^$client=10.0.3.0/24,important
 ||epi.com.vn^$client=10.0.3.0/24,important
 ||24h.com.vn^$client=10.0.3.0/24,important
 ||soha.vn^$client=10.0.3.0/24,important
-||vntoday.vn^$client=10.0.3.0/24,important
-||vnngaynay.vn^$client=10.0.3.0/24,important
-||tinnong.vn^$client=10.0.3.0/24,important
 ||tinmoi.vn^$client=10.0.3.0/24,important
 ||tintuc.vn^$client=10.0.3.0/24,important
-||tintucvietnam.vn^$client=10.0.3.0/24,important
 ||infonet.vn^$client=10.0.3.0/24,important
-||baonet.vn^$client=10.0.3.0/24,important
-||newsvietnam.com^$client=10.0.3.0/24,important
-||vntopic.com^$client=10.0.3.0/24,important
+! vtcnews.vn là báo chính thống (VTC): xóa dòng dưới nếu không chủ ý chặn.
 ||vtcnews.vn^$client=10.0.3.0/24,important
 ! --- Showbiz / giải trí ---
 ||kenh14.vn^$client=10.0.3.0/24,important
 ||saostar.vn^$client=10.0.3.0/24,important
 ||tiin.vn^$client=10.0.3.0/24,important
 ||2sao.vn^$client=10.0.3.0/24,important
-||2sao.com.vn^$client=10.0.3.0/24,important
 ||yan.vn^$client=10.0.3.0/24,important
 ||yeah1.com^$client=10.0.3.0/24,important
-||yeah1.tv^$client=10.0.3.0/24,important
 ||vietgiaitri.com^$client=10.0.3.0/24,important
 ||thegioitre.vn^$client=10.0.3.0/24,important
 ||bestie.vn^$client=10.0.3.0/24,important
 ||beat.vn^$client=10.0.3.0/24,important
-||saigononline.vn^$client=10.0.3.0/24,important
-||topvietnam.vn^$client=10.0.3.0/24,important
 ! --- Đời sống / tâm sự ---
 ||nguoiduatin.vn^$client=10.0.3.0/24,important
 ||doisongphapluat.com.vn^$client=10.0.3.0/24,important
-||phapluatplus.baophapluat.vn^$client=10.0.3.0/24,important
 ||phunutoday.vn^$client=10.0.3.0/24,important
 ||giadinhmoi.vn^$client=10.0.3.0/24,important
-||thoidaiplus.giadinh.net.vn^$client=10.0.3.0/24,important
-||thoidaiplus.suckhoedoisong.vn^$client=10.0.3.0/24,important
 ||eva.vn^$client=10.0.3.0/24,important
 ||afamily.vn^$client=10.0.3.0/24,important
 ||webtretho.com^$client=10.0.3.0/24,important
 ||emdep.vn^$client=10.0.3.0/24,important
+! petrotimes.vn là báo ngành dầu khí: xóa dòng dưới nếu không chủ ý chặn.
 ||petrotimes.vn^$client=10.0.3.0/24,important
 ! --- Công nghệ / game tổng hợp ---
 ||genk.vn^$client=10.0.3.0/24,important
@@ -78,7 +67,6 @@
 ||gamek.vn^$client=10.0.3.0/24,important
 ||kenhtingame.com^$client=10.0.3.0/24,important
 ||2game.vn^$client=10.0.3.0/24,important
-||50mm.vn^$client=10.0.3.0/24,important
 ! --- Zing News / ZNews (KHÔNG chặn gốc zing.vn để giữ Zing MP3) ---
 ||zingnews.vn^$client=10.0.3.0/24,important
 ||znews.vn^$client=10.0.3.0/24,important
@@ -89,46 +77,22 @@
 ||gapo.vn^$client=10.0.3.0/24,important
 ||hahalolo.com^$client=10.0.3.0/24,important
 ||mocha.com.vn^$client=10.0.3.0/24,important
-||api.mocha.vn^$client=10.0.3.0/24,important
-||cdn.mocha.vn^$client=10.0.3.0/24,important
-||netcalo.com^$client=10.0.3.0/24,important
 ||spiderum.com^$client=10.0.3.0/24,important
 
 
 ! #####################################################################
-! 2. ZALO SOCIAL — chặn Nhật ký, Story, Zalo Video, Shop, Game, ZaloPay
-!    GIỮ: nhắn tin, gọi, ảnh/video/file trong tin nhắn, Mini App, OA.
-!    Lưu ý: tên host dạng zfeed*/story*/shop*... là suy theo mẫu, CHƯA
-!    kiểm chứng. Mở Nhật ký trên 1 máy test, lọc Query Log theo IP máy đó
-!    rồi bổ sung host thật (vd f*-zpsocial.zdn.vn, f*-zpcloud.zdn.vn).
+! 2. ZALO SOCIAL — chỉ chặn host đã xác nhận có thật
+!    GIỮ: nhắn tin, gọi, ảnh/video/file trong tin nhắn, Mini App, OA,
+!    ZaloPay.
+!    Hiệu quả: ảnh Nhật ký và Story không tải; chữ của Nhật ký vẫn hiện.
+!    Zalo Video CHƯA bị chặn: zchannel*.zadn.vn và zalo.video là host có
+!    thật nhưng chưa chắc không dùng cho video trong chat -> test trước.
 ! #####################################################################
-! --- Nhật ký / Feed ---
+! --- Nhật ký (ảnh bài đăng) ---
 ||zpsocial*.zadn.vn^$client=10.0.3.0/24,important
-||zpsocial*.zdn.vn^$client=10.0.3.0/24,important
-||zfeed*.zadn.vn^$client=10.0.3.0/24,important
-||feed*.zadn.vn^$client=10.0.3.0/24,important
-||newsfeed*.zadn.vn^$client=10.0.3.0/24,important
 ! --- Story ---
-||story*.zadn.vn^$client=10.0.3.0/24,important
 ||zstory*.zadn.vn^$client=10.0.3.0/24,important
-! --- Bài viết OA (KHÔNG chặn oa.zadn.vn: tin nhắn OA ngân hàng đi qua đây) ---
-||article*.zadn.vn^$client=10.0.3.0/24,important
-||blog*.zadn.vn^$client=10.0.3.0/24,important
-! --- Zalo Video / TV ---
-||tv.zadn.vn^$client=10.0.3.0/24,important
-||vod*.zadn.vn^$client=10.0.3.0/24,important
-||zalo.tv^$client=10.0.3.0/24,important
-! --- Shop / Game ---
-||shop*.zadn.vn^$client=10.0.3.0/24,important
-||zshop*.zadn.vn^$client=10.0.3.0/24,important
-||game*.zadn.vn^$client=10.0.3.0/24,important
-! --- ZaloPay ---
-||zalopay.vn^$client=10.0.3.0/24,important
-||zalopay.com.vn^$client=10.0.3.0/24,important
-! --- Quảng cáo / tracking ---
-||ads*.zadn.vn^$client=10.0.3.0/24,important
-||adservice*.zadn.vn^$client=10.0.3.0/24,important
-||tracking*.zadn.vn^$client=10.0.3.0/24,important
+! --- Quảng cáo Zalo (Adtima) ---
 ||adtima.vn^$client=10.0.3.0/24,important
 
 
@@ -145,7 +109,6 @@
 ! --- Cloudflare ---
 ||cloudflare-dns.com^$client=10.0.3.0/24,important
 ||one.one.one.one^$client=10.0.3.0/24,important
-||dns.cloudflare.com^$client=10.0.3.0/24,important
 ! --- Quad9 ---
 ||dns.quad9.net^$client=10.0.3.0/24,important
 ||dns9.quad9.net^$client=10.0.3.0/24,important
@@ -161,7 +124,6 @@
 ||dns.alidns.com^$client=10.0.3.0/24,important
 ||doh.pub^$client=10.0.3.0/24,important
 ||dot.pub^$client=10.0.3.0/24,important
-||dns.pub^$client=10.0.3.0/24,important
 ||doh.360.cn^$client=10.0.3.0/24,important
 ||dot.360.cn^$client=10.0.3.0/24,important
 ! --- Khác ---
@@ -176,34 +138,28 @@
 ||doh.libredns.gr^$client=10.0.3.0/24,important
 ||dns.twnic.tw^$client=10.0.3.0/24,important
 ||ordns.he.net^$client=10.0.3.0/24,important
-||dns.vnnic.vn^$client=10.0.3.0/24,important
 ! --- Firefox canary ---
 ||use-application-dns.net^$client=10.0.3.0/24,important
 ! --- Apple iCloud Private Relay ---
 ! Apple khuyến nghị trả NXDOMAIN để iPhone tự tắt Private Relay ngay.
-! Dòng dnsrewrite làm việc đó; 3 dòng chặn thường bên dưới là dự phòng.
+! Dòng dnsrewrite làm việc đó; 2 dòng chặn thường bên dưới là dự phòng.
 ||mask.icloud.com^$client=10.0.3.0/24,dnsrewrite=NXDOMAIN;;
 ||mask-h2.icloud.com^$client=10.0.3.0/24,dnsrewrite=NXDOMAIN;;
 ||mask.icloud.com^$client=10.0.3.0/24,important
 ||mask-h2.icloud.com^$client=10.0.3.0/24,important
-||mask-api.icloud.com^$client=10.0.3.0/24,important
 
 
 ! #####################################################################
-! 5. CẬP NHẬT HỆ ĐIỀU HÀNH ĐIỆN THOẠI
+! 4. CẬP NHẬT HỆ ĐIỀU HÀNH ĐIỆN THOẠI
 !    KHÔNG chặn android.clients.google.com (Play Services cần để đăng
 !    nhập và nhận thông báo đẩy).
 ! #####################################################################
 ! --- iOS / iPadOS ---
 ||mesu.apple.com^$client=10.0.3.0/24,important
 ||gdmf.apple.com^$client=10.0.3.0/24,important
-||mesu-cdn.origin-apple.com.akadns.net^$client=10.0.3.0/24,important
 ||appldnld.apple.com^$client=10.0.3.0/24,important
 ||updates.cdn-apple.com^$client=10.0.3.0/24,important
 ||updates-http.cdn-apple.com^$client=10.0.3.0/24,important
-||gg.apple.com^$client=10.0.3.0/24,important
-||gnf-mdn.apple.com^$client=10.0.3.0/24,important
-||gnf-mr.apple.com^$client=10.0.3.0/24,important
 ! --- Android / Pixel ---
 ||ota.googlezip.net^$client=10.0.3.0/24,important
 ||ota-cache1.googlezip.net^$client=10.0.3.0/24,important
@@ -211,8 +167,6 @@
 ! --- Samsung ---
 ||fota-cloud-dn.ospserver.net^$client=10.0.3.0/24,important
 ||fota-secure-dn.ospserver.net^$client=10.0.3.0/24,important
-||fos2-cloud-dn.ospserver.net^$client=10.0.3.0/24,important
-||fo2-cloud-dn.ospserver.net^$client=10.0.3.0/24,important
 ! --- Xiaomi ---
 ||update.miui.com^$client=10.0.3.0/24,important
 ||update.intl.miui.com^$client=10.0.3.0/24,important
@@ -220,62 +174,34 @@
 ||update.dbankcloud.com^$client=10.0.3.0/24,important
 ||update.hicloud.com^$client=10.0.3.0/24,important
 ||query.hicloud.com^$client=10.0.3.0/24,important
-! --- Oppo / Realme ---
-||ota.coloros.com^$client=10.0.3.0/24,important
-||component-ota.coloros.com^$client=10.0.3.0/24,important
+! --- Realme ---
 ||ifota.realmemobile.com^$client=10.0.3.0/24,important
-! --- Vivo ---
-||ota-update.vivo.com.cn^$client=10.0.3.0/24,important
-||sysupgrade.vivoglobal.com^$client=10.0.3.0/24,important
 
 
 ! #####################################################################
-! 6. ĐỒNG BỘ ẢNH LÊN CLOUD
+! 5. ĐỒNG BỘ ẢNH LÊN CLOUD
 ! #####################################################################
 ! --- Google Photos ---
 ||photos.google.com^$client=10.0.3.0/24,important
 ||photos.googleapis.com^$client=10.0.3.0/24,important
 ||photosdata-pa.googleapis.com^$client=10.0.3.0/24,important
-||photosettings-pa.googleapis.com^$client=10.0.3.0/24,important
-||photos-ugc.l.googleusercontent.com^$client=10.0.3.0/24,important
 ! --- Apple iCloud Photos ---
-! p*-ckdatabase là CloudKit dùng chung: cũng chặn đồng bộ Ghi chú, Lời nhắc qua iCloud.
+! p*-ckdatabase là CloudKit dùng chung: cũng chặn đồng bộ Ghi chú, Lời nhắc
+! và dữ liệu iCloud của app bên thứ ba. cvws.icloud-content.com cũng phục vụ
+! iCloud Drive. Xóa 2 dòng đó nếu chỉ muốn chặn ảnh.
 ||p*-ckdatabase.icloud.com^$client=10.0.3.0/24,important
-||p*-sharedstreams.icloud.com^$client=10.0.3.0/24,important
 ||cvws.icloud-content.com^$client=10.0.3.0/24,important
-! --- Samsung Cloud ---
-||vas.samsungcloud.com^$client=10.0.3.0/24,important
-||gos-api.samsungcloud.com^$client=10.0.3.0/24,important
-||syncservice.samsungcloud.com^$client=10.0.3.0/24,important
-||gallery.samsungcloud.com^$client=10.0.3.0/24,important
-||cm-gallery.samsungcloud.com^$client=10.0.3.0/24,important
-||api-gallery.samsungcloud.com^$client=10.0.3.0/24,important
+||p*-sharedstreams.icloud.com^$client=10.0.3.0/24,important
 ! --- Xiaomi Mi Cloud ---
+! i.mi.com là cổng chung của Mi Cloud: chặn cả danh bạ, ghi chú, tìm thiết bị.
 ||i.mi.com^$client=10.0.3.0/24,important
-||bs.mi.com^$client=10.0.3.0/24,important
 ||micloud.xiaomi.net^$client=10.0.3.0/24,important
-||gallery.cloud.xiaomi.com^$client=10.0.3.0/24,important
-! --- Oppo / HeyTap ---
+! --- Oppo / HeyTap / Vivo / Huawei (cổng cloud chung, không riêng ảnh) ---
 ||cloud.oppo.com^$client=10.0.3.0/24,important
-||api-cloud.oppo.com^$client=10.0.3.0/24,important
 ||cloud.heytap.com^$client=10.0.3.0/24,important
-||api-cloud.heytap.com^$client=10.0.3.0/24,important
-||backup-cloud.heytap.com^$client=10.0.3.0/24,important
-||gallery-cloud.heytap.com^$client=10.0.3.0/24,important
-! --- Vivo ---
 ||cloud.vivo.com^$client=10.0.3.0/24,important
-||api-cloud.vivo.com^$client=10.0.3.0/24,important
-||cs.vivo.com^$client=10.0.3.0/24,important
-||gallery-cloud.vivo.com^$client=10.0.3.0/24,important
-! --- Huawei (KHÔNG chặn gốc hicloud.com: còn dùng cho push, kiểm tra kết nối) ---
 ||cloud.huawei.com^$client=10.0.3.0/24,important
-||api.hicloud.com^$client=10.0.3.0/24,important
-||cloud-api.hicloud.com^$client=10.0.3.0/24,important
-||gallery.hicloud.com^$client=10.0.3.0/24,important
-||cloud.dbankcloud.com^$client=10.0.3.0/24,important
-||cloud.dbankcdn.com^$client=10.0.3.0/24,important
-! --- Amazon Photos / Flickr / MEGA ---
-||photos.amazon.com^$client=10.0.3.0/24,important
+! --- Amazon Drive / Flickr / MEGA ---
 ||drive.amazonaws.com^$client=10.0.3.0/24,important
 ||api.flickr.com^$client=10.0.3.0/24,important
 ||up.flickr.com^$client=10.0.3.0/24,important

@@ -215,3 +215,6 @@
 ||eufy.com^$client=10.0.3.0/24,important
 ||blinkforhome.com^$client=10.0.3.0/24,important
 ||immedia-semi.com^$client=10.0.3.0/24,important
+
+||sg.app.business.smartcamera.api.io.mi.com^$client=10.0.3.0/24,important
+||dayscamera.com^
